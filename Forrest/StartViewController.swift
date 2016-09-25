@@ -26,7 +26,7 @@ class StartViewController: UIViewController
         self.tabBarController?.tabBar.hidden = true
         
         /* 첫화면 배경 색상 설정 */
-        self.view.backgroundColor = UIColor(red: CGFloat(92/225.0), green: CGFloat(251/255.0), blue: CGFloat(193/255.0), alpha: CGFloat(1.0))
+        self.view.backgroundColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         
     }
 

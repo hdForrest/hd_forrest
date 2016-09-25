@@ -49,12 +49,15 @@
                                 <rect key="frame" x="309" y="305" width="46" height="30"/>
                                 <state key="normal" title="발자취"/>
                                 <connections>
-                                    <segue destination="WZl-vi-v4T" kind="show" id="X1a-r4-TF9"/>
+                                    <segue destination="X6e-mu-ie5" kind="show" id="wE3-5e-31E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPz-0C-sp4">
                                 <rect key="frame" x="20" y="305" width="61" height="30"/>
                                 <state key="normal" title="사진미션"/>
+                                <connections>
+                                    <segue destination="X6e-mu-ie5" kind="show" id="VSi-eQ-ChK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0B-UJ-ZRk">
                                 <rect key="frame" x="134" y="362" width="94" height="86"/>
@@ -194,7 +197,6 @@
         <!--리뷰-->
         <scene sceneID="Axv-Ol-eVk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qCE-8f-WD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Byy-iT-84I" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A69-pU-2X7"/>
@@ -208,6 +210,7 @@
                     <tabBarItem key="tabBarItem" title="리뷰" id="sSg-Zh-Vts"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCE-8f-WD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-723.5" y="463.5"/>
         </scene>
@@ -251,7 +254,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="wE3-5e-31E"/>
         <segue reference="ngQ-CT-TMP"/>
-        <segue reference="AtO-3F-G7N"/>
     </inferredMetricsTieBreakers>
 </document>
