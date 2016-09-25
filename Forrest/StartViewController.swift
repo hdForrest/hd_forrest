@@ -22,6 +22,9 @@ class StartViewController: UIViewController
         
         /* 첫화면 네비게이션 바 숨기기. */
         self.navigationController?.navigationBarHidden = true
+        /* tab bar 숨기기 */
+        self.tabBarController?.tabBar.hidden = true
+        
         /* 첫화면 배경 색상 설정 */
         self.view.backgroundColor = UIColor(red: CGFloat(92/225.0), green: CGFloat(251/255.0), blue: CGFloat(193/255.0), alpha: CGFloat(1.0))
         
