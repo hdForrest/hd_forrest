@@ -10,20 +10,25 @@ import UIKit
 
 class StartViewController: UIViewController
 {
-
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // 첫화면 네비게이션 바 숨기기.
+        
+        /* 첫화면 네비게이션 바 숨기기. */
         self.navigationController?.navigationBarHidden = true
+        
+        self.view.backgroundColor = UIColor(red: CGFloat(92/225.0), green: CGFloat(251/255.0), blue: CGFloat(193/255.0), alpha: CGFloat(1.0))
+        
     }
 
-    // 화면 사라질 때 네비게이션 바 나타나기.
+    
+    /* 화면 사라질 때 네비게이션 바 나타나기. */
     override func viewWillDisappear(animated:Bool)
     {
         super.viewWillDisappear(animated)
         self.navigationController?.navigationBarHidden = false
     }
+    
     
     override func didReceiveMemoryWarning()
     {
@@ -31,7 +36,9 @@ class StartViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    
+    
     /*
     // MARK: - Navigation
 

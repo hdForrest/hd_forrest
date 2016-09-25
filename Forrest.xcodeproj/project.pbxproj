@@ -77,6 +77,7 @@
 		5C9DA3FC1D955B490084B468 = {
 			isa = PBXGroup;
 			children = (
+				5CFCAE281D97B47F001DBC18 /* Resource */,
 				5C9DA4071D955B490084B468 /* Forrest */,
 				5C9DA41C1D955B490084B468 /* ForrestTests */,
 				5C9DA4271D955B490084B468 /* ForrestUITests */,
@@ -123,6 +124,13 @@
 				5C9DA42A1D955B490084B468 /* Info.plist */,
 			);
 			path = ForrestUITests;
+			sourceTree = "<group>";
+		};
+		5CFCAE281D97B47F001DBC18 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
