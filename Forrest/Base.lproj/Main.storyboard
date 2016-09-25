@@ -136,7 +136,7 @@
         <!--초급-->
         <scene sceneID="R7c-SJ-VQG">
             <objects>
-                <viewController id="JOM-Fi-Hww" sceneMemberID="viewController">
+                <viewController id="JOM-Fi-Hww" customClass="BeginnerViewController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1ci-6D-qnW"/>
                         <viewControllerLayoutGuide type="bottom" id="XGk-ec-uvr"/>

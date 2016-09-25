@@ -16,6 +16,7 @@
 		5C9DA4291D955B490084B468 /* ForrestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DA4281D955B490084B468 /* ForrestUITests.swift */; };
 		5CFCAE2E1D97CC13001DBC18 /* WalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */; };
 		5CFCAE301D97DC65001DBC18 /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */; };
+		5CFCAE321D97DCF3001DBC18 /* BeginnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE311D97DCF3001DBC18 /* BeginnerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5C9DA42A1D955B490084B468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkViewController.swift; sourceTree = "<group>"; };
 		5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionViewController.swift; sourceTree = "<group>"; };
+		5CFCAE311D97DCF3001DBC18 /* BeginnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				5C0CDC221D95794A00372AA9 /* StartViewController.swift */,
 				5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */,
 				5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */,
+				5CFCAE311D97DCF3001DBC18 /* BeginnerViewController.swift */,
 			);
 			path = Forrest;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				5C0CDC231D95794A00372AA9 /* StartViewController.swift in Sources */,
 				5CFCAE2E1D97CC13001DBC18 /* WalkViewController.swift in Sources */,
 				5CFCAE301D97DC65001DBC18 /* MissionViewController.swift in Sources */,
+				5CFCAE321D97DCF3001DBC18 /* BeginnerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
