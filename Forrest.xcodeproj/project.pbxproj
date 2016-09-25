@@ -15,6 +15,7 @@
 		5C9DA41E1D955B490084B468 /* ForrestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DA41D1D955B490084B468 /* ForrestTests.swift */; };
 		5C9DA4291D955B490084B468 /* ForrestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DA4281D955B490084B468 /* ForrestUITests.swift */; };
 		5CFCAE2E1D97CC13001DBC18 /* WalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */; };
+		5CFCAE301D97DC65001DBC18 /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5C9DA4281D955B490084B468 /* ForrestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForrestUITests.swift; sourceTree = "<group>"; };
 		5C9DA42A1D955B490084B468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkViewController.swift; sourceTree = "<group>"; };
+		5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +103,13 @@
 			isa = PBXGroup;
 			children = (
 				5C9DA4081D955B490084B468 /* AppDelegate.swift */,
-				5C0CDC221D95794A00372AA9 /* StartViewController.swift */,
-				5C9DA40C1D955B490084B468 /* Main.storyboard */,
 				5C9DA40F1D955B490084B468 /* Assets.xcassets */,
 				5C9DA4111D955B490084B468 /* LaunchScreen.storyboard */,
 				5C9DA4141D955B490084B468 /* Info.plist */,
+				5C9DA40C1D955B490084B468 /* Main.storyboard */,
+				5C0CDC221D95794A00372AA9 /* StartViewController.swift */,
 				5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */,
+				5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */,
 			);
 			path = Forrest;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				5C9DA4091D955B490084B468 /* AppDelegate.swift in Sources */,
 				5C0CDC231D95794A00372AA9 /* StartViewController.swift in Sources */,
 				5CFCAE2E1D97CC13001DBC18 /* WalkViewController.swift in Sources */,
+				5CFCAE301D97DC65001DBC18 /* MissionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

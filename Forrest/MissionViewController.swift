@@ -1,5 +1,5 @@
 //
-//  WalkViewController.swift
+//  MissionViewController.swift
 //  Forrest
 //
 //  Created by 이승환 on 2016. 9. 25..
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WalkViewController: UIViewController
+class MissionViewController: UIViewController
 {
 
     override func viewDidLoad()
@@ -17,11 +17,10 @@ class WalkViewController: UIViewController
         
         /* 첫화면 네비게이션 바 숨기기. */
         self.navigationController?.navigationBarHidden = true
-        
+
         // Do any additional setup after loading the view.
     }
 
-    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()

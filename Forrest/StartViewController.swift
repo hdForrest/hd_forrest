@@ -29,7 +29,18 @@ class StartViewController: UIViewController
         self.view.backgroundColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         
     }
+    /*
+    override func viewDidAppear(animated: Bool)
+    {
+        /* 첫화면 네비게이션 바 숨기기. */
+        self.navigationController?.navigationBarHidden = true
+        /* tab bar 숨기기 */
+        self.tabBarController?.tabBar.hidden = true
+        /* 첫화면 배경 색상 설정 */
+        self.view.backgroundColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
 
+    }
+    */
     
     /* 화면 사라질 때 네비게이션 바 나타나기. */
     override func viewWillDisappear(animated:Bool)
