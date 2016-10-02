@@ -64,6 +64,7 @@ class StartViewController: UIViewController
         if(segue.identifier=="mission"){
             let tabVC = segue.destinationViewController as! MissonTabbarController
             tabVC.selectedIndex = 2
+            tabVC.navigationController?.navigationBarHidden = true
         }
     }
     
