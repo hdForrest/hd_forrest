@@ -27,7 +27,6 @@ class StartViewController: UIViewController
         
         /* 첫화면 배경 색상 설정 */
         self.view.backgroundColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
-        
     }
     /*
     override func viewDidAppear(animated: Bool)

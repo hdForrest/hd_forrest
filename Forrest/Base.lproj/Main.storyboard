@@ -35,34 +35,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3N-OI-mzZ">
-                                <rect key="frame" x="134" y="161" width="94" height="86"/>
+                                <rect key="frame" x="140" y="161" width="94" height="86"/>
                                 <state key="normal" title="숲여행"/>
                                 <connections>
                                     <segue destination="slo-D7-Tz1" kind="show" id="JAG-XH-teR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXw-0m-Fg8">
-                                <rect key="frame" x="134" y="268" width="94" height="86"/>
+                                <rect key="frame" x="140" y="268" width="94" height="86"/>
                                 <state key="normal" title="동행콜"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NP-3O-ZAC">
-                                <rect key="frame" x="309" y="305" width="46" height="30"/>
+                                <rect key="frame" x="309" y="296" width="46" height="30"/>
                                 <state key="normal" title="발자취"/>
                                 <connections>
                                     <segue destination="X6e-mu-ie5" kind="show" id="VTl-M6-pss"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPz-0C-sp4">
-                                <rect key="frame" x="20" y="305" width="61" height="30"/>
+                                <rect key="frame" x="20" y="296" width="61" height="30"/>
                                 <state key="normal" title="사진미션"/>
                                 <connections>
                                     <segue destination="X6e-mu-ie5" kind="show" id="feH-va-c9d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0B-UJ-ZRk">
-                                <rect key="frame" x="134" y="362" width="94" height="86"/>
+                                <rect key="frame" x="140" y="362" width="94" height="86"/>
                                 <state key="normal" title="설정"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title.png" translatesAutoresizingMaskIntoConstraints="NO" id="z0l-EV-71N">
+                                <rect key="frame" x="68" y="57" width="238" height="103"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -258,6 +261,9 @@
             <point key="canvasLocation" x="-225.5" y="-1122.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Title.png" width="484" height="171"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="feH-va-c9d"/>
         <segue reference="ngQ-CT-TMP"/>
