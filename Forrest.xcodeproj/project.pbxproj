@@ -21,6 +21,7 @@
 		5CFCAE2E1D97CC13001DBC18 /* WalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */; };
 		5CFCAE301D97DC65001DBC18 /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */; };
 		5CFCAE321D97DCF3001DBC18 /* BeginnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE311D97DCF3001DBC18 /* BeginnerViewController.swift */; };
+		EEEEF5EF1DA164600031E0ED /* MissonTabberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEEF5EE1DA164600031E0ED /* MissonTabberController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkViewController.swift; sourceTree = "<group>"; };
 		5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionViewController.swift; sourceTree = "<group>"; };
 		5CFCAE311D97DCF3001DBC18 /* BeginnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginnerViewController.swift; sourceTree = "<group>"; };
+		EEEEF5EE1DA164600031E0ED /* MissonTabberController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissonTabberController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */,
 				5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */,
 				5CFCAE311D97DCF3001DBC18 /* BeginnerViewController.swift */,
+				EEEEF5EE1DA164600031E0ED /* MissonTabberController.swift */,
 			);
 			path = Forrest;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C9DA4091D955B490084B468 /* AppDelegate.swift in Sources */,
+				EEEEF5EF1DA164600031E0ED /* MissonTabberController.swift in Sources */,
 				5C0CDC231D95794A00372AA9 /* StartViewController.swift in Sources */,
 				5CFCAE2E1D97CC13001DBC18 /* WalkViewController.swift in Sources */,
 				5CFCAE301D97DC65001DBC18 /* MissionViewController.swift in Sources */,

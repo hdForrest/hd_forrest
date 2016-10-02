@@ -124,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="-2996.5" y="1267.5"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Misson Tabbar Controller-->
         <scene sceneID="xRM-PR-Bbb">
             <objects>
-                <tabBarController id="X6e-mu-ie5" sceneMemberID="viewController">
+                <tabBarController id="X6e-mu-ie5" customClass="MissonTabbarController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="CgF-2E-P8w"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ccM-Vt-G75">
