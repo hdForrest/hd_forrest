@@ -36,9 +36,14 @@ class StartViewController: UIViewController
         self.view.backgroundColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         
         /* 버튼에 이미지 입히기 */
-        
+        bt_travel.setImage(UIImage(named: "Travel"), forState: .Normal)
         bt_mission.setImage(UIImage(named : "Mission"), forState: .Normal)
+        bt_walk.setImage(UIImage(named : "Walk"), forState: .Normal)
+        
+        
+        bt_travel.tintColor = UIColor.blackColor()
         bt_mission.tintColor = UIColor.blackColor()
+        bt_walk.tintColor = UIColor.blackColor()
         //bt_travel.setTitleColor(UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0)), forState: .Normal)
         
     }
