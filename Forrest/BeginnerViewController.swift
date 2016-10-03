@@ -28,8 +28,16 @@ class BeginnerViewController: UIViewController
         
         self.tabBarController?.navigationController!.navigationBar.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         
+        /* tab bar set */
+        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: 28)!], forState: .Normal)
+        
+        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -5)
+        
+        self.tabBarController?.tabBar.backgroundColor = UIColor(red: CGFloat(54/225.0), green: CGFloat(54/255.0), blue: CGFloat(54/255.0), alpha: CGFloat(1.0))
+        self.tabBarController?.tabBar.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        
     }
-
+    
     
     
     

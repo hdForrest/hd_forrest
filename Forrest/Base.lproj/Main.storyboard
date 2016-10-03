@@ -34,18 +34,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXw-0m-Fg8">
+                                <rect key="frame" x="140" y="361" width="200" height="86"/>
+                                <state key="normal" title="동행콜"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPz-0C-sp4">
                                 <rect key="frame" x="0.0" y="252" width="59" height="161"/>
                                 <state key="normal" title="사진미션"/>
                                 <connections>
                                     <segue destination="X6e-mu-ie5" kind="show" identifier="mission" id="feH-va-c9d"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0B-UJ-ZRk">
-                                <rect key="frame" x="87" y="467" width="200" height="86"/>
-                                <state key="normal" title="설정"/>
-                                <connections>
-                                    <segue destination="Gl1-wr-mAh" kind="show" id="nS1-Oc-b1U"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title.png" translatesAutoresizingMaskIntoConstraints="NO" id="z0l-EV-71N">
@@ -65,9 +62,12 @@
                                     <segue destination="X6e-mu-ie5" kind="show" id="VTl-M6-pss"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXw-0m-Fg8">
-                                <rect key="frame" x="87" y="348" width="200" height="86"/>
-                                <state key="normal" title="동행콜"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0B-UJ-ZRk">
+                                <rect key="frame" x="87" y="468" width="200" height="86"/>
+                                <state key="normal" title="설정"/>
+                                <connections>
+                                    <segue destination="Gl1-wr-mAh" kind="show" id="nS1-Oc-b1U"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -269,8 +269,8 @@
                         <segue destination="JOM-Fi-Hww" kind="relationship" relationship="viewControllers" id="37d-vP-ivg"/>
                         <segue destination="drq-Qs-cg2" kind="relationship" relationship="viewControllers" id="sxT-Kc-2LD"/>
                         <segue destination="X8I-W2-4tS" kind="relationship" relationship="viewControllers" id="D8J-wo-Vpv"/>
-                        <segue destination="sQN-Vb-njg" kind="relationship" relationship="viewControllers" id="gnP-R9-Slh"/>
                         <segue destination="Byy-iT-84I" kind="relationship" relationship="viewControllers" id="lMj-Pv-EFw"/>
+                        <segue destination="sQN-Vb-njg" kind="relationship" relationship="viewControllers" id="gnP-R9-Slh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EU1-qf-z7B" userLabel="First Responder" sceneMemberID="firstResponder"/>
