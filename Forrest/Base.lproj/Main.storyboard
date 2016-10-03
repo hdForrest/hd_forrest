@@ -48,6 +48,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0B-UJ-ZRk">
                                 <rect key="frame" x="140" y="488" width="94" height="86"/>
                                 <state key="normal" title="설정"/>
+                                <connections>
+                                    <segue destination="Gl1-wr-mAh" kind="show" id="nS1-Oc-b1U"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title.png" translatesAutoresizingMaskIntoConstraints="NO" id="z0l-EV-71N">
                                 <rect key="frame" x="68" y="57" width="238" height="103"/>
@@ -102,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ty3-gO-5aT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2528.5" y="455.5"/>
+            <point key="canvasLocation" x="-2513.5" y="718.5"/>
         </scene>
         <!--사진미션-->
         <scene sceneID="0k3-bl-MJm">
@@ -122,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="see-33-Zxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2996.5" y="1267.5"/>
+            <point key="canvasLocation" x="-3593.5" y="718.5"/>
         </scene>
         <!--Misson Tabbar Controller-->
         <scene sceneID="xRM-PR-Bbb">
@@ -143,7 +146,36 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="giv-Uh-shB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2996.5" y="455.5"/>
+            <point key="canvasLocation" x="-2986.5" y="718.5"/>
+        </scene>
+        <!--Setting Table View Controller-->
+        <scene sceneID="X23-Tr-c4V">
+            <objects>
+                <tableViewController id="Gl1-wr-mAh" customClass="SettingTableViewController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="895-dE-4Du">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" id="wl1-Mb-1PN">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wl1-Mb-1PN" id="S3Z-Ca-bfo">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Gl1-wr-mAh" id="q1n-bO-d4g"/>
+                            <outlet property="delegate" destination="Gl1-wr-mAh" id="aQo-rH-5pD"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cab-Ze-oa4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2490.5" y="-329.5"/>
         </scene>
         <!--초급-->
         <scene sceneID="R7c-SJ-VQG">
@@ -163,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3SH-KU-woD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-714.5" y="-1122.5"/>
+            <point key="canvasLocation" x="-225.5" y="-1082.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="src-gi-B9Z">
@@ -185,7 +217,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EU1-qf-z7B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2301.5" y="-329.5"/>
+            <point key="canvasLocation" x="-714.5" y="-339.5"/>
         </scene>
         <!--고급-->
         <scene sceneID="NNs-DO-65R">
@@ -205,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scY-XH-e3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-225.5" y="-339.5"/>
+            <point key="canvasLocation" x="-225.5" y="406.5"/>
         </scene>
         <!--리뷰-->
         <scene sceneID="Axv-Ol-eVk">
@@ -225,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCE-8f-WD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-723.5" y="463.5"/>
+            <point key="canvasLocation" x="170.5" y="23.5"/>
         </scene>
         <!--자율-->
         <scene sceneID="VOj-lL-5eI">
@@ -245,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFa-Hw-Gou" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-225.5" y="463.5"/>
+            <point key="canvasLocation" x="170.5" y="-716.5"/>
         </scene>
         <!--중급-->
         <scene sceneID="Opn-5k-Dgh">
@@ -265,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As6-um-FkQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-225.5" y="-1122.5"/>
+            <point key="canvasLocation" x="-225.5" y="-339.5"/>
         </scene>
     </scenes>
     <resources>

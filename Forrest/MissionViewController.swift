@@ -10,13 +10,16 @@ import UIKit
 
 class MissionViewController: UIViewController
 {
-
+    /* navigation 바 숨기기 */
+    override func viewWillAppear(animated:Bool)
+    {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        /* 첫화면 네비게이션 바 숨기기. */
-        self.navigationController?.navigationBarHidden = true
 
         // Do any additional setup after loading the view.
     }
@@ -25,11 +28,6 @@ class MissionViewController: UIViewController
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    override func viewWillAppear(animated:Bool)
-    {
-        super.viewWillAppear(animated)
-        self.navigationController?.navigationBarHidden = true
     }
 
     /*

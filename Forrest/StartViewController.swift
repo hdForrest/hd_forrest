@@ -60,6 +60,8 @@ class StartViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier=="mission"){
             let tabVC = segue.destinationViewController as! MissonTabbarController
@@ -67,6 +69,7 @@ class StartViewController: UIViewController
             tabVC.navigationController?.navigationBarHidden = true
         }
     }
+    
     
     /*
     // MARK: - Navigation

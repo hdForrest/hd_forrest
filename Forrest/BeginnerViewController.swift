@@ -10,6 +10,13 @@ import UIKit
 
 class BeginnerViewController: UIViewController
 {
+    /* 사라질 때 navigation bar 숨기기 */
+    override func viewWillDisappear(animated:Bool)
+    {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBarHidden = true
+    }
+    
     /* navigation bar set */
     override func viewWillAppear(animated: Bool)
     {
@@ -21,10 +28,11 @@ class BeginnerViewController: UIViewController
         self.tabBarController?.navigationController!.navigationBar.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         
         self.tabBarController?.navigationController!.navigationBar.barTintColor = UIColor(red: CGFloat(30/225.0), green: CGFloat(30/255.0), blue: CGFloat(30/255.0), alpha: CGFloat(1.0))
-        
-        
     }
 
+    
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -35,13 +43,6 @@ class BeginnerViewController: UIViewController
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    /* 사라질 때 숨기기 */
-    override func viewWillDisappear(animated:Bool)
-    {
-        super.viewWillDisappear(animated)
-        self.navigationController?.navigationBarHidden = true
     }
     
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C0CDC231D95794A00372AA9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CDC221D95794A00372AA9 /* StartViewController.swift */; };
 		5C4FAE0A1DA2738100E3D5F6 /* MissonTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4FAE091DA2738100E3D5F6 /* MissonTabbarController.swift */; };
+		5C4FAE0C1DA27B0500E3D5F6 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4FAE0B1DA27B0500E3D5F6 /* SettingTableViewController.swift */; };
 		5C9DA4091D955B490084B468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DA4081D955B490084B468 /* AppDelegate.swift */; };
 		5C9DA40E1D955B490084B468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C9DA40C1D955B490084B468 /* Main.storyboard */; };
 		5C9DA4101D955B490084B468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C9DA40F1D955B490084B468 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		5C0CDC221D95794A00372AA9 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		5C4FAE091DA2738100E3D5F6 /* MissonTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissonTabbarController.swift; sourceTree = "<group>"; };
+		5C4FAE0B1DA27B0500E3D5F6 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		5C9DA4051D955B490084B468 /* Forrest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forrest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9DA4081D955B490084B468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C9DA40D1D955B490084B468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */,
 				5CFCAE311D97DCF3001DBC18 /* BeginnerViewController.swift */,
 				5C4FAE091DA2738100E3D5F6 /* MissonTabbarController.swift */,
+				5C4FAE0B1DA27B0500E3D5F6 /* SettingTableViewController.swift */,
 			);
 			path = Forrest;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4FAE0C1DA27B0500E3D5F6 /* SettingTableViewController.swift in Sources */,
 				5C9DA4091D955B490084B468 /* AppDelegate.swift in Sources */,
 				5C4FAE0A1DA2738100E3D5F6 /* MissonTabbarController.swift in Sources */,
 				5C0CDC231D95794A00372AA9 /* StartViewController.swift in Sources */,
