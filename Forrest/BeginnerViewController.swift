@@ -23,11 +23,11 @@ class BeginnerViewController: UIViewController
         super.viewWillAppear(animated)
         
         self.tabBarController?.navigationItem.title = "초급 주행"
-        self.tabBarController?.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: CGFloat(255/225.0), green: CGFloat(255/255.0), blue: CGFloat(255/255.0), alpha: CGFloat(1.0))]
+        self.tabBarController?.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.tabBarController?.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
         
         self.tabBarController?.navigationController!.navigationBar.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         
-        self.tabBarController?.navigationController!.navigationBar.barTintColor = UIColor(red: CGFloat(30/225.0), green: CGFloat(30/255.0), blue: CGFloat(30/255.0), alpha: CGFloat(1.0))
     }
 
     

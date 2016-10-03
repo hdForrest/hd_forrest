@@ -39,11 +39,13 @@ class StartViewController: UIViewController
         bt_travel.setImage(UIImage(named: "Travel"), forState: .Normal)
         bt_mission.setImage(UIImage(named : "Mission"), forState: .Normal)
         bt_walk.setImage(UIImage(named : "Walk"), forState: .Normal)
+        bt_setting.setImage(UIImage(named : "Setting"), forState: .Normal)
         
         
         bt_travel.tintColor = UIColor.blackColor()
         bt_mission.tintColor = UIColor.blackColor()
         bt_walk.tintColor = UIColor.blackColor()
+        bt_setting.tintColor = UIColor.blackColor()
         //bt_travel.setTitleColor(UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0)), forState: .Normal)
         
     }
@@ -62,11 +64,12 @@ class StartViewController: UIViewController
     }
     
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if(segue.identifier=="mission"){
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if(segue.identifier=="mission")
+        {
             let tabVC = segue.destinationViewController as! MissonTabbarController
             tabVC.selectedIndex = 2
-            tabVC.navigationController?.navigationBarHidden = true
         }
     }
     
