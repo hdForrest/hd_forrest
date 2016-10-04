@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BeginnerViewController: UIViewController
+class BeginnerViewController: UIViewController, UIScrollViewDelegate
 {
     var scroll_view: UIScrollView!
     var image_view: UIImageView!
@@ -20,6 +20,11 @@ class BeginnerViewController: UIViewController
         self.navigationController?.navigationBarHidden = true
     }
     
+    /* zoom function */
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
+    {
+        return image_view
+    }
     
     override func viewWillAppear(animated: Bool)
     {
@@ -49,17 +54,27 @@ class BeginnerViewController: UIViewController
     {
         super.viewDidLoad()
         
+        /* 사진 띄우기 */
         image_view = UIImageView(image: UIImage(named: "beginner_map"))
         
         scroll_view = UIScrollView(frame: view.bounds)
         scroll_view.contentSize = image_view.bounds.size
         scroll_view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         
+        // 초기 위치 설정
+        scroll_view.contentOffset = CGPoint(x: 1230, y: 400)
+        
+        
+        // zoom 정도 세팅
+        scroll_view.delegate = self
+        scroll_view.minimumZoomScale = 0.1
+        scroll_view.maximumZoomScale = 3.0
+        scroll_view.zoomScale = 0.5
+        
+        
         scroll_view.addSubview(image_view)
         view.addSubview(scroll_view)
         
-        //self.ScrollView.addSubview()
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning()
