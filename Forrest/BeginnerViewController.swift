@@ -80,6 +80,11 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         scroll_view.maximumZoomScale = 3.0
         scroll_view.zoomScale = 0.5
         
+        //scroll_view.userInteractionEnabled = true
+        //scroll_view.exclusiveTouch = true
+        //scroll_view.canCancelContentTouches = true
+        //scroll_view.delaysContentTouches = false
+        
         /* 사진 띄우기 */
         scroll_view.addSubview(image_view)
         view.addSubview(scroll_view)
