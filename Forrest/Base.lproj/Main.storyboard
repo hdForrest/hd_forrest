@@ -302,8 +302,8 @@
                         <segue destination="JOM-Fi-Hww" kind="relationship" relationship="viewControllers" id="37d-vP-ivg"/>
                         <segue destination="drq-Qs-cg2" kind="relationship" relationship="viewControllers" id="sxT-Kc-2LD"/>
                         <segue destination="X8I-W2-4tS" kind="relationship" relationship="viewControllers" id="D8J-wo-Vpv"/>
-                        <segue destination="Byy-iT-84I" kind="relationship" relationship="viewControllers" id="lMj-Pv-EFw"/>
                         <segue destination="sQN-Vb-njg" kind="relationship" relationship="viewControllers" id="gnP-R9-Slh"/>
+                        <segue destination="Byy-iT-84I" kind="relationship" relationship="viewControllers" id="lMj-Pv-EFw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EU1-qf-z7B" userLabel="First Responder" sceneMemberID="firstResponder"/>

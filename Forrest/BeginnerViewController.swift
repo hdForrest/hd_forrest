@@ -79,6 +79,9 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         scroll_view.maximumZoomScale = 3.0
         scroll_view.zoomScale = 0.5
         
+        
+        //image_view.addSubview(bt_travel_start)
+        
         /* 사진 띄우기 */
         scroll_view.addSubview(image_view)
         //scroll_view.addSubview(bt_travel_start)
@@ -93,11 +96,11 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         
         
         
-        
+        //bt_travel_start.frame = CGRectMake(0, 0, 20, 20)
         
         //self.view.frame = scroll_view.bounds
-        
-        //scroll_view.userInteractionEnabled = true
+        image_view.userInteractionEnabled = false
+        scroll_view.userInteractionEnabled = false
         //scroll_view.exclusiveTouch = true
         //scroll_view.canCancelContentTouches = true
         //scroll_view.delaysContentTouches = true
