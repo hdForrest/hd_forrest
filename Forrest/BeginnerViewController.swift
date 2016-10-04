@@ -73,30 +73,36 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         // 초기 위치 설정
         scroll_view.contentOffset = CGPoint(x: 1230, y: 480)
         
-        
         // zoom 정도 세팅
         scroll_view.delegate = self
         scroll_view.minimumZoomScale = 0.1
         scroll_view.maximumZoomScale = 3.0
         scroll_view.zoomScale = 0.5
         
-        //scroll_view.userInteractionEnabled = true
-        //scroll_view.exclusiveTouch = true
-        //scroll_view.canCancelContentTouches = true
-        //scroll_view.delaysContentTouches = false
-        
         /* 사진 띄우기 */
         scroll_view.addSubview(image_view)
+        //scroll_view.addSubview(bt_travel_start)
         view.addSubview(scroll_view)
         
         /* 주행시작 버튼 이미지 입히기 */
         //bt_travel_start.setImage(UIImage(named: "bt_travel_start"), forState: .Normal)
-        
         bt_travel_start.layer.cornerRadius = 0.5 * bt_travel_start.bounds.size.width
-        
         //bt_travel_start.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         bt_travel_start.backgroundColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         bt_travel_start.layer.zPosition = 1
+        
+        
+        
+        
+        
+        //self.view.frame = scroll_view.bounds
+        
+        //scroll_view.userInteractionEnabled = true
+        //scroll_view.exclusiveTouch = true
+        //scroll_view.canCancelContentTouches = true
+        //scroll_view.delaysContentTouches = true
+        //bt_travel_start.frame = scroll_view.bounds
+        //bt_travel_start.userInteractionEnabled = true
         
     }
 
@@ -118,13 +124,6 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         // Pass the selected object to the new view controller.
     }
     */
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-    {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-
 }
 
 
