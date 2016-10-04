@@ -13,6 +13,15 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
     var scroll_view: UIScrollView!
     var image_view: UIImageView!
     
+    @IBOutlet weak var bt_travel_start: UIButton!
+    
+    /*
+    @IBAction func click_start(sender: AnyObject)
+    {
+        self.performSegueWithIdentifier("travel_start", sender: sender)
+        //prepareForSegue("travel_start", sender: sender)
+    }*/
+    
     /* 사라질 때 navigation bar 숨기기 */
     override func viewWillDisappear(animated:Bool)
     {
@@ -62,7 +71,7 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         scroll_view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         
         // 초기 위치 설정
-        scroll_view.contentOffset = CGPoint(x: 1230, y: 400)
+        scroll_view.contentOffset = CGPoint(x: 1230, y: 480)
         
         
         // zoom 정도 세팅
@@ -71,9 +80,18 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         scroll_view.maximumZoomScale = 3.0
         scroll_view.zoomScale = 0.5
         
-        
+        /* 사진 띄우기 */
         scroll_view.addSubview(image_view)
         view.addSubview(scroll_view)
+        
+        /* 주행시작 버튼 이미지 입히기 */
+        //bt_travel_start.setImage(UIImage(named: "bt_travel_start"), forState: .Normal)
+        
+        bt_travel_start.layer.cornerRadius = 0.5 * bt_travel_start.bounds.size.width
+        
+        //bt_travel_start.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        bt_travel_start.backgroundColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        bt_travel_start.layer.zPosition = 1
         
     }
 
@@ -88,10 +106,32 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+     {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
