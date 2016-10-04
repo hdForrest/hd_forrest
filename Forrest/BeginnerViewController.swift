@@ -46,17 +46,16 @@ class BeginnerViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        /*
+        imageView = UIImageView(image: UIImage(named: "beginner_map"))
         
-        //imageView = UIImageView(image: UIImage(named: "beginnerMap"))
+        scrollView = UIScrollView(frame: view.bounds)
+        scrollView.contentSize = imageView.bounds.size
+        scrollView.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         
-        
-        //ScrollView = UIScrollView(frame: view.bounds)
-        //ScrollView.contentSize = imageView.bounds.size
-        //ScrollView.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
-        
-        //ScrollView.addSubview(imageView)
-        //view.addSubview(ScrollView)
-        
+        scrollView.addSubview(imageView)
+        view.addSubview(scrollView)
+        */
         //self.ScrollView.addSubview()
         // Do any additional setup after loading the view.
     }
