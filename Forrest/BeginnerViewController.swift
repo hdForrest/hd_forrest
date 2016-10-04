@@ -10,6 +10,8 @@ import UIKit
 
 class BeginnerViewController: UIViewController
 {
+    var scroll_view: UIScrollView!
+    var image_view: UIImageView!
     
     /* 사라질 때 navigation bar 숨기기 */
     override func viewWillDisappear(animated:Bool)
@@ -46,16 +48,16 @@ class BeginnerViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        /*
-        imageView = UIImageView(image: UIImage(named: "beginner_map"))
         
-        scrollView = UIScrollView(frame: view.bounds)
-        scrollView.contentSize = imageView.bounds.size
-        scrollView.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+        image_view = UIImageView(image: UIImage(named: "beginner_map"))
         
-        scrollView.addSubview(imageView)
-        view.addSubview(scrollView)
-        */
+        scroll_view = UIScrollView(frame: view.bounds)
+        scroll_view.contentSize = image_view.bounds.size
+        scroll_view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+        
+        scroll_view.addSubview(image_view)
+        view.addSubview(scroll_view)
+        
         //self.ScrollView.addSubview()
         // Do any additional setup after loading the view.
     }
