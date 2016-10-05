@@ -9,8 +9,10 @@
 import UIKit
 
 /* 글자, 배경 색 설정 */
-var background_color_state = 0;
+var background_color_state = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+
 var text_color_state = 0;
+
 /* 글자 크기 설정 */
 var text_size = 0;
 
@@ -33,7 +35,7 @@ class StartViewController: UIViewController
         self.tabBarController?.tabBar.hidden = true
         
         /* 첫화면 배경 색상 설정 */
-        self.view.backgroundColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        self.view.backgroundColor = background_color_state //UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         
         /* 버튼에 이미지 입히기 */
         bt_travel.setImage(UIImage(named: "Travel"), forState: .Normal)

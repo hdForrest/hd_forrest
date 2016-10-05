@@ -44,7 +44,7 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         self.tabBarController?.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.tabBarController?.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
         
-        self.tabBarController?.navigationController!.navigationBar.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        self.tabBarController?.navigationController!.navigationBar.tintColor = background_color_state //UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         
         
         /* tab bar set */

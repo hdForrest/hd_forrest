@@ -161,7 +161,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wl1-Mb-1PN" id="S3Z-Ca-bfo">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -190,7 +190,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSf-d0-JVp" id="vCJ-Wx-3iJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -219,7 +219,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="79"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ILr-bg-Y7F" id="4CC-PD-xRa">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="78.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -313,7 +313,7 @@
         <!--고급-->
         <scene sceneID="NNs-DO-65R">
             <objects>
-                <viewController id="X8I-W2-4tS" sceneMemberID="viewController">
+                <viewController id="X8I-W2-4tS" customClass="AdvancedViewController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c3N-VX-Ril"/>
                         <viewControllerLayoutGuide type="bottom" id="6y7-CV-tUB"/>
@@ -353,7 +353,7 @@
         <!--자율-->
         <scene sceneID="VOj-lL-5eI">
             <objects>
-                <viewController id="sQN-Vb-njg" sceneMemberID="viewController">
+                <viewController id="sQN-Vb-njg" customClass="FreeViewController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QKe-cg-tl9"/>
                         <viewControllerLayoutGuide type="bottom" id="E8Y-M3-Kq1"/>
@@ -373,7 +373,7 @@
         <!--중급-->
         <scene sceneID="Opn-5k-Dgh">
             <objects>
-                <viewController id="drq-Qs-cg2" sceneMemberID="viewController">
+                <viewController id="drq-Qs-cg2" customClass="IntermediateViewController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DPp-eF-acH"/>
                         <viewControllerLayoutGuide type="bottom" id="cOM-h5-Ui6"/>
