@@ -26,7 +26,7 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
     override func viewWillDisappear(animated:Bool)
     {
         super.viewWillDisappear(animated)
-        self.navigationController?.navigationBarHidden = true
+        //self.navigationController?.navigationBarHidden = true
     }
     
     /* zoom function */
@@ -35,29 +35,24 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         return image_view
     }
     
+    
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
         
         /* navigation bar set */
         self.tabBarController?.navigationItem.title = "초급 주행"
-        self.tabBarController?.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.tabBarController?.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
         self.tabBarController?.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
-        
-        self.tabBarController?.navigationController!.navigationBar.tintColor = background_color_state //UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
-        
+        self.tabBarController?.navigationController!.navigationBar.tintColor = background_color_state
         
         /* tab bar set */
-        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: 25)!], forState: .Normal)
-        
+        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!], forState: .Normal)
         UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -7)
         
-        self.tabBarController?.tabBar.backgroundColor = UIColor(red: CGFloat(54/225.0), green: CGFloat(54/255.0), blue: CGFloat(54/255.0), alpha: CGFloat(1.0))
-        self.tabBarController?.tabBar.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        self.tabBarController?.tabBar.backgroundColor = UIColor.blackColor()
+        self.tabBarController?.tabBar.tintColor = background_color_state
     }
-    
-    
-    
     
     override func viewDidLoad()
     {
@@ -91,7 +86,8 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         //bt_travel_start.setImage(UIImage(named: "bt_travel_start"), forState: .Normal)
         bt_travel_start.layer.cornerRadius = 0.5 * bt_travel_start.bounds.size.width
         //bt_travel_start.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
-        bt_travel_start.backgroundColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        bt_travel_start.backgroundColor = background_color_state
+        
         bt_travel_start.layer.zPosition = 1
         
         

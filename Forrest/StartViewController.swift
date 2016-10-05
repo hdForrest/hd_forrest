@@ -10,11 +10,11 @@ import UIKit
 
 /* 글자, 배경 색 설정 */
 var background_color_state = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
-
 var text_color_state = 0;
 
 /* 글자 크기 설정 */
-var text_size = 0;
+var text_size: CGFloat = 25;
+
 
 class StartViewController: UIViewController
 {
@@ -24,13 +24,18 @@ class StartViewController: UIViewController
     @IBOutlet weak var bt_call: UIButton!
     @IBOutlet weak var bt_setting: UIButton!
     
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        /* 첫화면 네비게이션 바 숨기기. */
+        self.navigationController?.navigationBarHidden = true
+    }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        /* 첫화면 네비게이션 바 숨기기. */
-        self.navigationController?.navigationBarHidden = true
         /* tab bar 숨기기 */
         self.tabBarController?.tabBar.hidden = true
         

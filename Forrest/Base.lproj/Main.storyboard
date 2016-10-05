@@ -321,10 +321,21 @@
                     <view key="view" contentMode="scaleToFill" id="Dfc-vr-P3D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1v-10-YHy">
+                                <rect key="frame" x="126" y="491" width="122" height="117"/>
+                                <state key="normal" title="주행 시작" image="bt_travel_start.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="고급" id="cIc-iu-r7N"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bt_travel_start" destination="b1v-10-YHy" id="Gl2-78-gHT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scY-XH-e3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -361,10 +372,21 @@
                     <view key="view" contentMode="scaleToFill" id="Hh3-Oa-6fO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o61-6Z-egk">
+                                <rect key="frame" x="126" y="491" width="122" height="117"/>
+                                <state key="normal" title="주행 시작" image="bt_travel_start.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="자율" id="NLm-uU-P29"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bt_travel_start" destination="o61-6Z-egk" id="JUL-m0-QTm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFa-Hw-Gou" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -381,10 +403,21 @@
                     <view key="view" contentMode="scaleToFill" id="Z1i-Uq-eWV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HK-EY-2VZ">
+                                <rect key="frame" x="126" y="491" width="122" height="117"/>
+                                <state key="normal" title="주행 시작" image="bt_travel_start.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="중급" id="cIj-vb-wCD"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bt_travel_start" destination="6HK-EY-2VZ" id="hHT-fT-iXD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As6-um-FkQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

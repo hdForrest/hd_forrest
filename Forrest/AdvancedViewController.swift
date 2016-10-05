@@ -10,6 +10,21 @@ import UIKit
 
 class AdvancedViewController: UIViewController
 {
+    @IBOutlet weak var bt_travel_start: UIButton!
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        /* navigation bar set */
+        self.tabBarController?.navigationItem.title = "고급 주행"
+        self.tabBarController?.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
+        self.tabBarController?.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
+        self.tabBarController?.navigationController!.navigationBar.tintColor = background_color_state
+        
+        /* tab bar set */
+        self.tabBarController?.tabBar.backgroundColor = UIColor.blackColor()
+        self.tabBarController?.tabBar.tintColor = background_color_state    }
 
     override func viewDidLoad()
     {
