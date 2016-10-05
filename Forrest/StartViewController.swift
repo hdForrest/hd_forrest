@@ -53,7 +53,11 @@ class StartViewController: UIViewController
         bt_mission.tintColor = UIColor.blackColor()
         bt_walk.tintColor = UIColor.blackColor()
         bt_setting.tintColor = UIColor.blackColor()
-        //bt_travel.setTitleColor(UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0)), forState: .Normal)
+        
+        /* 탭바 설정 */
+        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!], forState: .Normal)
+        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -7)
+        
         
     }
     

@@ -47,9 +47,6 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         self.tabBarController?.navigationController!.navigationBar.tintColor = background_color_state
         
         /* tab bar set */
-        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!], forState: .Normal)
-        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -7)
-        
         self.tabBarController?.tabBar.backgroundColor = UIColor.blackColor()
         self.tabBarController?.tabBar.tintColor = background_color_state
     }

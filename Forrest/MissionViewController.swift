@@ -10,12 +10,15 @@ import UIKit
 
 class MissionViewController: UIViewController
 {
-    /* navigation 바 숨기기 */
     override func viewWillAppear(animated:Bool)
     {
         super.viewWillAppear(animated)
         
+        /* navigation 바 숨기기 */
         self.navigationController?.navigationBarHidden = true
+        /* tab bar set */
+        self.tabBarController?.tabBar.backgroundColor = UIColor.blackColor()
+        self.tabBarController?.tabBar.tintColor = background_color_state
     }
     
     override func viewDidLoad()

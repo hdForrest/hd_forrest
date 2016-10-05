@@ -10,13 +10,20 @@ import UIKit
 
 class WalkViewController: UIViewController
 {
+    override func viewWillAppear(animated:Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        /* navigation 바 숨기기 */
+        self.navigationController?.navigationBarHidden = true
+        /* tab bar set */
+        self.tabBarController?.tabBar.backgroundColor = UIColor.blackColor()
+        self.tabBarController?.tabBar.tintColor = background_color_state
+    }
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        /* 첫화면 네비게이션 바 숨기기. */
-        self.navigationController?.navigationBarHidden = true
         
         // Do any additional setup after loading the view.
     }
