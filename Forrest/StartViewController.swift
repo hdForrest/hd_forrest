@@ -40,7 +40,7 @@ class StartViewController: UIViewController
         self.tabBarController?.tabBar.hidden = true
         
         /* 첫화면 배경 색상 설정 */
-        self.view.backgroundColor = background_color_state //UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        self.view.backgroundColor = background_color_state
         
         /* 버튼에 이미지 입히기 */
         bt_travel.setImage(UIImage(named: "Travel"), forState: .Normal)
@@ -82,6 +82,10 @@ class StartViewController: UIViewController
             let tabVC = segue.destinationViewController as! MissonTabbarController
             tabVC.selectedIndex = 2
         }
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = "        "
+        navigationItem.backBarButtonItem = backItem
     }
     
     
