@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="24z-vl-1YJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="24z-vl-1YJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -98,14 +98,38 @@
                     <view key="view" contentMode="scaleToFill" id="Cne-sj-UCq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqa-4U-cHE">
+                                <rect key="frame" x="0.0" y="32" width="181" height="52"/>
+                                <state key="normal" title="오늘"/>
+                                <connections>
+                                    <action selector="today:" destination="WZl-vi-v4T" eventType="touchUpInside" id="c1Q-lr-c87"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK8-ps-8QC">
+                                <rect key="frame" x="189" y="34" width="186" height="50"/>
+                                <state key="normal" title="누적기록"/>
+                                <connections>
+                                    <action selector="noojuk:" destination="WZl-vi-v4T" eventType="touchUpInside" id="zRq-5e-NCA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vig-OY-jG8">
+                                <rect key="frame" x="33" y="92" width="309" height="455"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="발자취" id="UEe-cY-srs"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="image" destination="vig-OY-jG8" id="n9a-LZ-elF"/>
+                        <outlet property="noojuk" destination="IK8-ps-8QC" id="mwW-PT-4lS"/>
+                        <outlet property="onl" destination="Mqa-4U-cHE" id="s7b-M8-VqE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ty3-gO-5aT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2513.5" y="718.5"/>
+            <point key="canvasLocation" x="-2527.5" y="718.5"/>
         </scene>
         <!--사진미션-->
         <scene sceneID="0k3-bl-MJm">
@@ -118,14 +142,38 @@
                     <view key="view" contentMode="scaleToFill" id="GX0-5W-pbE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFm-Gv-k8H">
+                                <rect key="frame" x="189" y="28" width="186" height="50"/>
+                                <state key="normal" title="누적기록"/>
+                                <connections>
+                                    <action selector="noojuk:" destination="hps-Qh-31Z" eventType="touchUpInside" id="yiI-6Q-CIZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDG-z2-qMr">
+                                <rect key="frame" x="0.0" y="26" width="181" height="52"/>
+                                <state key="normal" title="오늘"/>
+                                <connections>
+                                    <action selector="mtoday:" destination="hps-Qh-31Z" eventType="touchUpInside" id="ZeU-Vo-dfe"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fi6-gA-Vd7">
+                                <rect key="frame" x="32" y="86" width="309" height="419"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="사진미션" id="5cX-xA-XZh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="image" destination="Fi6-gA-Vd7" id="R9L-XR-2eQ"/>
+                        <outlet property="noojuk" destination="dFm-Gv-k8H" id="Kef-Vk-z5k"/>
+                        <outlet property="onl" destination="IDG-z2-qMr" id="jA2-xJ-hDn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="see-33-Zxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3593.5" y="718.5"/>
+            <point key="canvasLocation" x="-3553.5" y="696.5"/>
         </scene>
         <!--Misson Tabbar Controller-->
         <scene sceneID="xRM-PR-Bbb">
@@ -161,7 +209,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wl1-Mb-1PN" id="S3Z-Ca-bfo">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -190,7 +238,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSf-d0-JVp" id="vCJ-Wx-3iJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -219,7 +267,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="79"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ILr-bg-Y7F" id="4CC-PD-xRa">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="78.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -430,6 +478,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ngQ-CT-TMP"/>
-        <segue reference="VTl-M6-pss"/>
+        <segue reference="feH-va-c9d"/>
     </inferredMetricsTieBreakers>
 </document>

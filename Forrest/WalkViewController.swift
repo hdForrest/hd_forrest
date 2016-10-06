@@ -10,6 +10,18 @@ import UIKit
 
 class WalkViewController: UIViewController
 {
+   
+    @IBOutlet weak var onl: UIButton!
+    @IBOutlet weak var noojuk: UIButton!
+    @IBAction func noojuk(sender: AnyObject) {
+         image.image = nil
+    }
+    @IBOutlet weak var image: UIImageView!
+    @IBAction func today(sender: AnyObject) {
+        let img = UIImage(named: "walktoday")
+        image.image = img
+        onl.setImage(UIImage(named: "onl"),forState: .Normal)
+    }
     override func viewWillAppear(animated:Bool)
     {
         super.viewWillAppear(animated)
@@ -24,7 +36,8 @@ class WalkViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        noojuk.setImage(UIImage(named: "noojuk"), forState: .Normal)
+        noojuk.tintColor = UIColor.blackColor()
         // Do any additional setup after loading the view.
     }
 

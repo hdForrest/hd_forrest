@@ -10,6 +10,20 @@ import UIKit
 
 class MissionViewController: UIViewController
 {
+  
+    @IBOutlet weak var onl: UIButton!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var noojuk: UIButton!
+    @IBAction func noojuk(sender: AnyObject) {
+        image.image = nil
+            }
+    @IBAction func mtoday(sender: AnyObject) {
+       let img = UIImage(named: "missiontoday")
+       image.image = img
+        onl.setImage(UIImage(named: "onl"),forState: .Normal)
+        
+    }
+
     override func viewWillAppear(animated:Bool)
     {
         super.viewWillAppear(animated)
@@ -24,7 +38,8 @@ class MissionViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        noojuk.setImage(UIImage(named: "noojuk"), forState: .Normal)
+        noojuk.tintColor = UIColor.blackColor()
         // Do any additional setup after loading the view.
     }
 
