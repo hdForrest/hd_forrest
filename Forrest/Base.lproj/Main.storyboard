@@ -100,22 +100,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqa-4U-cHE">
-                                <rect key="frame" x="0.0" y="32" width="181" height="52"/>
+                                <rect key="frame" x="0.0" y="25" width="187" height="52"/>
                                 <state key="normal" title="오늘"/>
                                 <connections>
                                     <action selector="toWalk:" destination="WZl-vi-v4T" eventType="touchUpInside" id="VVN-Pd-rfV"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vig-OY-jG8">
+                                <rect key="frame" x="0.0" y="80" width="374" height="581"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK8-ps-8QC">
-                                <rect key="frame" x="189" y="32" width="186" height="50"/>
+                                <rect key="frame" x="188" y="25" width="187" height="52"/>
                                 <state key="normal" title="누적기록"/>
                                 <connections>
                                     <action selector="nuWalk:" destination="WZl-vi-v4T" eventType="touchUpInside" id="3eb-OV-TA9"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vig-OY-jG8">
-                                <rect key="frame" x="9" y="92" width="356" height="575"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -145,22 +145,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFm-Gv-k8H">
-                                <rect key="frame" x="189" y="25" width="186" height="53"/>
+                                <rect key="frame" x="188" y="25" width="187" height="52"/>
                                 <state key="normal" title="누적기록"/>
                                 <connections>
                                     <action selector="nuMisson:" destination="hps-Qh-31Z" eventType="touchUpInside" id="FQu-lQ-h7u"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fi6-gA-Vd7">
+                                <rect key="frame" x="0.0" y="80" width="374" height="581"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDG-z2-qMr">
-                                <rect key="frame" x="0.0" y="26" width="181" height="52"/>
+                                <rect key="frame" x="0.0" y="25" width="187" height="52"/>
                                 <state key="normal" title="오늘"/>
                                 <connections>
                                     <action selector="toMisson:" destination="hps-Qh-31Z" eventType="touchUpInside" id="ywj-sT-MEE"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fi6-gA-Vd7">
-                                <rect key="frame" x="7" y="86" width="360" height="581"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

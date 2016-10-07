@@ -49,6 +49,11 @@ class WalkViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        /*디폴트 설정*/
+        let img = UIImage(named: "toWalk")
+        Image.image = img
+        bt_toWalk.setImage(UIImage(named: "bt_toGreen"), forState: .Normal)
+        bt_toWalk.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         bt_nuWalk.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
         bt_nuWalk.tintColor = UIColor.blackColor()
         

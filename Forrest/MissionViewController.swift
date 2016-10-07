@@ -55,6 +55,11 @@ class MissionViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        /*디폴트 설정*/
+        let img = UIImage(named: "toMission")
+        Image.image = img
+        bt_toMission.setImage(UIImage(named: "bt_toGreen"),forState: .Normal)
+        bt_toMission.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         bt_nuMission.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
         bt_nuMission.tintColor = UIColor.blackColor()
         // Do any additional setup after loading the view.
