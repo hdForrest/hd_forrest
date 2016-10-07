@@ -103,18 +103,18 @@
                                 <rect key="frame" x="0.0" y="32" width="181" height="52"/>
                                 <state key="normal" title="오늘"/>
                                 <connections>
-                                    <action selector="today:" destination="WZl-vi-v4T" eventType="touchUpInside" id="c1Q-lr-c87"/>
+                                    <action selector="toWalk:" destination="WZl-vi-v4T" eventType="touchUpInside" id="VVN-Pd-rfV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK8-ps-8QC">
-                                <rect key="frame" x="189" y="34" width="186" height="50"/>
+                                <rect key="frame" x="189" y="32" width="186" height="50"/>
                                 <state key="normal" title="누적기록"/>
                                 <connections>
-                                    <action selector="noojuk:" destination="WZl-vi-v4T" eventType="touchUpInside" id="zRq-5e-NCA"/>
+                                    <action selector="nuWalk:" destination="WZl-vi-v4T" eventType="touchUpInside" id="3eb-OV-TA9"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vig-OY-jG8">
-                                <rect key="frame" x="33" y="92" width="309" height="455"/>
+                                <rect key="frame" x="9" y="92" width="356" height="575"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -122,9 +122,10 @@
                     <tabBarItem key="tabBarItem" title="발자취" id="UEe-cY-srs"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="Image" destination="vig-OY-jG8" id="2Vm-Ca-DXI"/>
+                        <outlet property="bt_nuWalk" destination="IK8-ps-8QC" id="vWc-k7-pul"/>
+                        <outlet property="bt_toWalk" destination="Mqa-4U-cHE" id="edI-HC-G8n"/>
                         <outlet property="image" destination="vig-OY-jG8" id="n9a-LZ-elF"/>
-                        <outlet property="noojuk" destination="IK8-ps-8QC" id="mwW-PT-4lS"/>
-                        <outlet property="onl" destination="Mqa-4U-cHE" id="s7b-M8-VqE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ty3-gO-5aT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -144,21 +145,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFm-Gv-k8H">
-                                <rect key="frame" x="189" y="28" width="186" height="50"/>
+                                <rect key="frame" x="189" y="25" width="186" height="53"/>
                                 <state key="normal" title="누적기록"/>
                                 <connections>
-                                    <action selector="noojuk:" destination="hps-Qh-31Z" eventType="touchUpInside" id="yiI-6Q-CIZ"/>
+                                    <action selector="nuMisson:" destination="hps-Qh-31Z" eventType="touchUpInside" id="FQu-lQ-h7u"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDG-z2-qMr">
                                 <rect key="frame" x="0.0" y="26" width="181" height="52"/>
                                 <state key="normal" title="오늘"/>
                                 <connections>
-                                    <action selector="mtoday:" destination="hps-Qh-31Z" eventType="touchUpInside" id="ZeU-Vo-dfe"/>
+                                    <action selector="toMisson:" destination="hps-Qh-31Z" eventType="touchUpInside" id="ywj-sT-MEE"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fi6-gA-Vd7">
-                                <rect key="frame" x="32" y="86" width="309" height="419"/>
+                                <rect key="frame" x="7" y="86" width="360" height="581"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -166,14 +167,15 @@
                     <tabBarItem key="tabBarItem" title="사진미션" id="5cX-xA-XZh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="Image" destination="Fi6-gA-Vd7" id="Zar-2Z-det"/>
+                        <outlet property="bt_nuMission" destination="dFm-Gv-k8H" id="URq-Sa-JfP"/>
+                        <outlet property="bt_toMission" destination="IDG-z2-qMr" id="h8V-S4-g8D"/>
                         <outlet property="image" destination="Fi6-gA-Vd7" id="R9L-XR-2eQ"/>
-                        <outlet property="noojuk" destination="dFm-Gv-k8H" id="Kef-Vk-z5k"/>
-                        <outlet property="onl" destination="IDG-z2-qMr" id="jA2-xJ-hDn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="see-33-Zxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3553.5" y="696.5"/>
+            <point key="canvasLocation" x="-3555.5" y="718.5"/>
         </scene>
         <!--Misson Tabbar Controller-->
         <scene sceneID="xRM-PR-Bbb">

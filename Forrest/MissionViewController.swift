@@ -11,18 +11,35 @@ import UIKit
 class MissionViewController: UIViewController
 {
   
-    @IBOutlet weak var onl: UIButton!
-    @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var noojuk: UIButton!
-    @IBAction func noojuk(sender: AnyObject) {
-        image.image = nil
-            }
-    @IBAction func mtoday(sender: AnyObject) {
-       let img = UIImage(named: "missiontoday")
-       image.image = img
-        onl.setImage(UIImage(named: "onl"),forState: .Normal)
+    @IBOutlet weak var bt_toMission: UIButton!
+    
+    @IBOutlet weak var bt_nuMission: UIButton!
+    @IBOutlet weak var Image: UIImageView!
+   
+    @IBAction func toMisson(sender: AnyObject) {
+        let img = UIImage(named: "toMission")
+        Image.image = img
+        bt_nuMission.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
+        bt_nuMission.tintColor = UIColor.blackColor()
+        bt_toMission.setImage(UIImage(named: "bt_toGreen"),forState: .Normal)
+         bt_toMission.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         
     }
+    @IBAction func nuMisson(sender: AnyObject) {
+        let img = UIImage(named: "nuMisson")
+        Image.image = img
+        
+        bt_toMission.setImage(UIImage(named: "bt_toBlack"), forState: .Normal)
+         bt_toMission.tintColor = UIColor.blackColor()
+        bt_nuMission.setImage(UIImage(named: "bt_nuGreen"), forState: .Normal)
+        bt_nuMission.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+    }
+    
+    
+   
+    
+        
+   
 
     override func viewWillAppear(animated:Bool)
     {
@@ -38,8 +55,8 @@ class MissionViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        noojuk.setImage(UIImage(named: "noojuk"), forState: .Normal)
-        noojuk.tintColor = UIColor.blackColor()
+        bt_nuMission.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
+        bt_nuMission.tintColor = UIColor.blackColor()
         // Do any additional setup after loading the view.
     }
 

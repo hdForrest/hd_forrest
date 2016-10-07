@@ -10,18 +10,31 @@ import UIKit
 
 class WalkViewController: UIViewController
 {
+    
+
+    @IBOutlet weak var bt_toWalk: UIButton!
+    @IBOutlet weak var bt_nuWalk: UIButton!
+    
+    @IBOutlet weak var Image: UIImageView!
+    @IBAction func toWalk(sender: AnyObject) {
+        let img = UIImage(named: "toWalk")
+        Image.image = img
+        bt_nuWalk.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
+        bt_nuWalk.tintColor = UIColor.blackColor()
+        bt_toWalk.setImage(UIImage(named: "bt_toGreen"), forState: .Normal)
+        bt_toWalk.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+    }
+  
+   @IBAction func nuWalk(sender: AnyObject) {
+        let img = UIImage(named: "nuWalk")
+        Image.image = img
+        bt_toWalk.setImage(UIImage(named: "bt_toBlack"), forState: .Normal)
+        bt_toWalk.tintColor = UIColor.blackColor()
+        bt_nuWalk.setImage(UIImage(named: "bt_nuGreen"), forState: .Normal)
+        bt_nuWalk.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+    }
    
-    @IBOutlet weak var onl: UIButton!
-    @IBOutlet weak var noojuk: UIButton!
-    @IBAction func noojuk(sender: AnyObject) {
-         image.image = nil
-    }
-    @IBOutlet weak var image: UIImageView!
-    @IBAction func today(sender: AnyObject) {
-        let img = UIImage(named: "walktoday")
-        image.image = img
-        onl.setImage(UIImage(named: "onl"),forState: .Normal)
-    }
+ 
     override func viewWillAppear(animated:Bool)
     {
         super.viewWillAppear(animated)
@@ -36,8 +49,9 @@ class WalkViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        noojuk.setImage(UIImage(named: "noojuk"), forState: .Normal)
-        noojuk.tintColor = UIColor.blackColor()
+        bt_nuWalk.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
+        bt_nuWalk.tintColor = UIColor.blackColor()
+        
         // Do any additional setup after loading the view.
     }
 
