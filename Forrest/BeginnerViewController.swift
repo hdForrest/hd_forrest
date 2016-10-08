@@ -10,7 +10,8 @@ import UIKit
 
 class BeginnerViewController: UIViewController, UIScrollViewDelegate
 {
-    var scroll_view: UIScrollView!
+    
+   var scroll_view: UIScrollView!
     var image_view: UIImageView!
     
     @IBOutlet weak var bt_travel_start: UIButton!
@@ -57,9 +58,9 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         
         /* 사진 띄우기 */
         image_view = UIImageView(image: UIImage(named: "beginner_map"))
-        
-        scroll_view = UIScrollView(frame: view.bounds)
-        scroll_view.contentSize = image_view.bounds.size
+        image_view.contentMode = .ScaleAspectFill
+       scroll_view = UIScrollView(frame: view.bounds)
+        scroll_view.contentSize = image_view.frame.size //bound를  frame으로 바꿈
         scroll_view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         
         // 초기 위치 설정
@@ -70,15 +71,12 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         scroll_view.minimumZoomScale = 0.1
         scroll_view.maximumZoomScale = 3.0
         scroll_view.zoomScale = 0.5
-        
+        self.view.translatesAutoresizingMaskIntoConstraints = true
         
         //image_view.addSubview(bt_travel_start)
         
-        /* 사진 띄우기 */
-        scroll_view.addSubview(image_view)
-        //scroll_view.addSubview(bt_travel_start)
-        view.addSubview(scroll_view)
         
+      
         /* 주행시작 버튼 이미지 입히기 */
         //bt_travel_start.setImage(UIImage(named: "bt_travel_start"), forState: .Normal)
         bt_travel_start.layer.cornerRadius = 0.5 * bt_travel_start.bounds.size.width
@@ -92,14 +90,21 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         //bt_travel_start.frame = CGRectMake(0, 0, 20, 20)
         
         //self.view.frame = scroll_view.bounds
-        image_view.userInteractionEnabled = false
-        scroll_view.userInteractionEnabled = false
+       // image_view.userInteractionEnabled = false
+       // scroll_view.userInteractionEnabled = false
         //scroll_view.exclusiveTouch = true
         //scroll_view.canCancelContentTouches = true
-        //scroll_view.delaysContentTouches = true
+        scroll_view.delaysContentTouches = false
         //bt_travel_start.frame = scroll_view.bounds
         //bt_travel_start.userInteractionEnabled = true
+      //   scroll_view.addSubview(bt_travel_start)
         
+        /* 사진 띄우기 */
+        
+        scroll_view.addSubview(image_view)
+       
+        view?.addSubview(scroll_view)      //뷰에다가 두개 띄워버림
+        view.addSubview(bt_travel_start)
     }
 
     override func didReceiveMemoryWarning()
