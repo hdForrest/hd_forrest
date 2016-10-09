@@ -14,8 +14,6 @@ class SettingTableViewController: UITableViewController
 {
     /* cell 이름 정할 변수 */
     let cellText = ["색반전", "색상설정", "글자크기설정", "동행콜계정"]
-
-
     
     override func viewDidLoad()
     {
@@ -56,7 +54,8 @@ class SettingTableViewController: UITableViewController
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell", forIndexPath: indexPath)
         
         cell.textLabel!.text = cellText[indexPath.row]
@@ -64,6 +63,19 @@ class SettingTableViewController: UITableViewController
         return cell
     }
  
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        switch indexPath.row
+        {
+        case 0: break
+        case 1:
+            performSegueWithIdentifier("Color_Set", sender: nil)
+        case 2:
+            performSegueWithIdentifier("Textsize_Set", sender: nil)
+        default:
+            break
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

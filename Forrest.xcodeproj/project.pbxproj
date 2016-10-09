@@ -21,7 +21,6 @@
 		5C4FAE1C1DA335AB00E3D5F6 /* beginner_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4FAE1B1DA335AB00E3D5F6 /* beginner_map.png */; };
 		5C961E2E1DA3B97B0040310B /* bt_travel_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C961E2D1DA3B97B0040310B /* bt_travel_start.png */; };
 		5C9DA4091D955B490084B468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DA4081D955B490084B468 /* AppDelegate.swift */; };
-		5C9DA40E1D955B490084B468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C9DA40C1D955B490084B468 /* Main.storyboard */; };
 		5C9DA4101D955B490084B468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C9DA40F1D955B490084B468 /* Assets.xcassets */; };
 		5C9DA4131D955B490084B468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C9DA4111D955B490084B468 /* LaunchScreen.storyboard */; };
 		5C9DA41E1D955B490084B468 /* ForrestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DA41D1D955B490084B468 /* ForrestTests.swift */; };
@@ -30,6 +29,7 @@
 		5CA6EE251DA12D4600B9C547 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CA6EE231DA12D4600B9C547 /* Title.png */; };
 		5CA6EE271DA1327100B9C547 /* Travel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CA6EE261DA1327000B9C547 /* Travel.png */; };
 		5CA6EE2B1DA135CE00B9C547 /* Walk.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CA6EE2A1DA135CE00B9C547 /* Walk.png */; };
+		5CC331831DAA53F60065F261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC331811DAA53F60065F261 /* Main.storyboard */; };
 		5CE2A1591DAA386300B0FD96 /* donghang.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CE2A1581DAA386300B0FD96 /* donghang.png */; };
 		5CFCAE2E1D97CC13001DBC18 /* WalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */; };
 		5CFCAE301D97DC65001DBC18 /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */; };
@@ -79,7 +79,6 @@
 		5C961E2D1DA3B97B0040310B /* bt_travel_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bt_travel_start.png; path = image/bt_travel_start.png; sourceTree = "<group>"; };
 		5C9DA4051D955B490084B468 /* Forrest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forrest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9DA4081D955B490084B468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C9DA40D1D955B490084B468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C9DA40F1D955B490084B468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C9DA4121D955B490084B468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C9DA4141D955B490084B468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +92,7 @@
 		5CA6EE231DA12D4600B9C547 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Title.png; path = image/Title.png; sourceTree = "<group>"; };
 		5CA6EE261DA1327000B9C547 /* Travel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Travel.png; path = image/Travel.png; sourceTree = "<group>"; };
 		5CA6EE2A1DA135CE00B9C547 /* Walk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Walk.png; path = image/Walk.png; sourceTree = "<group>"; };
+		5CC331821DAA53F60065F261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Forrest/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CE2A1581DAA386300B0FD96 /* donghang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = donghang.png; path = image/donghang.png; sourceTree = "<group>"; };
 		5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkViewController.swift; sourceTree = "<group>"; };
 		5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +134,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C03B6C31DAA4DAE0023A799 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				5C4FAE0B1DA27B0500E3D5F6 /* SettingTableViewController.swift */,
+				5C4FAE0D1DA2828600E3D5F6 /* ColorSetTableViewController.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
 		5C3F35DA1DA4B3AB0098566D /* map */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,12 +199,11 @@
 		5C9DA4071D955B490084B468 /* Forrest */ = {
 			isa = PBXGroup;
 			children = (
+				5CC331811DAA53F60065F261 /* Main.storyboard */,
+				5C03B6C31DAA4DAE0023A799 /* Setting */,
 				5C3F35DC1DA4B68F0098566D /* mission&walk */,
 				5C3F35DB1DA4B3C00098566D /* travel */,
-				5C9DA40C1D955B490084B468 /* Main.storyboard */,
 				5C0CDC221D95794A00372AA9 /* StartViewController.swift */,
-				5C4FAE0B1DA27B0500E3D5F6 /* SettingTableViewController.swift */,
-				5C4FAE0D1DA2828600E3D5F6 /* ColorSetTableViewController.swift */,
 				5C9DA4081D955B490084B468 /* AppDelegate.swift */,
 				5C9DA40F1D955B490084B468 /* Assets.xcassets */,
 				5C9DA4111D955B490084B468 /* LaunchScreen.storyboard */,
@@ -357,6 +365,7 @@
 				EE1180661DA620E9007719F2 /* onl.png in Resources */,
 				5CA6EE251DA12D4600B9C547 /* Title.png in Resources */,
 				EE19580C1DA716E900574DF9 /* toWalk.png in Resources */,
+				5CC331831DAA53F60065F261 /* Main.storyboard in Resources */,
 				EE1FADF71DA8047800C59C8E /* bt_toGreen.png in Resources */,
 				5C9DA4131D955B490084B468 /* LaunchScreen.storyboard in Resources */,
 				EE1FADF51DA8003300C59C8E /* bt_nuGreen.png in Resources */,
@@ -376,7 +385,6 @@
 				5CA6EE271DA1327100B9C547 /* Travel.png in Resources */,
 				5CA6EE241DA12D4600B9C547 /* Mission.png in Resources */,
 				EE19580D1DA716E900574DF9 /* nuMisson.png in Resources */,
-				5C9DA40E1D955B490084B468 /* Main.storyboard in Resources */,
 				5C3F35D71DA4B3A50098566D /* advanced_map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,20 +456,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5C9DA40C1D955B490084B468 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C9DA40D1D955B490084B468 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5C9DA4111D955B490084B468 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5C9DA4121D955B490084B468 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5CC331811DAA53F60065F261 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CC331821DAA53F60065F261 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -222,6 +222,10 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="Z64-W6-x4r" kind="show" identifier="Color_Set" id="JAN-lf-iv9"/>
+                        <segue destination="0R2-fG-lrg" kind="show" identifier="Textsize_Set" id="aU8-uo-WIT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cab-Ze-oa4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -265,7 +269,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="79" id="ILr-bg-Y7F">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Color_LabelCell" rowHeight="79" id="ILr-bg-Y7F">
                                 <rect key="frame" x="0.0" y="28" width="375" height="79"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ILr-bg-Y7F" id="4CC-PD-xRa">

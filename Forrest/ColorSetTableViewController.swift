@@ -10,6 +10,8 @@ import UIKit
 
 class ColorSetTableViewController: UITableViewController
 {
+    /* cell 이름 정할 변수 */
+    let cellText = ["글자 색상", "배경 색상", "대비 조절"]
 
     override func viewDidLoad()
     {
@@ -40,6 +42,20 @@ class ColorSetTableViewController: UITableViewController
     {
         // #warning Incomplete implementation, return the number of rows
         return 3
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Color_LabelCell", forIndexPath: indexPath)
+        
+        cell.textLabel!.text = cellText[indexPath.row]
+        
+        return cell
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
+    {
+        return 70.0
     }
 
     /*
