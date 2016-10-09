@@ -47,17 +47,17 @@ class StartViewController: UIViewController
         bt_mission.setImage(UIImage(named : "Mission"), forState: .Normal)
         bt_walk.setImage(UIImage(named : "Walk"), forState: .Normal)
         bt_setting.setImage(UIImage(named : "Setting"), forState: .Normal)
-        
+        bt_call.setImage(UIImage(named : "donghang"), forState: .Normal)
         
         bt_travel.tintColor = UIColor.blackColor()
         bt_mission.tintColor = UIColor.blackColor()
         bt_walk.tintColor = UIColor.blackColor()
         bt_setting.tintColor = UIColor.blackColor()
+        bt_call.tintColor = UIColor.blackColor()
         
         /* 탭바 설정 */
         UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!], forState: .Normal)
         UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -7)
-        
         
     }
     
@@ -81,10 +81,14 @@ class StartViewController: UIViewController
         {
             let tabVC = segue.destinationViewController as! MissonTabbarController
             tabVC.selectedIndex = 2
+            
+            let backItem = UIBarButtonItem()
+            backItem.title = "   "
+            navigationItem.backBarButtonItem = backItem
         }
         
         let backItem = UIBarButtonItem()
-        backItem.title = "        "
+        backItem.title = "   "
         navigationItem.backBarButtonItem = backItem
     }
     

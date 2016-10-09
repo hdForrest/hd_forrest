@@ -8,9 +8,18 @@
 
 import UIKit
 
-class IntermediateViewController: UIViewController
+class IntermediateViewController: UIViewController, UIScrollViewDelegate
 {
     @IBOutlet weak var bt_travel_start: UIButton!
+    
+    var scroll_view: UIScrollView!
+    var image_view: UIImageView!
+    
+    /* zoom function */
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
+    {
+        return image_view
+    }
     
     override func viewWillAppear(animated: Bool)
     {
@@ -31,10 +40,38 @@ class IntermediateViewController: UIViewController
     {
         super.viewDidLoad()
         
-        /* 네비게이션 바 보이기. */
-        self.navigationController?.navigationBarHidden = false
+        /* 사진 띄우기 */
+        image_view = UIImageView(image: UIImage(named: "intermediate_map"))
+        image_view.contentMode = .ScaleAspectFill
+        scroll_view = UIScrollView(frame: view.bounds)
+        scroll_view.contentSize = image_view.frame.size //bound를  frame으로 바꿈
+        scroll_view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         
-        // Do any additional setup after loading the view.
+        // 초기 위치 설정
+        scroll_view.contentOffset = CGPoint(x: 1315, y: 510)
+        
+        // zoom 정도 세팅
+        scroll_view.delegate = self
+        scroll_view.minimumZoomScale = 0.1
+        scroll_view.maximumZoomScale = 3.0
+        scroll_view.zoomScale = 0.5
+        self.view.translatesAutoresizingMaskIntoConstraints = true
+        
+        /* 주행시작 버튼 이미지 입히기 */
+        bt_travel_start.layer.cornerRadius = 0.5 * bt_travel_start.bounds.size.width
+        bt_travel_start.backgroundColor = background_color_state
+        /* 버튼 맨 위에 있게 */
+        bt_travel_start.layer.zPosition = 1
+        
+        
+        /* scroll and click 다 되게 */
+        scroll_view.delaysContentTouches = false
+        
+        /* 사진 띄우기 */
+        scroll_view.addSubview(image_view)
+        view?.addSubview(scroll_view)      //뷰에다가 두개 띄워버림
+        view.addSubview(bt_travel_start)
+        
     }
 
     override func didReceiveMemoryWarning()

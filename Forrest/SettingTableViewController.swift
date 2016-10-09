@@ -14,18 +14,20 @@ class SettingTableViewController: UITableViewController
 {
     /* cell 이름 정할 변수 */
     let cellText = ["색반전", "색상설정", "글자크기설정", "동행콜계정"]
-    
-    /* 사라질 때 navigation bar 숨기기 */
-    override func viewWillDisappear(animated:Bool)
-    {
-        super.viewWillDisappear(animated)
-        self.navigationController?.navigationBarHidden = true
-    }
 
+
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        
+        
+        /* navigation bar set */
+        self.navigationItem.title = "설정"
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
+        self.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController!.navigationBar.tintColor = background_color_state
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

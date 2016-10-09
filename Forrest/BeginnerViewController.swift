@@ -10,25 +10,16 @@ import UIKit
 
 class BeginnerViewController: UIViewController, UIScrollViewDelegate
 {
-    
-   var scroll_view: UIScrollView!
-    var image_view: UIImageView!
-    
     @IBOutlet weak var bt_travel_start: UIButton!
     
-    /* 사라질 때 navigation bar 숨기기 */
-    override func viewWillDisappear(animated:Bool)
-    {
-        super.viewWillDisappear(animated)
-        //self.navigationController?.navigationBarHidden = true
-    }
+    var scroll_view: UIScrollView!
+    var image_view: UIImageView!
     
     /* zoom function */
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
     {
         return image_view
     }
-    
     
     override func viewWillAppear(animated: Bool)
     {
@@ -71,7 +62,6 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         bt_travel_start.backgroundColor = background_color_state
         /* 버튼 맨 위에 있게 */
         bt_travel_start.layer.zPosition = 1
-        
         
         /* scroll and click 다 되게 */
         scroll_view.delaysContentTouches = false

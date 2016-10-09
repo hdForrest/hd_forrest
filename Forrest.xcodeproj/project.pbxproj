@@ -30,6 +30,7 @@
 		5CA6EE251DA12D4600B9C547 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CA6EE231DA12D4600B9C547 /* Title.png */; };
 		5CA6EE271DA1327100B9C547 /* Travel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CA6EE261DA1327000B9C547 /* Travel.png */; };
 		5CA6EE2B1DA135CE00B9C547 /* Walk.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CA6EE2A1DA135CE00B9C547 /* Walk.png */; };
+		5CE2A1591DAA386300B0FD96 /* donghang.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CE2A1581DAA386300B0FD96 /* donghang.png */; };
 		5CFCAE2E1D97CC13001DBC18 /* WalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */; };
 		5CFCAE301D97DC65001DBC18 /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */; };
 		5CFCAE321D97DCF3001DBC18 /* BeginnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFCAE311D97DCF3001DBC18 /* BeginnerViewController.swift */; };
@@ -92,6 +93,7 @@
 		5CA6EE231DA12D4600B9C547 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Title.png; path = image/Title.png; sourceTree = "<group>"; };
 		5CA6EE261DA1327000B9C547 /* Travel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Travel.png; path = image/Travel.png; sourceTree = "<group>"; };
 		5CA6EE2A1DA135CE00B9C547 /* Walk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Walk.png; path = image/Walk.png; sourceTree = "<group>"; };
+		5CE2A1581DAA386300B0FD96 /* donghang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = donghang.png; path = image/donghang.png; sourceTree = "<group>"; };
 		5CFCAE2D1D97CC13001DBC18 /* WalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkViewController.swift; sourceTree = "<group>"; };
 		5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionViewController.swift; sourceTree = "<group>"; };
 		5CFCAE311D97DCF3001DBC18 /* BeginnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginnerViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				EE1180611DA61883007719F2 /* noojuk.png */,
 				5C3F35DA1DA4B3AB0098566D /* map */,
 				5C961E2D1DA3B97B0040310B /* bt_travel_start.png */,
+				5CE2A1581DAA386300B0FD96 /* donghang.png */,
 				5CA6EE221DA12D4600B9C547 /* Mission.png */,
 				5CA6EE231DA12D4600B9C547 /* Title.png */,
 				5CA6EE261DA1327000B9C547 /* Travel.png */,
@@ -364,6 +367,7 @@
 				EE1958151DA71E0800574DF9 /* bt_nuBlack.png in Resources */,
 				EE19580B1DA716E900574DF9 /* toMission.png in Resources */,
 				5CA6EE2B1DA135CE00B9C547 /* Walk.png in Resources */,
+				5CE2A1591DAA386300B0FD96 /* donghang.png in Resources */,
 				5C961E2E1DA3B97B0040310B /* bt_travel_start.png in Resources */,
 				EE1180621DA61883007719F2 /* noojuk.png in Resources */,
 				5C9DA4101D955B490084B468 /* Assets.xcassets in Resources */,

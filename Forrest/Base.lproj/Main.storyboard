@@ -58,16 +58,16 @@
                                     <segue destination="X6e-mu-ie5" kind="show" id="VTl-M6-pss"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXw-0m-Fg8">
+                                <rect key="frame" x="87" y="357" width="200" height="98"/>
+                                <state key="normal" title="동행콜"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0B-UJ-ZRk">
-                                <rect key="frame" x="87" y="468" width="200" height="86"/>
+                                <rect key="frame" x="87" y="475" width="200" height="91"/>
                                 <state key="normal" title="설정"/>
                                 <connections>
                                     <segue destination="Gl1-wr-mAh" kind="show" id="nS1-Oc-b1U"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXw-0m-Fg8">
-                                <rect key="frame" x="87" y="357" width="200" height="86"/>
-                                <state key="normal" title="동행콜"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -336,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1J-v7-Q1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="444" y="-736"/>
+            <point key="canvasLocation" x="519.5" y="-594.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="src-gi-B9Z">
