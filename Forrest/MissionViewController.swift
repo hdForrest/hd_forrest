@@ -16,29 +16,25 @@ class MissionViewController: UIViewController
     @IBOutlet weak var bt_nuMission: UIButton!
     @IBOutlet weak var Image: UIImageView!
    
-    @IBAction func toMisson(sender: AnyObject) {
+    @IBAction func toMisson(sender: AnyObject)
+    {
         let img = UIImage(named: "toMission")
         Image.image = img
         bt_nuMission.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
         bt_nuMission.tintColor = UIColor.blackColor()
         bt_toMission.setImage(UIImage(named: "bt_toGreen"),forState: .Normal)
-         bt_toMission.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
-        
+         bt_toMission.tintColor = background_color_state
     }
-    @IBAction func nuMisson(sender: AnyObject) {
+    @IBAction func nuMisson(sender: AnyObject)
+    {
         let img = UIImage(named: "nuMisson")
         Image.image = img
         
         bt_toMission.setImage(UIImage(named: "bt_toBlack"), forState: .Normal)
          bt_toMission.tintColor = UIColor.blackColor()
         bt_nuMission.setImage(UIImage(named: "bt_nuGreen"), forState: .Normal)
-        bt_nuMission.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        bt_nuMission.tintColor = background_color_state
     }
-    
-    
-   
-    
-        
    
 
     override func viewWillAppear(animated:Bool)
@@ -59,7 +55,7 @@ class MissionViewController: UIViewController
         let img = UIImage(named: "toMission")
         Image.image = img
         bt_toMission.setImage(UIImage(named: "bt_toGreen"),forState: .Normal)
-        bt_toMission.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        bt_toMission.tintColor = background_color_state
         bt_nuMission.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
         bt_nuMission.tintColor = UIColor.blackColor()
         // Do any additional setup after loading the view.

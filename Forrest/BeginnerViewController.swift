@@ -16,13 +16,6 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
     
     @IBOutlet weak var bt_travel_start: UIButton!
     
-    /*
-    @IBAction func click_start(sender: AnyObject)
-    {
-        self.performSegueWithIdentifier("travel_start", sender: sender)
-        //prepareForSegue("travel_start", sender: sender)
-    }*/
-    
     /* 사라질 때 navigation bar 숨기기 */
     override func viewWillDisappear(animated:Bool)
     {
@@ -59,7 +52,7 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         /* 사진 띄우기 */
         image_view = UIImageView(image: UIImage(named: "beginner_map"))
         image_view.contentMode = .ScaleAspectFill
-       scroll_view = UIScrollView(frame: view.bounds)
+        scroll_view = UIScrollView(frame: view.bounds)
         scroll_view.contentSize = image_view.frame.size //bound를  frame으로 바꿈
         scroll_view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         
@@ -72,37 +65,19 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         scroll_view.maximumZoomScale = 3.0
         scroll_view.zoomScale = 0.5
         self.view.translatesAutoresizingMaskIntoConstraints = true
-        
-        //image_view.addSubview(bt_travel_start)
-        
-        
       
         /* 주행시작 버튼 이미지 입히기 */
-        //bt_travel_start.setImage(UIImage(named: "bt_travel_start"), forState: .Normal)
         bt_travel_start.layer.cornerRadius = 0.5 * bt_travel_start.bounds.size.width
-        //bt_travel_start.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
         bt_travel_start.backgroundColor = background_color_state
-        
+        /* 버튼 맨 위에 있게 */
         bt_travel_start.layer.zPosition = 1
         
         
-        
-        //bt_travel_start.frame = CGRectMake(0, 0, 20, 20)
-        
-        //self.view.frame = scroll_view.bounds
-       // image_view.userInteractionEnabled = false
-       // scroll_view.userInteractionEnabled = false
-        //scroll_view.exclusiveTouch = true
-        //scroll_view.canCancelContentTouches = true
+        /* scroll and click 다 되게 */
         scroll_view.delaysContentTouches = false
-        //bt_travel_start.frame = scroll_view.bounds
-        //bt_travel_start.userInteractionEnabled = true
-      //   scroll_view.addSubview(bt_travel_start)
         
         /* 사진 띄우기 */
-        
         scroll_view.addSubview(image_view)
-       
         view?.addSubview(scroll_view)      //뷰에다가 두개 띄워버림
         view.addSubview(bt_travel_start)
     }

@@ -16,22 +16,25 @@ class WalkViewController: UIViewController
     @IBOutlet weak var bt_nuWalk: UIButton!
     
     @IBOutlet weak var Image: UIImageView!
-    @IBAction func toWalk(sender: AnyObject) {
+    
+    @IBAction func toWalk(sender: AnyObject)
+    {
         let img = UIImage(named: "toWalk")
         Image.image = img
         bt_nuWalk.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
         bt_nuWalk.tintColor = UIColor.blackColor()
         bt_toWalk.setImage(UIImage(named: "bt_toGreen"), forState: .Normal)
-        bt_toWalk.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        bt_toWalk.tintColor = background_color_state
     }
   
-   @IBAction func nuWalk(sender: AnyObject) {
+   @IBAction func nuWalk(sender: AnyObject)
+   {
         let img = UIImage(named: "nuWalk")
         Image.image = img
         bt_toWalk.setImage(UIImage(named: "bt_toBlack"), forState: .Normal)
-        bt_toWalk.tintColor = UIColor.blackColor()
+        //bt_toWalk.tintColor = UIColor.blackColor()
         bt_nuWalk.setImage(UIImage(named: "bt_nuGreen"), forState: .Normal)
-        bt_nuWalk.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        //bt_nuWalk.tintColor = background_color_state
     }
    
  
@@ -53,7 +56,7 @@ class WalkViewController: UIViewController
         let img = UIImage(named: "toWalk")
         Image.image = img
         bt_toWalk.setImage(UIImage(named: "bt_toGreen"), forState: .Normal)
-        bt_toWalk.tintColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+        bt_toWalk.tintColor = background_color_state
         bt_nuWalk.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
         bt_nuWalk.tintColor = UIColor.blackColor()
         
