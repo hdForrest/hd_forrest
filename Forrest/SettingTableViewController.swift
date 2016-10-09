@@ -14,7 +14,7 @@ class SettingTableViewController: UITableViewController
 {
     /* cell 이름 정할 변수 */
     let cellText = ["색반전", "색상설정", "글자크기설정", "동행콜계정"]
-
+    let identifies = ["색반전", "색상설정", "글자크기설정", "동행콜계정"]
 
     
     override func viewDidLoad()
@@ -63,8 +63,11 @@ class SettingTableViewController: UITableViewController
         
         return cell
     }
- 
-
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let vcName = identifies[indexPath.row]
+        let viewController = storyboard?.instantiateViewControllerWithIdentifier(vcName)
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
