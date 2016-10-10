@@ -163,10 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				5CFCAE311D97DCF3001DBC18 /* BeginnerViewController.swift */,
+				5C9D81F11DABD68A002B0812 /* BeginnerInfoViewController.swift */,
 				5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */,
 				5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */,
 				5C3F35D21DA4AF070098566D /* FreeViewController.swift */,
-				5C9D81F11DABD68A002B0812 /* BeginnerInfoViewController.swift */,
 			);
 			name = travel;
 			sourceTree = "<group>";

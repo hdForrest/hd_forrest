@@ -43,7 +43,6 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
     {
         super.viewDidLoad()
         
-        
         /* 사진 띄우기 */
         image_view = UIImageView(image: UIImage(named: "beginner_map"))
         image_view.contentMode = .ScaleAspectFill
@@ -74,6 +73,13 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         scroll_view.addSubview(image_view)
         view?.addSubview(scroll_view)      //뷰에다가 두개 띄워버림
         view.addSubview(bt_travel_start)
+        
+        let bt_won = UIButton(type: UIButtonType.System)
+        bt_won.frame = CGRectMake(20, 70, 40, 40)
+        bt_won.layer.cornerRadius = 0.5 * bt_won.bounds.size.width
+        bt_won.backgroundColor = UIColor.blackColor()
+        //bt_won.addTarget(self, action: #selector(clicked_11), forControlEvents: UIControlEvents.TouchUpInside)
+        
     }
 
     override func didReceiveMemoryWarning()
