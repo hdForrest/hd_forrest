@@ -25,9 +25,11 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
     {
         super.viewWillAppear(animated)
         
-        /* navigation bar set */
+        /* navigation bar text set */
         self.tabBarController?.navigationItem.title = "초급 주행"
         self.tabBarController?.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
+        
+        /* navigation bar color set */
         self.tabBarController?.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
         self.tabBarController?.navigationController!.navigationBar.tintColor = background_color_state
         

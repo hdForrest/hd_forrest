@@ -113,7 +113,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vig-OY-jG8">
-                                <frame key="frameInset" minY="80" width="374" height="581"/>
+                                <frame key="frameInset" minY="64" width="374" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK8-ps-8QC">
@@ -137,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ty3-gO-5aT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2830" y="404"/>
+            <point key="canvasLocation" x="-2831.1999999999998" y="403.44827586206901"/>
         </scene>
         <!--사진미션-->
         <scene sceneID="0k3-bl-MJm">
@@ -159,10 +159,6 @@
                                     <action selector="nuMisson:" destination="hps-Qh-31Z" eventType="touchUpInside" id="FQu-lQ-h7u"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fi6-gA-Vd7">
-                                <frame key="frameInset" minY="80" width="374" height="581"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDG-z2-qMr">
                                 <frame key="frameInset" minY="25" width="187" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -171,6 +167,10 @@
                                     <action selector="toMisson:" destination="hps-Qh-31Z" eventType="touchUpInside" id="ywj-sT-MEE"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fi6-gA-Vd7">
+                                <frame key="frameInset" minY="64" width="374" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -184,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="see-33-Zxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4289" y="405"/>
+            <point key="canvasLocation" x="-4290.3999999999996" y="404.34782608695656"/>
         </scene>
         <!--Misson Tabbar Controller-->
         <scene sceneID="xRM-PR-Bbb">
@@ -248,7 +248,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KSf-d0-JVp">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSf-d0-JVp" id="vCJ-Wx-3iJ">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -486,6 +486,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="feH-va-c9d"/>
-        <segue reference="lxP-Yj-GO9"/>
+        <segue reference="ngQ-CT-TMP"/>
     </inferredMetricsTieBreakers>
 </document>

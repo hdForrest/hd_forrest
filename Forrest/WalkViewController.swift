@@ -53,6 +53,8 @@ class WalkViewController: UIViewController
     {
         super.viewDidLoad()
         /*디폴트 설정*/
+        self.view.backgroundColor = text_color_state
+        
         let img = UIImage(named: "toWalk")
         Image.image = img
         bt_toWalk.setImage(UIImage(named: "bt_toGreen"), forState: .Normal)

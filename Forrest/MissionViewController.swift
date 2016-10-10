@@ -52,6 +52,8 @@ class MissionViewController: UIViewController
     {
         super.viewDidLoad()
         /*디폴트 설정*/
+        self.view.backgroundColor = text_color_state
+        
         let img = UIImage(named: "toMission")
         Image.image = img
         bt_toMission.setImage(UIImage(named: "bt_toGreen"),forState: .Normal)
