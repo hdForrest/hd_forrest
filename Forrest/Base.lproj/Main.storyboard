@@ -342,7 +342,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_begin_backhop.png" translatesAutoresizingMaskIntoConstraints="NO" id="ERx-4a-U1f">
-                                <frame key="frameInset" minY="67" width="375" height="259"/>
+                                <frame key="frameInset" minY="57" width="375" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
