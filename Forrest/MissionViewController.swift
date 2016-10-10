@@ -16,6 +16,7 @@ class MissionViewController: UIViewController
     @IBOutlet weak var bt_nuMission: UIButton!
     @IBOutlet weak var Image: UIImageView!
    
+
     @IBAction func toMisson(sender: AnyObject)
     {
         let img = UIImage(named: "toMission")
@@ -35,7 +36,7 @@ class MissionViewController: UIViewController
         bt_nuMission.setImage(UIImage(named: "bt_nuGreen"), forState: .Normal)
         bt_nuMission.tintColor = background_color_state
     }
-   
+
 
     override func viewWillAppear(animated:Bool)
     {

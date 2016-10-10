@@ -78,7 +78,7 @@ class ColorSetTableViewController: UITableViewController
         {
         case 0:
             /* label set */
-            let label = UILabel(frame: CGRectMake(20, 10, 130, 30))
+            let label = UILabel(frame: CGRectMake(20, 10, 300, 30))
             label.text = cellText[indexPath.row]
             label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: text_size)
             label.textColor = text_color
@@ -93,7 +93,7 @@ class ColorSetTableViewController: UITableViewController
             cell.contentView.addSubview(bt_back_color11)
         case 1:
             /* label set */
-            let label = UILabel(frame: CGRectMake(20, 10, 130, 30))
+            let label = UILabel(frame: CGRectMake(20, 10, 300, 30))
             label.text = cellText[indexPath.row]
             label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: text_size)
             label.textColor = text_color
@@ -107,7 +107,7 @@ class ColorSetTableViewController: UITableViewController
             cell.contentView.addSubview(bt_back_color21)
         case 2:
             /* label set */
-            let label = UILabel(frame: CGRectMake(20, 10, 130, 30))
+            let label = UILabel(frame: CGRectMake(20, 10, 300, 30))
             label.text = cellText[indexPath.row]
             label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: text_size)
             label.textColor = text_color
