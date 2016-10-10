@@ -25,12 +25,12 @@ class ColorSetTableViewController: UITableViewController
 
         /* navigation bar set */
         self.navigationItem.title = "색상 설정"
-        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
-        self.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: text_color, NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
+        self.navigationController!.navigationBar.barTintColor = real_back_color
         self.navigationController!.navigationBar.tintColor = background_color_state
         
         /* background color set */
-        self.tableView.backgroundColor = UIColor.blackColor()
+        self.tableView.backgroundColor = real_back_color
         
         
         // Uncomment the following line to preserve selection between presentations
@@ -81,33 +81,36 @@ class ColorSetTableViewController: UITableViewController
             let label = UILabel(frame: CGRectMake(20, 10, 130, 30))
             label.text = cellText[indexPath.row]
             label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: text_size)
-            label.textColor = UIColor.whiteColor()
+            label.textColor = text_color
             cell.contentView.addSubview(label)
             
-            let bt_back_color = UIButton(type: UIButtonType.System)
-            bt_back_color.frame = CGRectMake(20, 60, 30, 30)
-            bt_back_color.layer.cornerRadius = 0.5 * bt_back_color.bounds.size.width
-            bt_back_color.backgroundColor = UIColor.whiteColor()
-            cell.contentView.addSubview(bt_back_color)
+            /* button 1 set */
+            let bt_back_color11 = UIButton(type: UIButtonType.System)
+            bt_back_color11.frame = CGRectMake(20, 70, 40, 40)
+            bt_back_color11.layer.cornerRadius = 0.5 * bt_back_color11.bounds.size.width
+            bt_back_color11.backgroundColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+            bt_back_color11.addTarget(self, action: #selector(clicked_11), forControlEvents: UIControlEvents.TouchUpInside)
+            cell.contentView.addSubview(bt_back_color11)
         case 1:
             /* label set */
             let label = UILabel(frame: CGRectMake(20, 10, 130, 30))
             label.text = cellText[indexPath.row]
             label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: text_size)
-            label.textColor = UIColor.whiteColor()
+            label.textColor = text_color
             cell.contentView.addSubview(label)
             
-            let bt_back_color = UIButton(type: UIButtonType.System)
-            bt_back_color.frame = CGRectMake(20, 80, 30, 30)
-            bt_back_color.layer.cornerRadius = 0.5 * bt_back_color.bounds.size.width
-            bt_back_color.backgroundColor = UIColor.whiteColor()
-            cell.contentView.addSubview(bt_back_color)
+            let bt_back_color21 = UIButton(type: UIButtonType.System)
+            bt_back_color21.frame = CGRectMake(20, 70, 40, 40)
+            bt_back_color21.layer.cornerRadius = 0.5 * bt_back_color21.bounds.size.width
+            bt_back_color21.backgroundColor = UIColor.whiteColor()
+            bt_back_color21.addTarget(self, action: #selector(clicked_21), forControlEvents: UIControlEvents.TouchUpInside)
+            cell.contentView.addSubview(bt_back_color21)
         case 2:
             /* label set */
             let label = UILabel(frame: CGRectMake(20, 10, 130, 30))
             label.text = cellText[indexPath.row]
             label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: text_size)
-            label.textColor = UIColor.whiteColor()
+            label.textColor = text_color
             cell.contentView.addSubview(label)
         default: break
         }
@@ -120,6 +123,17 @@ class ColorSetTableViewController: UITableViewController
         return 151.0
     }
 
+    /* button click event */
+    func clicked_11(sender: UIButton)
+    {
+        background_color_state = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+    }
+    func clicked_21(sender: UIButton)
+    {
+        text_color = UIColor.blackColor()
+        real_back_color = UIColor.whiteColor()
+    }
+    
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)

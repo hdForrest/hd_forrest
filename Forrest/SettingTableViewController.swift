@@ -28,12 +28,12 @@ class SettingTableViewController: UITableViewController
         
         /* navigation bar set */
         self.navigationItem.title = "설정"
-        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
-        self.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: text_color, NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
+        self.navigationController!.navigationBar.barTintColor = real_back_color
         self.navigationController!.navigationBar.tintColor = background_color_state
         
         /* background color set */
-        self.tableView.backgroundColor = UIColor.blackColor()
+        self.tableView.backgroundColor = real_back_color
         
         
         // Uncomment the following line to preserve selection between presentations

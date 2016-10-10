@@ -27,12 +27,14 @@ class IntermediateViewController: UIViewController, UIScrollViewDelegate
         
         /* navigation bar set */
         self.tabBarController?.navigationItem.title = "중급 주행"
-        self.tabBarController?.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
-        self.tabBarController?.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
+        self.tabBarController?.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: text_color, NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
+        
+        /* navigation bar color set */
+        self.tabBarController?.navigationController!.navigationBar.barTintColor = real_back_color
         self.tabBarController?.navigationController!.navigationBar.tintColor = background_color_state
         
         /* tab bar set */
-        self.tabBarController?.tabBar.backgroundColor = UIColor.blackColor()
+        self.tabBarController?.tabBar.backgroundColor = real_back_color
         self.tabBarController?.tabBar.tintColor = background_color_state
     }
 

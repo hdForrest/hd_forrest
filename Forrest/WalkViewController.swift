@@ -45,7 +45,7 @@ class WalkViewController: UIViewController
         /* navigation 바 숨기기 */
         self.navigationController?.navigationBarHidden = true
         /* tab bar set */
-        self.tabBarController?.tabBar.backgroundColor = UIColor.blackColor()
+        self.tabBarController?.tabBar.backgroundColor = real_back_color
         self.tabBarController?.tabBar.tintColor = background_color_state
     }
 
@@ -53,14 +53,14 @@ class WalkViewController: UIViewController
     {
         super.viewDidLoad()
         /*디폴트 설정*/
-        self.view.backgroundColor = text_color_state
+        self.view.backgroundColor = real_back_color
         
         let img = UIImage(named: "toWalk")
         Image.image = img
         bt_toWalk.setImage(UIImage(named: "bt_toGreen"), forState: .Normal)
         bt_toWalk.tintColor = background_color_state
         bt_nuWalk.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
-        bt_nuWalk.tintColor = UIColor.blackColor()
+        bt_nuWalk.tintColor = real_back_color
         
         // Do any additional setup after loading the view.
     }

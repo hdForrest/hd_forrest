@@ -23,7 +23,7 @@ class MissionViewController: UIViewController
         bt_nuMission.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
         bt_nuMission.tintColor = UIColor.blackColor()
         bt_toMission.setImage(UIImage(named: "bt_toGreen"),forState: .Normal)
-         bt_toMission.tintColor = background_color_state
+        bt_toMission.tintColor = background_color_state
     }
     @IBAction func nuMisson(sender: AnyObject)
     {
@@ -31,7 +31,7 @@ class MissionViewController: UIViewController
         Image.image = img
         
         bt_toMission.setImage(UIImage(named: "bt_toBlack"), forState: .Normal)
-         bt_toMission.tintColor = UIColor.blackColor()
+        bt_toMission.tintColor = UIColor.blackColor()
         bt_nuMission.setImage(UIImage(named: "bt_nuGreen"), forState: .Normal)
         bt_nuMission.tintColor = background_color_state
     }
@@ -44,7 +44,7 @@ class MissionViewController: UIViewController
         /* navigation 바 숨기기 */
         self.navigationController?.navigationBarHidden = true
         /* tab bar set */
-        self.tabBarController?.tabBar.backgroundColor = UIColor.blackColor()
+        self.tabBarController?.tabBar.backgroundColor = real_back_color
         self.tabBarController?.tabBar.tintColor = background_color_state
     }
     
@@ -52,14 +52,14 @@ class MissionViewController: UIViewController
     {
         super.viewDidLoad()
         /*디폴트 설정*/
-        self.view.backgroundColor = text_color_state
+        self.view.backgroundColor = real_back_color
         
         let img = UIImage(named: "toMission")
         Image.image = img
         bt_toMission.setImage(UIImage(named: "bt_toGreen"),forState: .Normal)
         bt_toMission.tintColor = background_color_state
         bt_nuMission.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
-        bt_nuMission.tintColor = UIColor.blackColor()
+        bt_nuMission.tintColor = real_back_color
         // Do any additional setup after loading the view.
     }
 
