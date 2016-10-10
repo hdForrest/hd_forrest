@@ -13,6 +13,11 @@ class MissonTabbarController: UITabBarController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = "   "
+        navigationItem.backBarButtonItem = backItem
+        
         // [Maybe you don't have a navigation controller] yNavBar indicates the height of the navigation bar.
                // yStatusBar indicates the height of the status bar
         // Set the size and the position in the screen of the tab bar
