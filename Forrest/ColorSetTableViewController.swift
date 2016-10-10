@@ -12,11 +12,27 @@ class ColorSetTableViewController: UITableViewController
 {
     /* cell 이름 정할 변수 */
     let cellText = ["글자 색상", "배경 색상", "대비 조절"]
-
+    
+    /* cell background color */
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        cell.backgroundColor = UIColor.clearColor()
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
+        /* navigation bar set */
+        self.navigationItem.title = "색상 설정"
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
+        self.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController!.navigationBar.tintColor = background_color_state
+        
+        /* background color set */
+        self.tableView.backgroundColor = UIColor.blackColor()
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -49,6 +65,13 @@ class ColorSetTableViewController: UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier("Color_LabelCell", forIndexPath: indexPath)
         
         cell.textLabel!.text = cellText[indexPath.row]
+        
+        /* text color set */
+        cell.textLabel!.textColor = UIColor.whiteColor()
+        
+        /* button */
+        
+        
         
         return cell
     }

@@ -15,6 +15,12 @@ class SettingTableViewController: UITableViewController
     /* cell 이름 정할 변수 */
     let cellText = ["색반전", "색상설정", "글자크기설정", "동행콜계정"]
     
+    /* cell background color */
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        cell.backgroundColor = UIColor.clearColor()
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -25,6 +31,10 @@ class SettingTableViewController: UITableViewController
         self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
         self.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
         self.navigationController!.navigationBar.tintColor = background_color_state
+        
+        /* background color set */
+        self.tableView.backgroundColor = UIColor.blackColor()
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -59,6 +69,9 @@ class SettingTableViewController: UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell", forIndexPath: indexPath)
         
         cell.textLabel!.text = cellText[indexPath.row]
+        
+        /* text color set */
+        cell.textLabel!.textColor = background_color_state
         
         return cell
     }

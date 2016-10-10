@@ -22,9 +22,9 @@ class WalkViewController: UIViewController
         let img = UIImage(named: "toWalk")
         Image.image = img
         bt_nuWalk.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
-        bt_nuWalk.tintColor = UIColor.blackColor()
+        //bt_nuWalk.tintColor = UIColor.blackColor()
         bt_toWalk.setImage(UIImage(named: "bt_toGreen"), forState: .Normal)
-        bt_toWalk.tintColor = background_color_state
+        //bt_toWalk.tintColor = background_color_state
     }
   
    @IBAction func nuWalk(sender: AnyObject)
