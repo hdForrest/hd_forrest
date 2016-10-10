@@ -322,16 +322,17 @@
                     <tabBarItem key="tabBarItem" title="초급" id="ThU-dS-vPu"/>
                     <connections>
                         <outlet property="bt_travel_start" destination="2V8-rA-J1h" id="Hyr-dB-JRJ"/>
+                        <segue destination="BBb-45-RwL" kind="show" identifier="won_soga" id="3hb-Z5-cZO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3SH-KU-woD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-490" y="-1033"/>
         </scene>
-        <!--View Controller-->
+        <!--Beginner Info View Controller-->
         <scene sceneID="uAw-S4-jwG">
             <objects>
-                <viewController id="BBb-45-RwL" sceneMemberID="viewController">
+                <viewController id="BBb-45-RwL" customClass="BeginnerInfoViewController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uid-9j-1xj"/>
                         <viewControllerLayoutGuide type="bottom" id="Ljm-Qo-DfN"/>
@@ -340,13 +341,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ERx-4a-U1f">
-                                <frame key="frameInset" minY="73" width="375" height="259"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_begin_backhop.png" translatesAutoresizingMaskIntoConstraints="NO" id="ERx-4a-U1f">
+                                <frame key="frameInset" minY="67" width="375" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ZFs-0C-gu2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cO8-zN-CgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -507,6 +509,7 @@
     <resources>
         <image name="Title.png" width="484" height="171"/>
         <image name="bt_travel_start.png" width="206" height="205"/>
+        <image name="img_begin_backhop.png" width="746" height="482"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="feH-va-c9d"/>

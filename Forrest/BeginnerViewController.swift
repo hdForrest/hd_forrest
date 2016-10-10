@@ -69,17 +69,20 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         /* scroll and click 다 되게 */
         scroll_view.delaysContentTouches = false
         
+        
+        let bt_won = UIButton(type: UIButtonType.System)
+        bt_won.frame = CGRectMake(3550, 1800, 300, 100)
+        bt_won.layer.cornerRadius = 0.2 * bt_won.bounds.size.width
+        //bt_won.backgroundColor = UIColor.orangeColor()
+        bt_won.addTarget(self, action: #selector(clicked_bt), forControlEvents: UIControlEvents.TouchUpInside)
+        image_view.addSubview(bt_won)
+        image_view.userInteractionEnabled = true
+        
+        
         /* 사진 띄우기 */
         scroll_view.addSubview(image_view)
         view?.addSubview(scroll_view)      //뷰에다가 두개 띄워버림
         view.addSubview(bt_travel_start)
-        
-        let bt_won = UIButton(type: UIButtonType.System)
-        bt_won.frame = CGRectMake(20, 70, 40, 40)
-        bt_won.layer.cornerRadius = 0.5 * bt_won.bounds.size.width
-        bt_won.backgroundColor = UIColor.blackColor()
-        //bt_won.addTarget(self, action: #selector(clicked_11), forControlEvents: UIControlEvents.TouchUpInside)
-        
     }
 
     override func didReceiveMemoryWarning()
@@ -89,6 +92,11 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
     }
     
 
+    func clicked_bt(sender: UIButton)
+    {
+        performSegueWithIdentifier("won_soga", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

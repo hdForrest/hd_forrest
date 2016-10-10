@@ -22,6 +22,7 @@
 		5C961E2E1DA3B97B0040310B /* bt_travel_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C961E2D1DA3B97B0040310B /* bt_travel_start.png */; };
 		5C9D81F01DABC7B9002B0812 /* TextSetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D81EF1DABC7B9002B0812 /* TextSetTableViewController.swift */; };
 		5C9D81F21DABD68A002B0812 /* BeginnerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D81F11DABD68A002B0812 /* BeginnerInfoViewController.swift */; };
+		5C9D81F41DABEB72002B0812 /* img_begin_backhop.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C9D81F31DABEB72002B0812 /* img_begin_backhop.png */; };
 		5C9DA4091D955B490084B468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DA4081D955B490084B468 /* AppDelegate.swift */; };
 		5C9DA4101D955B490084B468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C9DA40F1D955B490084B468 /* Assets.xcassets */; };
 		5C9DA4131D955B490084B468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C9DA4111D955B490084B468 /* LaunchScreen.storyboard */; };
@@ -81,6 +82,7 @@
 		5C961E2D1DA3B97B0040310B /* bt_travel_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bt_travel_start.png; path = image/bt_travel_start.png; sourceTree = "<group>"; };
 		5C9D81EF1DABC7B9002B0812 /* TextSetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSetTableViewController.swift; sourceTree = "<group>"; };
 		5C9D81F11DABD68A002B0812 /* BeginnerInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginnerInfoViewController.swift; sourceTree = "<group>"; };
+		5C9D81F31DABEB72002B0812 /* img_begin_backhop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_begin_backhop.png; path = image/img_begin_backhop.png; sourceTree = "<group>"; };
 		5C9DA4051D955B490084B468 /* Forrest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forrest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9DA4081D955B490084B468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C9DA40F1D955B490084B468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -181,6 +183,14 @@
 			name = "mission&walk";
 			sourceTree = "<group>";
 		};
+		5C9D81F51DABEB7D002B0812 /* course info */ = {
+			isa = PBXGroup;
+			children = (
+				5C9D81F31DABEB72002B0812 /* img_begin_backhop.png */,
+			);
+			name = "course info";
+			sourceTree = "<group>";
+		};
 		5C9DA3FC1D955B490084B468 = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +259,7 @@
 				EE19580A1DA716E900574DF9 /* nuWalk.png */,
 				EE1180651DA620E9007719F2 /* onl.png */,
 				EE1180611DA61883007719F2 /* noojuk.png */,
+				5C9D81F51DABEB7D002B0812 /* course info */,
 				5C3F35DA1DA4B3AB0098566D /* map */,
 				5C961E2D1DA3B97B0040310B /* bt_travel_start.png */,
 				5CE2A1581DAA386300B0FD96 /* donghang.png */,
@@ -381,6 +392,7 @@
 				5C4FAE1C1DA335AB00E3D5F6 /* beginner_map.png in Resources */,
 				EE1958151DA71E0800574DF9 /* bt_nuBlack.png in Resources */,
 				EE19580B1DA716E900574DF9 /* toMission.png in Resources */,
+				5C9D81F41DABEB72002B0812 /* img_begin_backhop.png in Resources */,
 				5CA6EE2B1DA135CE00B9C547 /* Walk.png in Resources */,
 				5CE2A1591DAA386300B0FD96 /* donghang.png in Resources */,
 				5C961E2E1DA3B97B0040310B /* bt_travel_start.png in Resources */,

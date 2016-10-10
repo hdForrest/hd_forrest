@@ -26,6 +26,7 @@ class AdvancedViewController: UIViewController, UIScrollViewDelegate
         super.viewWillAppear(animated)
         
         /* navigation bar set */
+        self.tabBarController?.navigationItem.title = "고급 주행"
         self.tabBarController?.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: text_color, NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
         
         /* navigation bar color set */
