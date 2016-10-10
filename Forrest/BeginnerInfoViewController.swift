@@ -35,6 +35,10 @@ class BeginnerInfoViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
+    func createScrollMenu()
+    {
+        
+    }
 
     /*
     // MARK: - Navigation

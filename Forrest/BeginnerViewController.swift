@@ -10,6 +10,8 @@ import UIKit
 
 class BeginnerViewController: UIViewController, UIScrollViewDelegate
 {
+    let bt_won = UIButton(type: UIButtonType.Custom)
+    
     @IBOutlet weak var bt_travel_start: UIButton!
     
     var scroll_view: UIScrollView!
@@ -36,6 +38,9 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         /* tab bar set */
         self.tabBarController?.tabBar.backgroundColor = real_back_color
         self.tabBarController?.tabBar.tintColor = background_color_state
+        
+        
+        bt_won.setImage(nil, forState: .Normal)
         
     }
     
@@ -70,8 +75,8 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         scroll_view.delaysContentTouches = false
         
         
-        let bt_won = UIButton(type: UIButtonType.System)
-        bt_won.frame = CGRectMake(3550, 1800, 300, 100)
+
+        bt_won.frame = CGRectMake(3037, 1495, 300, 100)
         bt_won.layer.cornerRadius = 0.2 * bt_won.bounds.size.width
         //bt_won.backgroundColor = UIColor.orangeColor()
         bt_won.addTarget(self, action: #selector(clicked_bt), forControlEvents: UIControlEvents.TouchUpInside)
@@ -95,6 +100,7 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
     func clicked_bt(sender: UIButton)
     {
         performSegueWithIdentifier("won_soga", sender: self)
+        bt_won.setImage(UIImage(named: "bt_bakhop"), forState: .Normal)
     }
     
     /*
