@@ -64,21 +64,60 @@ class ColorSetTableViewController: UITableViewController
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("Color_LabelCell", forIndexPath: indexPath)
         
-        cell.textLabel!.text = cellText[indexPath.row]
-        
+        /* text set */
+        //cell.textLabel!.text = cellText[indexPath.row]
         /* text color set */
-        cell.textLabel!.textColor = UIColor.whiteColor()
+        //cell.textLabel!.textColor = UIColor.whiteColor()
+        /* text position */
+        //cell.textLabel!.frame = CGRectMake(10, 10, 60, 50)
+        //cell.textLabel?.contentMode = UIViewContentMode
+        //cell.contentView.addSubview(cell.textLabel!)
         
         /* button */
-        
-        
+        switch indexPath.row
+        {
+        case 0:
+            /* label set */
+            let label = UILabel(frame: CGRectMake(20, 10, 130, 30))
+            label.text = cellText[indexPath.row]
+            label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: text_size)
+            label.textColor = UIColor.whiteColor()
+            cell.contentView.addSubview(label)
+            
+            let bt_back_color = UIButton(type: UIButtonType.System)
+            bt_back_color.frame = CGRectMake(20, 60, 30, 30)
+            bt_back_color.layer.cornerRadius = 0.5 * bt_back_color.bounds.size.width
+            bt_back_color.backgroundColor = UIColor.whiteColor()
+            cell.contentView.addSubview(bt_back_color)
+        case 1:
+            /* label set */
+            let label = UILabel(frame: CGRectMake(20, 10, 130, 30))
+            label.text = cellText[indexPath.row]
+            label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: text_size)
+            label.textColor = UIColor.whiteColor()
+            cell.contentView.addSubview(label)
+            
+            let bt_back_color = UIButton(type: UIButtonType.System)
+            bt_back_color.frame = CGRectMake(20, 80, 30, 30)
+            bt_back_color.layer.cornerRadius = 0.5 * bt_back_color.bounds.size.width
+            bt_back_color.backgroundColor = UIColor.whiteColor()
+            cell.contentView.addSubview(bt_back_color)
+        case 2:
+            /* label set */
+            let label = UILabel(frame: CGRectMake(20, 10, 130, 30))
+            label.text = cellText[indexPath.row]
+            label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: text_size)
+            label.textColor = UIColor.whiteColor()
+            cell.contentView.addSubview(label)
+        default: break
+        }
         
         return cell
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
     {
-        return 70.0
+        return 151.0
     }
 
     /*
