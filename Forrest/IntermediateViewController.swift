@@ -42,6 +42,7 @@ class IntermediateViewController: UIViewController, UIScrollViewDelegate
     {
         super.viewDidLoad()
         
+        
         /* 사진 띄우기 */
         image_view = UIImageView(image: UIImage(named: "intermediate_map"))
         image_view.contentMode = .ScaleAspectFill

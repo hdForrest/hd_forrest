@@ -12,7 +12,7 @@ import UIKit
 var background_color_state = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
 var text_color = UIColor.whiteColor()
 var real_back_color = UIColor.blackColor()
-
+var clicked_reverse = false
 /* 글자 크기 설정 */
 var text_size: CGFloat = 25;
 
@@ -31,6 +31,9 @@ class StartViewController: UIViewController
         
         /* 첫화면 네비게이션 바 숨기기. */
         self.navigationController?.navigationBarHidden = true
+        
+        /* 첫화면 배경 색상 설정 */
+        self.view.backgroundColor = background_color_state
     }
     
     override func viewDidLoad()

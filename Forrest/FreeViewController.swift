@@ -41,6 +41,7 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     {
         super.viewDidLoad()
         
+        
         /* 사진 띄우기 */
         image_view = UIImageView(image: UIImage(named: "free_map"))
         image_view.contentMode = .ScaleAspectFill

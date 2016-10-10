@@ -41,6 +41,7 @@ class AdvancedViewController: UIViewController, UIScrollViewDelegate
     {
         super.viewDidLoad()
         
+        
         /* 사진 띄우기 */
         image_view = UIImageView(image: UIImage(named: "advanced_map"))
         image_view.contentMode = .ScaleAspectFill

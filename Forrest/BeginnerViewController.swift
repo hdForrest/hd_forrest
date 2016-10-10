@@ -36,11 +36,13 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         /* tab bar set */
         self.tabBarController?.tabBar.backgroundColor = real_back_color
         self.tabBarController?.tabBar.tintColor = background_color_state
+        
     }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
         
         /* 사진 띄우기 */
         image_view = UIImageView(image: UIImage(named: "beginner_map"))

@@ -91,6 +91,13 @@ class ColorSetTableViewController: UITableViewController
             bt_back_color11.backgroundColor = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
             bt_back_color11.addTarget(self, action: #selector(clicked_11), forControlEvents: UIControlEvents.TouchUpInside)
             cell.contentView.addSubview(bt_back_color11)
+            /* button 2 set */
+            let bt_back_color12 = UIButton(type: UIButtonType.System)
+            bt_back_color12.frame = CGRectMake(70, 70, 40, 40)
+            bt_back_color12.layer.cornerRadius = 0.5 * bt_back_color12.bounds.size.width
+            bt_back_color12.backgroundColor = UIColor(red: CGFloat(220/225.0), green: CGFloat(52/255.0), blue: CGFloat(52/255.0), alpha: CGFloat(1.0))
+            bt_back_color12.addTarget(self, action: #selector(clicked_12), forControlEvents: UIControlEvents.TouchUpInside)
+            cell.contentView.addSubview(bt_back_color12)
         case 1:
             /* label set */
             let label = UILabel(frame: CGRectMake(20, 10, 300, 30))
@@ -127,6 +134,10 @@ class ColorSetTableViewController: UITableViewController
     func clicked_11(sender: UIButton)
     {
         background_color_state = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+    }
+    func clicked_12(sender: UIButton)
+    {
+        background_color_state = UIColor(red: CGFloat(220/225.0), green: CGFloat(52/255.0), blue: CGFloat(52/255.0), alpha: CGFloat(1.0))
     }
     func clicked_21(sender: UIButton)
     {

@@ -14,6 +14,7 @@ class SettingTableViewController: UITableViewController
 {
     /* cell 이름 정할 변수 */
     let cellText = ["색반전", "색상설정", "글자크기설정", "동행콜계정"]
+
     
     /* cell background color */
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
@@ -29,6 +30,7 @@ class SettingTableViewController: UITableViewController
         let backItem = UIBarButtonItem()
         backItem.title = "   "
         navigationItem.backBarButtonItem = backItem
+        /* color, text set */
         self.navigationItem.title = "설정"
         self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: text_color, NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
         self.navigationController!.navigationBar.barTintColor = real_back_color
@@ -43,6 +45,20 @@ class SettingTableViewController: UITableViewController
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        
+        /* color, text set */
+        self.navigationItem.title = "설정"
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: text_color, NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
+        self.navigationController!.navigationBar.barTintColor = real_back_color
+        self.navigationController!.navigationBar.tintColor = background_color_state
+        
+        /* background color set */
+        self.tableView.backgroundColor = real_back_color
     }
 
     override func didReceiveMemoryWarning()
@@ -71,6 +87,7 @@ class SettingTableViewController: UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell", forIndexPath: indexPath)
         
         cell.textLabel!.text = cellText[indexPath.row]
+        cell.textLabel!.font = UIFont(name: "AppleSDGothicNeo-Regular", size: text_size)
         
         /* text color set */
         cell.textLabel!.textColor = background_color_state
@@ -82,7 +99,28 @@ class SettingTableViewController: UITableViewController
     {
         switch indexPath.row
         {
-        case 0: break
+        case 0:
+            /* 색반전 */
+            if(clicked_reverse == false)
+            {
+                background_color_state = UIColor.orangeColor()
+                real_back_color = UIColor.whiteColor()
+                text_color = UIColor.blackColor()
+                clicked_reverse = true
+            }
+            else
+            {
+                background_color_state = UIColor(red: CGFloat(100/225.0), green: CGFloat(250/255.0), blue: CGFloat(194/255.0), alpha: CGFloat(1.0))
+                real_back_color = UIColor.blackColor()
+                text_color = UIColor.whiteColor()
+                clicked_reverse = false
+            }
+            /* 바로 바뀌게 */
+            self.navigationItem.title = "설정"
+            self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: text_color, NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
+            self.navigationController!.navigationBar.barTintColor = real_back_color
+            self.navigationController!.navigationBar.tintColor = background_color_state
+            self.tableView.backgroundColor = real_back_color
         case 1:
             performSegueWithIdentifier("Color_Set", sender: nil)
         case 2:
@@ -90,6 +128,11 @@ class SettingTableViewController: UITableViewController
         default:
             break
         }
+    }
+
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
+    {
+        return 60.0
     }
 
     /*
