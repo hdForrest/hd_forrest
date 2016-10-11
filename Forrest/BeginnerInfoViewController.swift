@@ -83,6 +83,14 @@ class BeginnerInfoViewController: UIViewController
         self.view.addSubview(scroll_view)
     }
     
+    /* juhang click */
+    func clicked_juhang()
+    {
+        performSegueWithIdentifier("juhang_segue", sender: self)
+    }
+    
+    
+    /* menu click */
     func clicked_0()
     {
         img_flower.image = UIImage(named: "img_begin_backhop")
