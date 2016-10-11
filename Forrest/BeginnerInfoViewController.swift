@@ -13,6 +13,9 @@ class BeginnerInfoViewController: UIViewController
     var scroll_view: UIScrollView! //= nil
     var won_name = ["백합원", "무궁화원", "창포원", "지피식물원", "삼미담", "잔디광장", "철쭉원"]
     
+    @IBOutlet weak var img_flower: UIImageView!
+    @IBOutlet weak var bt_juhang: UIButton!
+    
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
@@ -24,12 +27,18 @@ class BeginnerInfoViewController: UIViewController
         /* navigation bar color set */
         self.navigationController!.navigationBar.barTintColor = real_back_color
         self.navigationController!.navigationBar.tintColor = background_color_state
+        /* 주행하기 버튼 설정 */
+        bt_juhang.setTitle("주행 하기", forState: .Normal)
+        bt_juhang.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        bt_juhang.backgroundColor = background_color_state
+        bt_juhang.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
     }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         createScrollMenu()
+        img_flower.image = UIImage(named: "img_begin_backhop")
         // Do any additional setup after loading the view.
     }
     
@@ -38,6 +47,8 @@ class BeginnerInfoViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
     func createScrollMenu()
     {
@@ -51,14 +62,54 @@ class BeginnerInfoViewController: UIViewController
             bt.setTitle(won_name[i], forState: .Normal)
             bt.titleLabel!.font = UIFont(name: "AppleSDGothicNeo-Regular", size: text_size)
             bt.setTitleColor(background_color_state, forState: .Normal)
+            switch i
+            {
+            case 0: bt.addTarget(self, action: #selector(clicked_0), forControlEvents: UIControlEvents.TouchUpInside)
+            case 1: bt.addTarget(self, action: #selector(clicked_1), forControlEvents: UIControlEvents.TouchUpInside)
+            case 2: bt.addTarget(self, action: #selector(clicked_2), forControlEvents: UIControlEvents.TouchUpInside)
+            case 3: bt.addTarget(self, action: #selector(clicked_3), forControlEvents: UIControlEvents.TouchUpInside)
+            case 4: bt.addTarget(self, action: #selector(clicked_4), forControlEvents: UIControlEvents.TouchUpInside)
+            case 5: bt.addTarget(self, action: #selector(clicked_5), forControlEvents: UIControlEvents.TouchUpInside)
+            case 6: bt.addTarget(self, action: #selector(clicked_6), forControlEvents: UIControlEvents.TouchUpInside)
+            default : break
+            }
             bt.backgroundColor = real_back_color
             scroll_view.addSubview(bt)
             bt_X += bt.frame.size.width
         }
         
         scroll_view.contentSize = CGSizeMake(bt_X, scroll_view.frame.size.height)
-        
+        scroll_view.bounces = false
         self.view.addSubview(scroll_view)
+    }
+    
+    func clicked_0()
+    {
+        img_flower.image = UIImage(named: "img_begin_backhop")
+    }
+    func clicked_1()
+    {
+        img_flower.image = UIImage(named: "img_begin_mugung")
+    }
+    func clicked_2()
+    {
+        img_flower.image = UIImage(named: "img_begin_backhop")
+    }
+    func clicked_3()
+    {
+        img_flower.image = UIImage(named: "img_begin_backhop")
+    }
+    func clicked_4()
+    {
+        img_flower.image = UIImage(named: "img_begin_backhop")
+    }
+    func clicked_5()
+    {
+        img_flower.image = UIImage(named: "img_begin_backhop")
+    }
+    func clicked_6()
+    {
+        img_flower.image = UIImage(named: "img_begin_backhop")
     }
     
     /*
