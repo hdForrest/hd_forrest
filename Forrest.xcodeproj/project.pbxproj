@@ -33,6 +33,10 @@
 		5C9DEA141DAD02CF009F2D25 /* begin_road1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C9DEA131DAD02CF009F2D25 /* begin_road1.png */; };
 		5C9DEA171DAD0655009F2D25 /* begin_road1_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C9DEA151DAD0655009F2D25 /* begin_road1_small.png */; };
 		5C9DEA181DAD0655009F2D25 /* begin_road1_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C9DEA161DAD0655009F2D25 /* begin_road1_text.png */; };
+		5C9DEA1A1DAD298B009F2D25 /* AdvancedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DEA191DAD298B009F2D25 /* AdvancedInfoViewController.swift */; };
+		5C9DEA1C1DAD2999009F2D25 /* IntermediateInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DEA1B1DAD2999009F2D25 /* IntermediateInfoViewController.swift */; };
+		5C9DEA1E1DAD29BF009F2D25 /* Advanced_juhangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DEA1D1DAD29BF009F2D25 /* Advanced_juhangViewController.swift */; };
+		5C9DEA201DAD29D1009F2D25 /* Intermediate_juhang_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9DEA1F1DAD29D1009F2D25 /* Intermediate_juhang_ViewController.swift */; };
 		5CA2CC531DAC999D006A9C45 /* img_begin_mugung.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CA2CC521DAC999D006A9C45 /* img_begin_mugung.png */; };
 		5CA6EE241DA12D4600B9C547 /* Mission.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CA6EE221DA12D4600B9C547 /* Mission.png */; };
 		5CA6EE251DA12D4600B9C547 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CA6EE231DA12D4600B9C547 /* Title.png */; };
@@ -105,6 +109,10 @@
 		5C9DEA131DAD02CF009F2D25 /* begin_road1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = begin_road1.png; path = image/begin_road1.png; sourceTree = "<group>"; };
 		5C9DEA151DAD0655009F2D25 /* begin_road1_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = begin_road1_small.png; path = image/begin_road1_small.png; sourceTree = "<group>"; };
 		5C9DEA161DAD0655009F2D25 /* begin_road1_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = begin_road1_text.png; path = image/begin_road1_text.png; sourceTree = "<group>"; };
+		5C9DEA191DAD298B009F2D25 /* AdvancedInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedInfoViewController.swift; sourceTree = "<group>"; };
+		5C9DEA1B1DAD2999009F2D25 /* IntermediateInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateInfoViewController.swift; sourceTree = "<group>"; };
+		5C9DEA1D1DAD29BF009F2D25 /* Advanced_juhangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advanced_juhangViewController.swift; sourceTree = "<group>"; };
+		5C9DEA1F1DAD29D1009F2D25 /* Intermediate_juhang_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intermediate_juhang_ViewController.swift; sourceTree = "<group>"; };
 		5CA2CC521DAC999D006A9C45 /* img_begin_mugung.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_begin_mugung.png; path = image/img_begin_mugung.png; sourceTree = "<group>"; };
 		5CA6EE221DA12D4600B9C547 /* Mission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mission.png; path = image/Mission.png; sourceTree = "<group>"; };
 		5CA6EE231DA12D4600B9C547 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Title.png; path = image/Title.png; sourceTree = "<group>"; };
@@ -210,6 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */,
+				5C9DEA1B1DAD2999009F2D25 /* IntermediateInfoViewController.swift */,
+				5C9DEA1F1DAD29D1009F2D25 /* Intermediate_juhang_ViewController.swift */,
 			);
 			name = intermediate;
 			sourceTree = "<group>";
@@ -218,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */,
+				5C9DEA191DAD298B009F2D25 /* AdvancedInfoViewController.swift */,
+				5C9DEA1D1DAD29BF009F2D25 /* Advanced_juhangViewController.swift */,
 			);
 			name = Advanced;
 			sourceTree = "<group>";
@@ -483,16 +495,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C9DEA1A1DAD298B009F2D25 /* AdvancedInfoViewController.swift in Sources */,
 				5C4FAE0C1DA27B0500E3D5F6 /* SettingTableViewController.swift in Sources */,
 				5C9DA4091D955B490084B468 /* AppDelegate.swift in Sources */,
 				5C9D81F01DABC7B9002B0812 /* TextSetTableViewController.swift in Sources */,
 				5C9DEA111DACFFF6009F2D25 /* Begin_juhang_ViewController.swift in Sources */,
+				5C9DEA1C1DAD2999009F2D25 /* IntermediateInfoViewController.swift in Sources */,
 				5C4FAE0E1DA2828600E3D5F6 /* ColorSetTableViewController.swift in Sources */,
 				5C9D81F21DABD68A002B0812 /* BeginnerInfoViewController.swift in Sources */,
 				5C4FAE0A1DA2738100E3D5F6 /* MissonTabbarController.swift in Sources */,
 				5C3F35D11DA4AEBF0098566D /* IntermediateViewController.swift in Sources */,
 				5C3F35D31DA4AF070098566D /* FreeViewController.swift in Sources */,
 				5C0CDC231D95794A00372AA9 /* StartViewController.swift in Sources */,
+				5C9DEA201DAD29D1009F2D25 /* Intermediate_juhang_ViewController.swift in Sources */,
+				5C9DEA1E1DAD29BF009F2D25 /* Advanced_juhangViewController.swift in Sources */,
 				5CFCAE2E1D97CC13001DBC18 /* WalkViewController.swift in Sources */,
 				5C3F35CF1DA4AEA80098566D /* AdvancedViewController.swift in Sources */,
 				5CFCAE301D97DC65001DBC18 /* MissionViewController.swift in Sources */,

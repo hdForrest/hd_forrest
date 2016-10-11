@@ -36,7 +36,7 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         self.tabBarController?.navigationController!.navigationBar.tintColor = background_color_state
         
         /* tab bar set */
-        self.tabBarController?.tabBar.backgroundColor = real_back_color
+        self.tabBarController?.tabBar.backgroundColor = UIColor(red: CGFloat(0/225.0), green: CGFloat(0/255.0), blue: CGFloat(125/255.0), alpha: CGFloat(1.0)) //real_back_color
         self.tabBarController?.tabBar.tintColor = background_color_state
         
         
@@ -75,7 +75,7 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         scroll_view.delaysContentTouches = false
         
         
-
+        /* 백합원 띄우기 */
         bt_won.frame = CGRectMake(3037, 1495, 300, 100)
         bt_won.layer.cornerRadius = 0.2 * bt_won.bounds.size.width
         //bt_won.backgroundColor = UIColor.orangeColor()
@@ -99,7 +99,7 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
 
     func clicked_bt(sender: UIButton)
     {
-        performSegueWithIdentifier("won_soga", sender: self)
+        performSegueWithIdentifier("begin_won_soga", sender: self)
         bt_won.setImage(UIImage(named: "bt_bakhop"), forState: .Normal)
     }
     

@@ -322,7 +322,7 @@
                     <tabBarItem key="tabBarItem" title="초급" id="ThU-dS-vPu"/>
                     <connections>
                         <outlet property="bt_travel_start" destination="2V8-rA-J1h" id="Hyr-dB-JRJ"/>
-                        <segue destination="BBb-45-RwL" kind="show" identifier="won_soga" id="3hb-Z5-cZO"/>
+                        <segue destination="BBb-45-RwL" kind="show" identifier="begin_won_soga" id="3hb-Z5-cZO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3SH-KU-woD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -350,7 +350,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="주행 하기"/>
                                 <connections>
-                                    <segue destination="kzt-da-yXT" kind="show" identifier="juhang_segue" id="qRE-hd-pXn"/>
+                                    <segue destination="kzt-da-yXT" kind="show" identifier="" id="qRE-hd-pXn"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eZX-al-BTD">
@@ -503,6 +503,7 @@
                     <tabBarItem key="tabBarItem" title="고급" id="cIc-iu-r7N"/>
                     <connections>
                         <outlet property="bt_travel_start" destination="b1v-10-YHy" id="Gl2-78-gHT"/>
+                        <segue destination="X1k-dI-FAk" kind="show" identifier="advanced_won_soga" id="OgU-AD-AQl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scY-XH-e3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -584,11 +585,193 @@
                     <tabBarItem key="tabBarItem" title="중급" id="cIj-vb-wCD"/>
                     <connections>
                         <outlet property="bt_travel_start" destination="6HK-EY-2VZ" id="hHT-fT-iXD"/>
+                        <segue destination="dMm-60-iEh" kind="show" identifier="intermediate_won_soga" action="showDetailViewController:sender:" id="rIa-gX-PQV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As6-um-FkQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-489" y="-340"/>
+        </scene>
+        <!--Intermediate Info View Controller-->
+        <scene sceneID="Zn1-Yc-NI5">
+            <objects>
+                <viewController id="dMm-60-iEh" customClass="IntermediateInfoViewController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="30n-4I-3rc"/>
+                        <viewControllerLayoutGuide type="bottom" id="TYS-qb-81N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hG6-aW-dSB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Ae-6S-TsA">
+                                <frame key="frameInset" minY="57" width="375" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oq-zL-yyv">
+                                <frame key="frameInset" minY="613" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="주행 하기"/>
+                                <connections>
+                                    <segue destination="FJ1-s9-OZz" kind="show" identifier="" id="i6v-W7-lki">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yWg-im-d9o">
+                                <frame key="frameInset" minY="366" width="375" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zNn-jP-evR"/>
+                    <connections>
+                        <outlet property="bt_juhang" destination="1Oq-zL-yyv" id="SYn-G1-MV3"/>
+                        <outlet property="img_flower" destination="8Ae-6S-TsA" id="fM0-3L-mPu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="58E-UF-ONK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241" y="-340"/>
+        </scene>
+        <!--Intermediate juhang View Controller-->
+        <scene sceneID="sKJ-TT-3CP">
+            <objects>
+                <viewController id="FJ1-s9-OZz" customClass="Intermediate_juhang_ViewController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lmo-Ic-Fkr"/>
+                        <viewControllerLayoutGuide type="bottom" id="OLt-LS-ddr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NeX-fV-Hxd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bd-8N-oWK">
+                                <frame key="frameInset" minY="20" width="64" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="종료"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kun-0S-vLf">
+                                <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="전체보기"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xhi-TQ-8gR">
+                                <frame key="frameInset" minX="298" minY="64" width="77" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BKl-Ur-GKn">
+                                <frame key="frameInset" minY="64" width="298" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SZ1-ex-a3h">
+                                <frame key="frameInset" minY="147" width="375" height="476"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="big_image" destination="SZ1-ex-a3h" id="sZN-pt-ZBZ"/>
+                        <outlet property="bt_exit" destination="8bd-8N-oWK" id="P2h-YB-k3M"/>
+                        <outlet property="bt_viewAll" destination="Kun-0S-vLf" id="Ugg-rF-tB7"/>
+                        <outlet property="small_image" destination="Xhi-TQ-8gR" id="6Av-ZM-aCt"/>
+                        <outlet property="text_image" destination="BKl-Ur-GKn" id="TG4-z8-LGA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zec-HR-RQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="-340"/>
+        </scene>
+        <!--Advanced Info View Controller-->
+        <scene sceneID="jHs-mY-tqD">
+            <objects>
+                <viewController id="X1k-dI-FAk" customClass="AdvancedInfoViewController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vNs-RN-pKr"/>
+                        <viewControllerLayoutGuide type="bottom" id="A0U-7d-SJh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8zJ-r5-ZUe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dy-0e-mKg">
+                                <frame key="frameInset" minY="57" width="375" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeY-6W-RvS">
+                                <frame key="frameInset" minY="613" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="주행 하기"/>
+                                <connections>
+                                    <segue destination="XEn-eg-iBg" kind="show" identifier="" id="XYA-KH-v3y">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TlN-8X-jHF">
+                                <frame key="frameInset" minY="366" width="375" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FTs-lM-wQp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGs-mO-saJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241" y="403"/>
+        </scene>
+        <!--Advanced juhang View Controller-->
+        <scene sceneID="G7X-Ma-oy9">
+            <objects>
+                <viewController id="XEn-eg-iBg" customClass="Advanced_juhangViewController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gj7-7C-ua6"/>
+                        <viewControllerLayoutGuide type="bottom" id="364-Zo-diU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eJS-Wh-L4X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDp-YY-bah">
+                                <frame key="frameInset" minY="20" width="64" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="종료"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yek-JJ-yix">
+                                <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="전체보기"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQj-kF-adO">
+                                <frame key="frameInset" minX="298" minY="64" width="77" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nv8-G5-Qi9">
+                                <frame key="frameInset" minY="64" width="298" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L3Y-Oz-Tcc">
+                                <frame key="frameInset" minY="147" width="375" height="476"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCA-x8-6hP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="403"/>
         </scene>
     </scenes>
     <resources>
@@ -596,8 +779,8 @@
         <image name="bt_travel_start.png" width="851" height="851"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="feH-va-c9d"/>
+        <segue reference="UPj-qT-lEA"/>
         <segue reference="onQ-hR-Tya"/>
-        <segue reference="qRE-hd-pXn"/>
+        <segue reference="feH-va-c9d"/>
     </inferredMetricsTieBreakers>
 </document>

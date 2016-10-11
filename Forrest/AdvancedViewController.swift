@@ -83,6 +83,12 @@ class AdvancedViewController: UIViewController, UIScrollViewDelegate
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func clicked_bt(sender: UIButton)
+    {
+        performSegueWithIdentifier("advanced_begin_won_soga", sender: self)
+        //bt_won.setImage(UIImage(named: "bt_bakhop"), forState: .Normal)
+    }
 
     /*
     // MARK: - Navigation
