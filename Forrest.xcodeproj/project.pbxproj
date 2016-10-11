@@ -169,10 +169,9 @@
 		5C3F35DB1DA4B3C00098566D /* travel */ = {
 			isa = PBXGroup;
 			children = (
-				5CFCAE311D97DCF3001DBC18 /* BeginnerViewController.swift */,
-				5C9D81F11DABD68A002B0812 /* BeginnerInfoViewController.swift */,
-				5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */,
-				5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */,
+				5C93D7931DACC7E800343656 /* Advanced */,
+				5C93D7921DACC7DC00343656 /* intermediate */,
+				5C93D7911DACC7D100343656 /* Beginner */,
 				5C3F35D21DA4AF070098566D /* FreeViewController.swift */,
 			);
 			name = travel;
@@ -186,6 +185,31 @@
 				5CFCAE2F1D97DC65001DBC18 /* MissionViewController.swift */,
 			);
 			name = "mission&walk";
+			sourceTree = "<group>";
+		};
+		5C93D7911DACC7D100343656 /* Beginner */ = {
+			isa = PBXGroup;
+			children = (
+				5CFCAE311D97DCF3001DBC18 /* BeginnerViewController.swift */,
+				5C9D81F11DABD68A002B0812 /* BeginnerInfoViewController.swift */,
+			);
+			name = Beginner;
+			sourceTree = "<group>";
+		};
+		5C93D7921DACC7DC00343656 /* intermediate */ = {
+			isa = PBXGroup;
+			children = (
+				5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */,
+			);
+			name = intermediate;
+			sourceTree = "<group>";
+		};
+		5C93D7931DACC7E800343656 /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */,
+			);
+			name = Advanced;
 			sourceTree = "<group>";
 		};
 		5C9D81F51DABEB7D002B0812 /* course info */ = {
