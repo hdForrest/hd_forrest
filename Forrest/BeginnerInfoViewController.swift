@@ -27,6 +27,7 @@ class BeginnerInfoViewController: UIViewController
         /* navigation bar color set */
         self.navigationController!.navigationBar.barTintColor = real_back_color
         self.navigationController!.navigationBar.tintColor = background_color_state
+        
         /* 주행하기 버튼 설정 */
         bt_juhang.setTitle("주행 하기", forState: .Normal)
         bt_juhang.setTitleColor(UIColor.blackColor(), forState: .Normal)
@@ -82,13 +83,6 @@ class BeginnerInfoViewController: UIViewController
         scroll_view.bounces = false
         self.view.addSubview(scroll_view)
     }
-    
-    /* juhang click */
-    func clicked_juhang()
-    {
-        performSegueWithIdentifier("juhang_segue", sender: self)
-    }
-    
     
     /* menu click */
     func clicked_0()
