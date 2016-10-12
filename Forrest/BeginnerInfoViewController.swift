@@ -10,7 +10,7 @@ import UIKit
 
 class BeginnerInfoViewController: UIViewController
 {
-    var scroll_view: UIScrollView! //= nil
+    var scroll_view: UIScrollView!
     var won_name = ["백합원", "무궁화원", "창포원", "지피식물원", "삼미담", "잔디광장", "철쭉원"]
     
     @IBOutlet weak var img_flower: UIImageView!
@@ -22,12 +22,18 @@ class BeginnerInfoViewController: UIViewController
         
         /* navigation bar text set */
         self.navigationItem.title = "코스 설명"
+        self.tabBarController?.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: text_color, NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
+        
+        /* navigation bar color set */
+        self.tabBarController?.navigationController!.navigationBar.barTintColor = real_back_color
+        self.tabBarController?.navigationController!.navigationBar.tintColor = background_color_state
+        /*
         self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: text_color, NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
         
         /* navigation bar color set */
         self.navigationController!.navigationBar.barTintColor = real_back_color
         self.navigationController!.navigationBar.tintColor = background_color_state
-        
+        */
         /* 주행하기 버튼 설정 */
         bt_juhang.setTitle("주행 하기", forState: .Normal)
         bt_juhang.setTitleColor(UIColor.blackColor(), forState: .Normal)

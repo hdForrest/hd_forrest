@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C0CDC231D95794A00372AA9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CDC221D95794A00372AA9 /* StartViewController.swift */; };
+		5C233D4E1DAE0FAA0015E91C /* bt_changpo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C233D4C1DAE0FAA0015E91C /* bt_changpo.png */; };
+		5C233D4F1DAE0FAA0015E91C /* bt_mugung.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C233D4D1DAE0FAA0015E91C /* bt_mugung.png */; };
 		5C3F35CF1DA4AEA80098566D /* AdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */; };
 		5C3F35D11DA4AEBF0098566D /* IntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */; };
 		5C3F35D31DA4AF070098566D /* FreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35D21DA4AF070098566D /* FreeViewController.swift */; };
@@ -78,6 +80,8 @@
 
 /* Begin PBXFileReference section */
 		5C0CDC221D95794A00372AA9 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		5C233D4C1DAE0FAA0015E91C /* bt_changpo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bt_changpo.png; path = image/bt_changpo.png; sourceTree = "<group>"; };
+		5C233D4D1DAE0FAA0015E91C /* bt_mugung.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bt_mugung.png; path = image/bt_mugung.png; sourceTree = "<group>"; };
 		5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedViewController.swift; sourceTree = "<group>"; };
 		5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateViewController.swift; sourceTree = "<group>"; };
 		5C3F35D21DA4AF070098566D /* FreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeViewController.swift; sourceTree = "<group>"; };
@@ -170,15 +174,74 @@
 			name = Setting;
 			sourceTree = "<group>";
 		};
-		5C3F35DA1DA4B3AB0098566D /* map */ = {
+		5C233D501DAE211F0015E91C /* mission&walk */ = {
 			isa = PBXGroup;
 			children = (
-				5C9DEA121DAD02C0009F2D25 /* begin_road_soga */,
-				5C4FAE1B1DA335AB00E3D5F6 /* beginner_map.png */,
+				EE1FADF61DA8047800C59C8E /* bt_toGreen.png */,
+				EE1FADF41DA8003300C59C8E /* bt_nuGreen.png */,
+				EE19580F1DA71E0800574DF9 /* bt_toBlack.png */,
+				EE1958111DA71E0800574DF9 /* bt_nuBlack.png */,
+				EE1958071DA716E900574DF9 /* toMission.png */,
+				EE1958081DA716E900574DF9 /* toWalk.png */,
+				EE1958091DA716E900574DF9 /* nuMisson.png */,
+				EE19580A1DA716E900574DF9 /* nuWalk.png */,
+				EE1180651DA620E9007719F2 /* onl.png */,
+				EE1180611DA61883007719F2 /* noojuk.png */,
+			);
+			name = "mission&walk";
+			sourceTree = "<group>";
+		};
+		5C233D511DAE214A0015E91C /* bt */ = {
+			isa = PBXGroup;
+			children = (
 				5C9D81F61DABFB97002B0812 /* bt_bakhop.png */,
+				5C233D4C1DAE0FAA0015E91C /* bt_changpo.png */,
+				5C233D4D1DAE0FAA0015E91C /* bt_mugung.png */,
+			);
+			name = bt;
+			sourceTree = "<group>";
+		};
+		5C233D521DAE215B0015E91C /* start */ = {
+			isa = PBXGroup;
+			children = (
+				5CE2A1581DAA386300B0FD96 /* donghang.png */,
+				5CA6EE221DA12D4600B9C547 /* Mission.png */,
+				5CA6EE231DA12D4600B9C547 /* Title.png */,
+				5CA6EE261DA1327000B9C547 /* Travel.png */,
+				5CA6EE2A1DA135CE00B9C547 /* Walk.png */,
+				5C4FAE0F1DA2868D00E3D5F6 /* Setting.png */,
+			);
+			name = start;
+			sourceTree = "<group>";
+		};
+		5C233D531DAE21750015E91C /* begin */ = {
+			isa = PBXGroup;
+			children = (
+				5C9D81F31DABEB72002B0812 /* img_begin_backhop.png */,
+				5CA2CC521DAC999D006A9C45 /* img_begin_mugung.png */,
+			);
+			name = begin;
+			sourceTree = "<group>";
+		};
+		5C233D541DAE21B50015E91C /* full_map */ = {
+			isa = PBXGroup;
+			children = (
+				5C4FAE1B1DA335AB00E3D5F6 /* beginner_map.png */,
 				5C3F35D41DA4B3A50098566D /* advanced_map.png */,
 				5C3F35D51DA4B3A50098566D /* free_map.png */,
 				5C3F35D61DA4B3A50098566D /* intermediate_map.png */,
+			);
+			name = full_map;
+			sourceTree = "<group>";
+		};
+		5C3F35DA1DA4B3AB0098566D /* map */ = {
+			isa = PBXGroup;
+			children = (
+				5C961E2D1DA3B97B0040310B /* bt_travel_start.png */,
+				5C233D541DAE21B50015E91C /* full_map */,
+				5C233D511DAE214A0015E91C /* bt */,
+				5C9D81F51DABEB7D002B0812 /* course info */,
+				5C9DEA121DAD02C0009F2D25 /* begin_road_soga */,
 			);
 			name = map;
 			sourceTree = "<group>";
@@ -237,8 +300,7 @@
 		5C9D81F51DABEB7D002B0812 /* course info */ = {
 			isa = PBXGroup;
 			children = (
-				5C9D81F31DABEB72002B0812 /* img_begin_backhop.png */,
-				5CA2CC521DAC999D006A9C45 /* img_begin_mugung.png */,
+				5C233D531DAE21750015E91C /* begin */,
 			);
 			name = "course info";
 			sourceTree = "<group>";
@@ -311,25 +373,9 @@
 		5CFCAE281D97B47F001DBC18 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				EE1FADF61DA8047800C59C8E /* bt_toGreen.png */,
-				EE1FADF41DA8003300C59C8E /* bt_nuGreen.png */,
-				EE19580F1DA71E0800574DF9 /* bt_toBlack.png */,
-				EE1958111DA71E0800574DF9 /* bt_nuBlack.png */,
-				EE1958071DA716E900574DF9 /* toMission.png */,
-				EE1958081DA716E900574DF9 /* toWalk.png */,
-				EE1958091DA716E900574DF9 /* nuMisson.png */,
-				EE19580A1DA716E900574DF9 /* nuWalk.png */,
-				EE1180651DA620E9007719F2 /* onl.png */,
-				EE1180611DA61883007719F2 /* noojuk.png */,
-				5C9D81F51DABEB7D002B0812 /* course info */,
+				5C233D521DAE215B0015E91C /* start */,
+				5C233D501DAE211F0015E91C /* mission&walk */,
 				5C3F35DA1DA4B3AB0098566D /* map */,
-				5C961E2D1DA3B97B0040310B /* bt_travel_start.png */,
-				5CE2A1581DAA386300B0FD96 /* donghang.png */,
-				5CA6EE221DA12D4600B9C547 /* Mission.png */,
-				5CA6EE231DA12D4600B9C547 /* Title.png */,
-				5CA6EE261DA1327000B9C547 /* Travel.png */,
-				5CA6EE2A1DA135CE00B9C547 /* Walk.png */,
-				5C4FAE0F1DA2868D00E3D5F6 /* Setting.png */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -449,6 +495,7 @@
 				5C9DA4131D955B490084B468 /* LaunchScreen.storyboard in Resources */,
 				EE1FADF51DA8003300C59C8E /* bt_nuGreen.png in Resources */,
 				EE19580E1DA716E900574DF9 /* nuWalk.png in Resources */,
+				5C233D4F1DAE0FAA0015E91C /* bt_mugung.png in Resources */,
 				5C3F35D81DA4B3A50098566D /* free_map.png in Resources */,
 				EE1958131DA71E0800574DF9 /* bt_toBlack.png in Resources */,
 				5C4FAE1C1DA335AB00E3D5F6 /* beginner_map.png in Resources */,
@@ -457,6 +504,7 @@
 				EE19580B1DA716E900574DF9 /* toMission.png in Resources */,
 				5C9D81F41DABEB72002B0812 /* img_begin_backhop.png in Resources */,
 				5CA6EE2B1DA135CE00B9C547 /* Walk.png in Resources */,
+				5C233D4E1DAE0FAA0015E91C /* bt_changpo.png in Resources */,
 				5C9DEA171DAD0655009F2D25 /* begin_road1_small.png in Resources */,
 				5CE2A1591DAA386300B0FD96 /* donghang.png in Resources */,
 				5C9DEA181DAD0655009F2D25 /* begin_road1_text.png in Resources */,

@@ -10,6 +10,8 @@ import UIKit
 
 class AdvancedViewController: UIViewController, UIScrollViewDelegate
 {
+    let bt_bakhop_won = UIButton(type: UIButtonType.Custom)
+    
     @IBOutlet weak var bt_travel_start: UIButton!
     
     var scroll_view: UIScrollView!
@@ -34,8 +36,10 @@ class AdvancedViewController: UIViewController, UIScrollViewDelegate
         self.tabBarController?.navigationController!.navigationBar.tintColor = background_color_state
         
         /* tab bar set */
-        self.tabBarController?.tabBar.backgroundColor = real_back_color
+        self.tabBarController?.tabBar.barTintColor = real_back_color
         self.tabBarController?.tabBar.tintColor = background_color_state
+        
+        bt_bakhop_won.setImage(nil, forState: .Normal)
     }
 
     override func viewDidLoad()
@@ -66,6 +70,13 @@ class AdvancedViewController: UIViewController, UIScrollViewDelegate
         /* 버튼 맨 위에 있게 */
         bt_travel_start.layer.zPosition = 1
         
+        /* 백합원 띄우기 */
+        bt_bakhop_won.frame = CGRectMake(3080, 1495, 200, 100)
+        bt_bakhop_won.layer.cornerRadius = 0.25 * bt_bakhop_won.bounds.size.width
+        //bt_bakhop_won.backgroundColor = UIColor.orangeColor()
+        bt_bakhop_won.addTarget(self, action: #selector(clicked_bt), forControlEvents: UIControlEvents.TouchUpInside)
+        image_view.addSubview(bt_bakhop_won)
+        image_view.userInteractionEnabled = true
         
         /* scroll and click 다 되게 */
         scroll_view.delaysContentTouches = false
@@ -86,8 +97,8 @@ class AdvancedViewController: UIViewController, UIScrollViewDelegate
     
     func clicked_bt(sender: UIButton)
     {
-        performSegueWithIdentifier("advanced_begin_won_soga", sender: self)
-        //bt_won.setImage(UIImage(named: "bt_bakhop"), forState: .Normal)
+        performSegueWithIdentifier("advanced_won_soga", sender: self)
+        bt_bakhop_won.setImage(UIImage(named: "bt_bakhop"), forState: .Normal)
     }
 
     /*

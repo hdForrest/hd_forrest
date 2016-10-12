@@ -219,7 +219,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wl1-Mb-1PN" id="S3Z-Ca-bfo">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -251,7 +251,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSf-d0-JVp" id="vCJ-Wx-3iJ">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -279,7 +279,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="79"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ILr-bg-Y7F" id="4CC-PD-xRa">
-                                    <frame key="frameInset" width="375" height="78"/>
+                                    <frame key="frameInset" width="375" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -322,7 +322,7 @@
                     <tabBarItem key="tabBarItem" title="초급" id="ThU-dS-vPu"/>
                     <connections>
                         <outlet property="bt_travel_start" destination="2V8-rA-J1h" id="Hyr-dB-JRJ"/>
-                        <segue destination="BBb-45-RwL" kind="show" identifier="begin_won_soga" id="3hb-Z5-cZO"/>
+                        <segue destination="BBb-45-RwL" kind="push" identifier="begin_won_soga" id="3hb-Z5-cZO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3SH-KU-woD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -353,7 +353,7 @@
                                     <segue destination="kzt-da-yXT" kind="show" identifier="" id="qRE-hd-pXn"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eZX-al-BTD">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eZX-al-BTD">
                                 <frame key="frameInset" minY="366" width="375" height="237"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -442,7 +442,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w4y-6S-XJp" id="q5K-W2-AQo">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -455,7 +455,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEV-Nw-2LU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658" y="-1033"/>
+            <point key="canvasLocation" x="1657" y="-1033"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="src-gi-B9Z">
@@ -496,6 +496,9 @@
                                 <state key="normal" title="주행 시작" image="bt_travel_start.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="XEn-eg-iBg" kind="show" id="96G-SF-doN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -503,7 +506,7 @@
                     <tabBarItem key="tabBarItem" title="고급" id="cIc-iu-r7N"/>
                     <connections>
                         <outlet property="bt_travel_start" destination="b1v-10-YHy" id="Gl2-78-gHT"/>
-                        <segue destination="X1k-dI-FAk" kind="show" identifier="advanced_won_soga" id="OgU-AD-AQl"/>
+                        <segue destination="X1k-dI-FAk" kind="push" identifier="advanced_won_soga" id="OgU-AD-AQl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scY-XH-e3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -578,6 +581,9 @@
                                 <state key="normal" title="주행 시작" image="bt_travel_start.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="FJ1-s9-OZz" kind="show" id="5Qq-R2-nsJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -585,7 +591,7 @@
                     <tabBarItem key="tabBarItem" title="중급" id="cIj-vb-wCD"/>
                     <connections>
                         <outlet property="bt_travel_start" destination="6HK-EY-2VZ" id="hHT-fT-iXD"/>
-                        <segue destination="dMm-60-iEh" kind="show" identifier="intermediate_won_soga" action="showDetailViewController:sender:" id="rIa-gX-PQV"/>
+                        <segue destination="dMm-60-iEh" kind="push" identifier="intermediate_won_soga" id="rIa-gX-PQV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As6-um-FkQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -618,7 +624,7 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yWg-im-d9o">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yWg-im-d9o">
                                 <frame key="frameInset" minY="366" width="375" height="237"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -655,11 +661,17 @@
                                 <frame key="frameInset" minY="20" width="64" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="종료"/>
+                                <connections>
+                                    <segue destination="QKf-W1-OgY" kind="show" id="XnL-e5-zio"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kun-0S-vLf">
                                 <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="전체보기"/>
+                                <connections>
+                                    <segue destination="Suy-TP-taH" kind="show" id="LYL-JL-PPf"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xhi-TQ-8gR">
                                 <frame key="frameInset" minX="298" minY="64" width="77" height="83"/>
@@ -714,7 +726,7 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TlN-8X-jHF">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TlN-8X-jHF">
                                 <frame key="frameInset" minY="366" width="375" height="237"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -726,6 +738,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="FTs-lM-wQp"/>
+                    <connections>
+                        <outlet property="bt_juhang" destination="AeY-6W-RvS" id="kPP-q2-emZ"/>
+                        <outlet property="img_flower" destination="0dy-0e-mKg" id="Ksu-w7-I1c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGs-mO-saJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -747,11 +763,17 @@
                                 <frame key="frameInset" minY="20" width="64" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="종료"/>
+                                <connections>
+                                    <segue destination="QKf-W1-OgY" kind="show" id="ssk-Oq-ams"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yek-JJ-yix">
                                 <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="전체보기"/>
+                                <connections>
+                                    <segue destination="BZ0-kK-NPc" kind="show" id="F6V-GN-uD5"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQj-kF-adO">
                                 <frame key="frameInset" minX="298" minY="64" width="77" height="83"/>
@@ -768,10 +790,73 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="big_image" destination="L3Y-Oz-Tcc" id="8fr-hv-reh"/>
+                        <outlet property="bt_exit" destination="kDp-YY-bah" id="hcQ-7l-Pig"/>
+                        <outlet property="bt_viewAll" destination="Yek-JJ-yix" id="F0O-dy-ubq"/>
+                        <outlet property="small_image" destination="JQj-kF-adO" id="TKD-vE-g8g"/>
+                        <outlet property="text_image" destination="Nv8-G5-Qi9" id="FHd-Uo-3hG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCA-x8-6hP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="948" y="403"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="29W-sq-kx8">
+            <objects>
+                <tableViewController id="Suy-TP-taH" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="U5s-Nq-vU6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zw0-px-exu">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zw0-px-exu" id="aXQ-ig-dEu">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Suy-TP-taH" id="E1j-LJ-Xpk"/>
+                            <outlet property="delegate" destination="Suy-TP-taH" id="PJA-4m-qar"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XXk-qC-hqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="-340"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="lSg-ev-cyy">
+            <objects>
+                <tableViewController id="BZ0-kK-NPc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="AaV-vN-gEa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="EF0-OA-yTw">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EF0-OA-yTw" id="uzx-78-gTX">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BZ0-kK-NPc" id="gD1-26-qYs"/>
+                            <outlet property="delegate" destination="BZ0-kK-NPc" id="jC1-Dh-WsP"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V3c-Qn-I8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="403"/>
         </scene>
     </scenes>
     <resources>
@@ -779,8 +864,10 @@
         <image name="bt_travel_start.png" width="851" height="851"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UPj-qT-lEA"/>
-        <segue reference="onQ-hR-Tya"/>
+        <segue reference="qRE-hd-pXn"/>
+        <segue reference="ssk-Oq-ams"/>
+        <segue reference="96G-SF-doN"/>
         <segue reference="feH-va-c9d"/>
+        <segue reference="i6v-W7-lki"/>
     </inferredMetricsTieBreakers>
 </document>
