@@ -11,6 +11,7 @@ import UIKit
 class BeginnerViewController: UIViewController, UIScrollViewDelegate
 {
     let bt_bakhop_won = UIButton(type: UIButtonType.Custom)
+    let bt_mugung_won = UIButton(type: UIButtonType.Custom)
     
     @IBOutlet weak var bt_travel_start: UIButton!
     
@@ -42,6 +43,7 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         
         
         bt_bakhop_won.setImage(nil, forState: .Normal)
+        bt_mugung_won.setImage(nil, forState: .Normal)
         
     }
     
@@ -75,13 +77,20 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         /* scroll and click 다 되게 */
         scroll_view.delaysContentTouches = false
         
-        
         /* 백합원 띄우기 */
-        bt_bakhop_won.frame = CGRectMake(3037, 1495, 300, 100)
+        bt_bakhop_won.frame = CGRectMake(3037, 1492, 300, 105)
         bt_bakhop_won.layer.cornerRadius = 0.2 * bt_bakhop_won.bounds.size.width
         //bt_won.backgroundColor = UIColor.orangeColor()
-        bt_bakhop_won.addTarget(self, action: #selector(clicked_bt), forControlEvents: UIControlEvents.TouchUpInside)
+        bt_bakhop_won.addTarget(self, action: #selector(clicked_bt_bh), forControlEvents: UIControlEvents.TouchUpInside)
         image_view.addSubview(bt_bakhop_won)
+        image_view.userInteractionEnabled = true
+        
+        /* 무궁화원 띄우기 */
+        bt_mugung_won.frame = CGRectMake(2800, 1400, 260, 105)
+        bt_mugung_won.layer.cornerRadius = 0.18 * bt_mugung_won.bounds.size.width
+        //bt_mugung_won.backgroundColor = UIColor.orangeColor()
+        bt_mugung_won.addTarget(self, action: #selector(clicked_bt_mg), forControlEvents: UIControlEvents.TouchUpInside)
+        image_view.addSubview(bt_mugung_won)
         image_view.userInteractionEnabled = true
         
         
@@ -96,14 +105,18 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    func clicked_bt(sender: UIButton)
+    func clicked_bt_bh(sender: UIButton)
     {
         performSegueWithIdentifier("begin_won_soga", sender: self)
         bt_bakhop_won.setImage(UIImage(named: "bt_bakhop"), forState: .Normal)
     }
     
+    func clicked_bt_mg(sender: UIButton)
+    {
+        performSegueWithIdentifier("begin_won_soga", sender: self)
+        bt_mugung_won.setImage(UIImage(named: "bt_mugung"), forState: .Normal)
+    }
     /*
     // MARK: - Navigation
 
