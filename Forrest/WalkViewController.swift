@@ -19,22 +19,22 @@ class WalkViewController: UIViewController
     
     @IBAction func toWalk(sender: AnyObject)
     {
-        let img = UIImage(named: "toWalk")
+        let img = UIImage(named: "towalk1")
         Image.image = img
         bt_nuWalk.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
-        //bt_nuWalk.tintColor = UIColor.blackColor()
+        bt_nuWalk.tintColor = UIColor.blackColor()
         bt_toWalk.setImage(UIImage(named: "bt_toGreen"), forState: .Normal)
-        //bt_toWalk.tintColor = background_color_state
+        bt_toWalk.tintColor = background_color_state
     }
   
    @IBAction func nuWalk(sender: AnyObject)
    {
-        let img = UIImage(named: "nuWalk")
+        let img = UIImage(named: "nuwalk1")
         Image.image = img
         bt_toWalk.setImage(UIImage(named: "bt_toBlack"), forState: .Normal)
-        //bt_toWalk.tintColor = UIColor.blackColor()
+        bt_toWalk.tintColor = UIColor.blackColor()
         bt_nuWalk.setImage(UIImage(named: "bt_nuGreen"), forState: .Normal)
-        //bt_nuWalk.tintColor = background_color_state
+        bt_nuWalk.tintColor = background_color_state
     }
    
  
@@ -55,7 +55,7 @@ class WalkViewController: UIViewController
         /*디폴트 설정*/
         self.view.backgroundColor = real_back_color
         
-        let img = UIImage(named: "toWalk")
+        let img = UIImage(named: "towalk1")
         Image.image = img
         bt_toWalk.setImage(UIImage(named: "bt_toGreen"), forState: .Normal)
         bt_toWalk.tintColor = background_color_state
