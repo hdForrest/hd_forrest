@@ -178,8 +178,57 @@
                                 <frame key="frameInset" minY="64" width="374" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="        50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntX-xI-1jN">
+                                <frame key="frameInset" minX="144" minY="343" width="95" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="        50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfc-r1-Ab2">
-                                <frame key="frameInset" minX="144" minY="341" width="95" height="52"/>
+                                <frame key="frameInset" minX="143" minY="314" width="95" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="사진미션 현황" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7s-sO-hMY">
+                                <frame key="frameInset" minX="144" minY="149" width="132" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10월15일 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zii-vH-YPi">
+                                <frame key="frameInset" minX="163" minY="374" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6개 성공!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqc-iS-JvL">
+                                <frame key="frameInset" minX="166" minY="542" width="64" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;6월17일&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vp4-Y5-NLw">
+                                <frame key="frameInset" minX="151" minY="105" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="사진미션 현황" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WD-MP-2Ib">
+                                <frame key="frameInset" minX="144" minY="178" width="93" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10월15일 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYH-hP-nmU">
+                                <frame key="frameInset" minX="163" minY="387" width="70" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -194,6 +243,14 @@
                         <outlet property="bt_nuMission" destination="dFm-Gv-k8H" id="URq-Sa-JfP"/>
                         <outlet property="bt_toMission" destination="IDG-z2-qMr" id="h8V-S4-g8D"/>
                         <outlet property="image" destination="Fi6-gA-Vd7" id="R9L-XR-2eQ"/>
+                        <outlet property="nuMissionLabel1" destination="vp4-Y5-NLw" id="GjD-f6-qLs"/>
+                        <outlet property="nuMissionLabel2" destination="9WD-MP-2Ib" id="uL2-7e-JfB"/>
+                        <outlet property="nuMissionLabel3" destination="ntX-xI-1jN" id="bBk-UU-Ap0"/>
+                        <outlet property="nuMissionLabel4" destination="tYH-hP-nmU" id="2Yf-23-apO"/>
+                        <outlet property="toMissionLabel1" destination="U7s-sO-hMY" id="Cvv-vh-hMp"/>
+                        <outlet property="toMissionLabel2" destination="mfc-r1-Ab2" id="FKO-i1-srP"/>
+                        <outlet property="toMissionLabel3" destination="Zii-vH-YPi" id="lT9-V9-tnh"/>
+                        <outlet property="toMissionLabel4" destination="Nqc-iS-JvL" id="7sW-Ua-eEh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="see-33-Zxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -876,7 +933,7 @@
     <resources>
         <image name="Title.png" width="484" height="171"/>
         <image name="bt_travel_start.png" width="851" height="851"/>
-        <image name="numission1.png" width="752" height="1211"/>
+        <image name="numission1.png" width="751" height="1211"/>
         <image name="nuwalk1.png" width="751" height="1211"/>
         <image name="tomission1.png" width="751" height="1211"/>
         <image name="towalk1.png" width="751" height="1211"/>

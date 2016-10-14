@@ -16,6 +16,20 @@ class MissionViewController: UIViewController
     @IBOutlet weak var bt_nuMission: UIButton!
     @IBOutlet weak var Image: UIImageView!
    
+    @IBOutlet weak var toMissionLabel1: UILabel!
+    
+    @IBOutlet weak var toMissionLabel2: UILabel!
+    @IBOutlet weak var toMissionLabel3: UILabel!
+    @IBOutlet weak var toMissionLabel4: UILabel!
+    @IBOutlet weak var nuMissionLabel1: UILabel!
+   
+    @IBOutlet weak var nuMissionLabel2: UILabel!
+    @IBOutlet weak var nuMissionLabel3: UILabel!
+    @IBOutlet weak var nuMissionLabel4: UILabel!
+    
+    
+    
+    
     @IBAction func toMission(sender: AnyObject) {
         let img = UIImage(named: "tomission1")
         Image.image = img
@@ -24,6 +38,14 @@ class MissionViewController: UIViewController
         bt_nuMission.tintColor = UIColor.blackColor()
         bt_toMission.setImage(UIImage(named: "bt_toGreen"),forState: .Normal)
         bt_toMission.tintColor = background_color_state
+        toMissionLabel1.textColor = UIColor.whiteColor()
+        toMissionLabel2.textColor =  background_color_state
+        toMissionLabel3.textColor =  background_color_state
+        toMissionLabel4.textColor =  background_color_state
+        nuMissionLabel1.textColor = UIColor.blackColor()
+        nuMissionLabel2.textColor = UIColor.blackColor()
+         nuMissionLabel3.textColor = UIColor.blackColor()
+         nuMissionLabel4.textColor = UIColor.blackColor()
     }
     @IBAction func nuMission(sender: AnyObject) {
         let img = UIImage(named: "numission1")
@@ -33,7 +55,16 @@ class MissionViewController: UIViewController
         bt_toMission.tintColor = UIColor.blackColor()
         bt_nuMission.setImage(UIImage(named: "bt_nuGreen"),forState: .Normal)
         bt_nuMission.tintColor = background_color_state
-    }
+        
+        nuMissionLabel1.textColor = UIColor.whiteColor()
+        nuMissionLabel2.textColor = background_color_state
+        nuMissionLabel3.textColor = background_color_state
+        nuMissionLabel4.textColor = background_color_state
+        toMissionLabel1.textColor = UIColor.blackColor()
+        toMissionLabel2.textColor =  UIColor.blackColor()
+        toMissionLabel3.textColor =  UIColor.blackColor()
+        toMissionLabel4.textColor =  UIColor.blackColor()
+          }
 
 
 
@@ -61,6 +92,10 @@ class MissionViewController: UIViewController
         bt_toMission.tintColor = background_color_state
         bt_nuMission.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
         bt_nuMission.tintColor = real_back_color
+        toMissionLabel1.textColor = UIColor.whiteColor()
+        toMissionLabel2.textColor = UIColor.whiteColor()
+         toMissionLabel3.textColor = UIColor.whiteColor()
+        toMissionLabel4.textColor = UIColor.whiteColor()
         // Do any additional setup after loading the view.
     }
 
