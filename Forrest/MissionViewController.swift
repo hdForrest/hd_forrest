@@ -106,6 +106,7 @@ class MissionViewController: UIViewController
         nuMissionLabel2.hidden = true
         nuMissionLabel3.hidden = true
         nuMissionLabel4.hidden = true
+        Image.backgroundColor = background_color_state
 
         // Do any additional setup after loading the view.
     }

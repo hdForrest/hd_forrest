@@ -17,6 +17,26 @@ class WalkViewController: UIViewController
     
     @IBOutlet weak var Image: UIImageView!
     
+    @IBOutlet weak var toWalkLabel1: UILabel!
+    @IBOutlet weak var toWalkLabel2: UILabel!
+    
+    @IBOutlet weak var toWalkLabel3: UILabel!
+    
+    @IBOutlet weak var toWalkLabel4: UILabel!
+    @IBOutlet weak var toWalkLabel5: UILabel!
+    @IBOutlet weak var toWalkLabel6: UILabel!
+    
+    @IBOutlet weak var toWalkLabel7: UILabel!
+    @IBOutlet weak var nuWalkLabel1: UILabel!
+    @IBOutlet weak var nuWalkLabel2: UILabel!
+    @IBOutlet weak var nuWalkLabel3: UILabel!
+    @IBOutlet weak var nuWalkLabel4: UILabel!
+    @IBOutlet weak var nuwalkLabel5: UILabel!
+    @IBOutlet weak var nuWalkLabel6: UILabel!
+    @IBOutlet weak var nuWalkLabel7: UILabel!
+    @IBOutlet weak var nuWalkLabel8: UILabel!
+    
+    
     @IBAction func toWalk(sender: AnyObject)
     {
         let img = UIImage(named: "towalk1")
@@ -25,6 +45,21 @@ class WalkViewController: UIViewController
         bt_nuWalk.tintColor = UIColor.blackColor()
         bt_toWalk.setImage(UIImage(named: "bt_toGreen"), forState: .Normal)
         bt_toWalk.tintColor = background_color_state
+        toWalkLabel1.hidden = false
+        toWalkLabel2.hidden = false
+        toWalkLabel3.hidden = false
+        toWalkLabel4.hidden = false
+        toWalkLabel5.hidden = false
+        toWalkLabel6.hidden = false
+        toWalkLabel7.hidden = false
+         nuWalkLabel1.hidden = true
+        nuWalkLabel2.hidden = true
+        nuWalkLabel3.hidden = true
+        nuWalkLabel4.hidden = true
+        nuwalkLabel5.hidden = true
+        nuWalkLabel6.hidden = true
+        nuWalkLabel7.hidden = true
+        nuWalkLabel8.hidden = true
     }
   
    @IBAction func nuWalk(sender: AnyObject)
@@ -35,6 +70,21 @@ class WalkViewController: UIViewController
         bt_toWalk.tintColor = UIColor.blackColor()
         bt_nuWalk.setImage(UIImage(named: "bt_nuGreen"), forState: .Normal)
         bt_nuWalk.tintColor = background_color_state
+        toWalkLabel1.hidden = true
+        toWalkLabel2.hidden = true
+        toWalkLabel3.hidden = true
+        toWalkLabel4.hidden = true
+        toWalkLabel5.hidden = true
+        toWalkLabel6.hidden = true
+        toWalkLabel7.hidden = true
+        nuWalkLabel1.hidden = false
+        nuWalkLabel2.hidden = false
+        nuWalkLabel3.hidden = false
+        nuWalkLabel4.hidden = false
+        nuwalkLabel5.hidden = false
+        nuWalkLabel6.hidden = false
+        nuWalkLabel7.hidden = false
+        nuWalkLabel8.hidden = false
     }
    
  
@@ -61,7 +111,33 @@ class WalkViewController: UIViewController
         bt_toWalk.tintColor = background_color_state
         bt_nuWalk.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
         bt_nuWalk.tintColor = real_back_color
+        Image.backgroundColor = background_color_state
         
+        toWalkLabel1.textColor = UIColor.whiteColor()
+        nuWalkLabel1.textColor = UIColor.whiteColor()
+        toWalkLabel2.textColor = background_color_state
+        toWalkLabel3.textColor = background_color_state
+        toWalkLabel4.textColor = background_color_state
+        toWalkLabel5.textColor = background_color_state
+        toWalkLabel6.textColor = background_color_state
+        toWalkLabel7.textColor = background_color_state
+        
+        nuWalkLabel2.textColor = background_color_state
+        nuWalkLabel3.textColor = background_color_state
+        nuWalkLabel4.textColor = background_color_state
+        nuwalkLabel5.textColor = UIColor.whiteColor()
+         nuWalkLabel6.textColor = UIColor.whiteColor()
+         nuWalkLabel7.textColor = UIColor.whiteColor()
+         nuWalkLabel8.textColor = UIColor.whiteColor()
+        
+        nuWalkLabel1.hidden = true
+        nuWalkLabel2.hidden = true
+        nuWalkLabel3.hidden = true
+        nuWalkLabel4.hidden = true
+        nuwalkLabel5.hidden = true
+        nuWalkLabel6.hidden = true
+        nuWalkLabel7.hidden = true
+        nuWalkLabel8.hidden = true
         // Do any additional setup after loading the view.
     }
 
