@@ -35,16 +35,22 @@ class WalkViewController: UIViewController
     @IBOutlet weak var nuWalkLabel6: UILabel!
     @IBOutlet weak var nuWalkLabel7: UILabel!
     @IBOutlet weak var nuWalkLabel8: UILabel!
+    @IBOutlet weak var nuWalkLabel9: UILabel!
     
+    @IBOutlet weak var nuWalkLabel10: UILabel!
     
+    @IBOutlet weak var nuWalkLabel11: UILabel!
+    @IBOutlet weak var nuWalkLabel12: UILabel!
     @IBAction func toWalk(sender: AnyObject)
     {
         let img = UIImage(named: "towalk1")
         Image.image = img
         bt_nuWalk.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
         bt_nuWalk.tintColor = UIColor.blackColor()
+        bt_nuWalk.backgroundColor = UIColor.whiteColor()
         bt_toWalk.setImage(UIImage(named: "bt_toGreen"), forState: .Normal)
         bt_toWalk.tintColor = background_color_state
+        bt_toWalk.backgroundColor =  UIColor.blackColor()
         toWalkLabel1.hidden = false
         toWalkLabel2.hidden = false
         toWalkLabel3.hidden = false
@@ -60,6 +66,11 @@ class WalkViewController: UIViewController
         nuWalkLabel6.hidden = true
         nuWalkLabel7.hidden = true
         nuWalkLabel8.hidden = true
+        nuWalkLabel9.hidden = true
+        nuWalkLabel10.hidden = true
+        nuWalkLabel11.hidden = true
+        nuWalkLabel12.hidden = true
+        
     }
   
    @IBAction func nuWalk(sender: AnyObject)
@@ -68,8 +79,10 @@ class WalkViewController: UIViewController
         Image.image = img
         bt_toWalk.setImage(UIImage(named: "bt_toBlack"), forState: .Normal)
         bt_toWalk.tintColor = UIColor.blackColor()
+        bt_toWalk.backgroundColor = UIColor.whiteColor()
         bt_nuWalk.setImage(UIImage(named: "bt_nuGreen"), forState: .Normal)
         bt_nuWalk.tintColor = background_color_state
+        bt_nuWalk.backgroundColor = UIColor.blackColor()
         toWalkLabel1.hidden = true
         toWalkLabel2.hidden = true
         toWalkLabel3.hidden = true
@@ -85,6 +98,10 @@ class WalkViewController: UIViewController
         nuWalkLabel6.hidden = false
         nuWalkLabel7.hidden = false
         nuWalkLabel8.hidden = false
+        nuWalkLabel9.hidden = false
+        nuWalkLabel10.hidden = false
+        nuWalkLabel11.hidden = false
+        nuWalkLabel12.hidden = false
     }
    
  
@@ -111,6 +128,7 @@ class WalkViewController: UIViewController
         bt_toWalk.tintColor = background_color_state
         bt_nuWalk.setImage(UIImage(named: "bt_nuBlack"), forState: .Normal)
         bt_nuWalk.tintColor = real_back_color
+         bt_nuWalk.backgroundColor = UIColor.whiteColor()
         Image.backgroundColor = background_color_state
         
         toWalkLabel1.textColor = UIColor.whiteColor()
@@ -138,6 +156,10 @@ class WalkViewController: UIViewController
         nuWalkLabel6.hidden = true
         nuWalkLabel7.hidden = true
         nuWalkLabel8.hidden = true
+        nuWalkLabel9.hidden = true
+        nuWalkLabel10.hidden = true
+        nuWalkLabel11.hidden = true
+        nuWalkLabel12.hidden = true
         // Do any additional setup after loading the view.
     }
 
