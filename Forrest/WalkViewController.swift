@@ -41,6 +41,7 @@ class WalkViewController: UIViewController
     
     @IBOutlet weak var nuWalkLabel11: UILabel!
     @IBOutlet weak var nuWalkLabel12: UILabel!
+    
     @IBAction func toWalk(sender: AnyObject)
     {
         let img = UIImage(named: "towalk1")
@@ -58,7 +59,7 @@ class WalkViewController: UIViewController
         toWalkLabel5.hidden = false
         toWalkLabel6.hidden = false
         toWalkLabel7.hidden = false
-         nuWalkLabel1.hidden = true
+        nuWalkLabel1.hidden = true
         nuWalkLabel2.hidden = true
         nuWalkLabel3.hidden = true
         nuWalkLabel4.hidden = true
@@ -144,9 +145,9 @@ class WalkViewController: UIViewController
         nuWalkLabel3.textColor = background_color_state
         nuWalkLabel4.textColor = background_color_state
         nuwalkLabel5.textColor = UIColor.whiteColor()
-         nuWalkLabel6.textColor = UIColor.whiteColor()
-         nuWalkLabel7.textColor = UIColor.whiteColor()
-         nuWalkLabel8.textColor = UIColor.whiteColor()
+        nuWalkLabel6.textColor = UIColor.whiteColor()
+        nuWalkLabel7.textColor = UIColor.whiteColor()
+        nuWalkLabel8.textColor = UIColor.whiteColor()
         
         nuWalkLabel1.hidden = true
         nuWalkLabel2.hidden = true

@@ -53,7 +53,7 @@ class MissionViewController: UIViewController
         toMissionLabel2.hidden = false
         toMissionLabel3.hidden = false
         toMissionLabel4.hidden = false
-             nuMissionLabel1.hidden = true
+        nuMissionLabel1.hidden = true
         nuMissionLabel2.hidden = true
         nuMissionLabel3.hidden = true
         nuMissionLabel4.hidden = true

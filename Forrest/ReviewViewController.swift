@@ -26,7 +26,7 @@ class ReviewViewController: UIViewController
         /* tab bar set */
         self.tabBarController?.tabBar.barTintColor = real_back_color
         self.tabBarController?.tabBar.tintColor = background_color_state
-
+        
     }
 
 
