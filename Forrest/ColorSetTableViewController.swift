@@ -112,6 +112,13 @@ class ColorSetTableViewController: UITableViewController
             bt_back_color21.backgroundColor = UIColor.whiteColor()
             bt_back_color21.addTarget(self, action: #selector(clicked_21), forControlEvents: UIControlEvents.TouchUpInside)
             cell.contentView.addSubview(bt_back_color21)
+            
+            let bt_back_color22 = UIButton(type: UIButtonType.System)
+            bt_back_color22.frame = CGRectMake(20, 70, 40, 40)
+            bt_back_color22.layer.cornerRadius = 0.5 * bt_back_color22.bounds.size.width
+            bt_back_color22.backgroundColor = UIColor.whiteColor()
+            bt_back_color22.addTarget(self, action: #selector(clicked_22), forControlEvents: UIControlEvents.TouchUpInside)
+            cell.contentView.addSubview(bt_back_color21)
         case 2:
             /* label set */
             let label = UILabel(frame: CGRectMake(20, 10, 300, 30))
@@ -143,6 +150,11 @@ class ColorSetTableViewController: UITableViewController
     {
         text_color = UIColor.blackColor()
         real_back_color = UIColor.whiteColor()
+    }
+    func clicked_22(sender: UIButton)
+    {
+        text_color = UIColor.whiteColor()
+        real_back_color = UIColor.blackColor()
     }
     
     /*

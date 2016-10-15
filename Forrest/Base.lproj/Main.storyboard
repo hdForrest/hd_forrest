@@ -10,7 +10,7 @@
         <scene sceneID="Vmy-TI-Tfp">
             <objects>
                 <navigationController id="24z-vl-1YJ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="IMM-e2-fcu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IMM-e2-fcu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -499,7 +499,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wl1-Mb-1PN" id="S3Z-Ca-bfo">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -531,7 +531,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSf-d0-JVp" id="vCJ-Wx-3iJ">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -559,7 +559,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="79"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ILr-bg-Y7F" id="4CC-PD-xRa">
-                                    <frame key="frameInset" width="375" height="79"/>
+                                    <frame key="frameInset" width="375" height="78"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -678,9 +678,6 @@
                                 <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="전체보기"/>
-                                <connections>
-                                    <segue destination="isi-6m-V6L" kind="show" id="qWx-oQ-GOc"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvz-kp-Ihu">
                                 <frame key="frameInset" minX="298" minY="64" width="77" height="83"/>
@@ -694,6 +691,14 @@
                                 <frame key="frameInset" minY="147" width="375" height="476"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jnt-Ye-DMq">
+                                <frame key="frameInset" minY="623" width="375" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="isi-6m-V6L" kind="show" id="1ed-Xe-fdt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -707,11 +712,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1J-v7-Q1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="-1033"/>
+            <point key="canvasLocation" x="948" y="-1033.1334332833585"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="gsz-5R-Vg7">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEV-Nw-2LU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="isi-6m-V6L" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="w9k-Qn-ts6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -722,7 +728,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w4y-6S-XJp" id="q5K-W2-AQo">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -733,7 +739,6 @@
                         </connections>
                     </tableView>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fEV-Nw-2LU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1657" y="-1033"/>
         </scene>
@@ -809,6 +814,9 @@
                                 <frame key="frameInset" minY="64" width="80" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clicked_all:" destination="Byy-iT-84I" eventType="touchUpInside" id="x7u-Gg-7fh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZZ-la-UbY">
                                 <frame key="frameInset" minX="88" minY="64" width="60" height="54"/>
@@ -844,6 +852,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="리뷰" id="sSg-Zh-Vts"/>
+                    <connections>
+                        <outlet property="bt_adv" destination="p8g-o1-nyz" id="5z1-Ly-927"/>
+                        <outlet property="bt_all" destination="9WY-fu-1ip" id="VIg-PB-3Hb"/>
+                        <outlet property="bt_begin" destination="7ZZ-la-UbY" id="Pdl-z0-MM8"/>
+                        <outlet property="bt_free" destination="Azg-qk-H3N" id="1eG-6S-mSw"/>
+                        <outlet property="bt_inte" destination="tkh-1U-iWp" id="T2Y-P2-S1v"/>
+                        <outlet property="bt_write" destination="Hcg-s9-SfK" id="jz3-FK-kru"/>
+                        <outlet property="review_table" destination="ncX-lJ-ExJ" id="CmO-EW-UdP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCE-8f-WD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -986,9 +1003,6 @@
                                 <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="전체보기"/>
-                                <connections>
-                                    <segue destination="Suy-TP-taH" kind="show" id="LYL-JL-PPf"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xhi-TQ-8gR">
                                 <frame key="frameInset" minX="298" minY="64" width="77" height="83"/>
@@ -1002,6 +1016,14 @@
                                 <frame key="frameInset" minY="147" width="375" height="476"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ2-dI-kcZ">
+                                <frame key="frameInset" minY="622" width="375" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Suy-TP-taH" kind="show" id="d5s-ko-fBh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1088,9 +1110,6 @@
                                 <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="전체보기"/>
-                                <connections>
-                                    <segue destination="BZ0-kK-NPc" kind="show" id="F6V-GN-uD5"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQj-kF-adO">
                                 <frame key="frameInset" minX="298" minY="64" width="77" height="83"/>
@@ -1104,6 +1123,14 @@
                                 <frame key="frameInset" minY="147" width="375" height="476"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNN-RT-FQc">
+                                <frame key="frameInset" minY="622" width="375" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BZ0-kK-NPc" kind="show" id="mKd-VA-xHC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1132,7 +1159,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zw0-px-exu" id="aXQ-ig-dEu">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1160,7 +1187,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EF0-OA-yTw" id="uzx-78-gTX">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1185,10 +1212,10 @@
         <image name="towalk1.png" width="751" height="1211"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="feH-va-c9d"/>
-        <segue reference="XnL-e5-zio"/>
-        <segue reference="i6v-W7-lki"/>
+        <segue reference="ssk-Oq-ams"/>
         <segue reference="XYA-KH-v3y"/>
         <segue reference="qRE-hd-pXn"/>
+        <segue reference="i6v-W7-lki"/>
+        <segue reference="feH-va-c9d"/>
     </inferredMetricsTieBreakers>
 </document>

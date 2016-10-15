@@ -10,6 +10,30 @@ import UIKit
 
 class ReviewViewController: UIViewController
 {
+    @IBOutlet weak var review_table: UITableView!
+    
+    @IBOutlet weak var bt_all: UIButton!
+    @IBOutlet weak var bt_begin: UIButton!
+    @IBOutlet weak var bt_inte: UIButton!
+    @IBOutlet weak var bt_adv: UIButton!
+    @IBOutlet weak var bt_free: UIButton!
+    @IBOutlet weak var bt_write: UIButton!
+    
+    var is_bt_clicked_all = true
+    var is_bt_clicked_begin = false
+    var is_bt_clicked_inte = false
+    var is_bt_clicked_adv = false
+    var is_bt_clicked_free = false
+    
+    /* 버튼 클릭 설정 */
+    @IBAction func clicked_all(sender: AnyObject)
+    {
+        if (is_bt_clicked_all == false)
+        {
+            bt_all.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        }
+        is_bt_clicked_all = true
+    }
     
     override func viewWillAppear(animated: Bool)
     {
@@ -27,12 +51,45 @@ class ReviewViewController: UIViewController
         self.tabBarController?.tabBar.barTintColor = real_back_color
         self.tabBarController?.tabBar.tintColor = background_color_state
         
+        /* 디폴트 배경 설정 */
+        self.view.backgroundColor = real_back_color
+        
+        /* background color set */
+        review_table.backgroundColor = real_back_color
+        
     }
 
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
+
+        
+        /* 버튼들 설정 */
+        bt_write.setTitle("리뷰 쓰기", forState: .Normal)
+        bt_write.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        bt_write.backgroundColor = background_color_state
+        bt_write.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
+        bt_all.setTitle("전체 보기", forState: .Normal)
+        bt_all.setTitleColor(background_color_state, forState: .Normal)
+        bt_all.backgroundColor = real_back_color
+        bt_all.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 9)
+        bt_begin.setTitle("초급", forState: .Normal)
+        bt_begin.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        bt_begin.backgroundColor = real_back_color
+        bt_begin.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 9)
+        bt_inte.setTitle("중급", forState: .Normal)
+        bt_inte.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        bt_inte.backgroundColor = real_back_color
+        bt_inte.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 9)
+        bt_adv.setTitle("고급", forState: .Normal)
+        bt_adv.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        bt_adv.backgroundColor = real_back_color
+        bt_adv.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 9)
+        bt_free.setTitle("자율 주행", forState: .Normal)
+        bt_free.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        bt_free.backgroundColor = real_back_color
+        bt_free.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 9)
 
         // Do any additional setup after loading the view.
     }
