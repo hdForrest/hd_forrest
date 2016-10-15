@@ -93,11 +93,11 @@ class AdvancedInfoViewController: UIViewController
     /* menu click */
     func clicked_0()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_inte_garo")
     }
     func clicked_1()
     {
-        img_flower.image = UIImage(named: "img_begin_mugung")
+        img_flower.image = UIImage(named: "img_inte_mok")
     }
     func clicked_2()
     {
@@ -105,35 +105,35 @@ class AdvancedInfoViewController: UIViewController
     }
     func clicked_3()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_delguk")
     }
     func clicked_4()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_mang")
     }
     func clicked_5()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_chul")
     }
     func clicked_6()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_heui")
     }
     func clicked_7()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_junsi")
     }
     func clicked_8()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_sim")
     }
     func clicked_9()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_chang")
     }
     func clicked_10()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_mugung")
     }
     func clicked_11()
     {

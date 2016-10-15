@@ -99,31 +99,31 @@ class IntermediateInfoViewController: UIViewController
     }
     func clicked_2()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_jipi")
     }
     func clicked_3()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_inte_garo")
     }
     func clicked_4()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_inte_mok")
     }
     func clicked_5()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_mang")
     }
     func clicked_6()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_chul")
     }
     func clicked_7()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_sim")
     }
     func clicked_8()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_chang")
     }
 
 

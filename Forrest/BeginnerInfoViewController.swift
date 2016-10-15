@@ -101,23 +101,23 @@ class BeginnerInfoViewController: UIViewController
     }
     func clicked_2()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_chang")
     }
     func clicked_3()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_jipi")
     }
     func clicked_4()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_sim")
     }
     func clicked_5()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_jandi")
     }
     func clicked_6()
     {
-        img_flower.image = UIImage(named: "img_begin_backhop")
+        img_flower.image = UIImage(named: "img_begin_chul")
     }
     
     /*

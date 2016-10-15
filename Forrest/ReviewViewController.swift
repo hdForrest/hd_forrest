@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReviewViewController: UIViewController
+class ReviewViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
     @IBOutlet weak var review_table: UITableView!
     
@@ -35,6 +35,54 @@ class ReviewViewController: UIViewController
         is_bt_clicked_all = true
     }
     
+    /* table set */
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int
+    {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        // #warning Incomplete implementation, return the number of rows
+        return 4
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell", forIndexPath: indexPath)
+        
+        cell.backgroundColor = real_back_color
+
+        switch indexPath.row
+        {
+        case 0:
+            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+            cell_img.image = UIImage(named: "review1")
+            cell.addSubview(cell_img)
+        case 1:
+            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+            cell_img.image = UIImage(named: "review2")
+            cell.addSubview(cell_img)
+        case 2:
+            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+            cell_img.image = UIImage(named: "review3")
+            cell.addSubview(cell_img)
+        case 3:
+            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+            cell_img.image = UIImage(named: "review4")
+            cell.addSubview(cell_img)
+        default: break
+        }
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
+    {
+        return 280.0
+    }
+    
+    /* view will appear */
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
@@ -54,9 +102,6 @@ class ReviewViewController: UIViewController
         /* 디폴트 배경 설정 */
         self.view.backgroundColor = real_back_color
         
-        /* background color set */
-        review_table.backgroundColor = real_back_color
-        
     }
 
 
@@ -64,6 +109,9 @@ class ReviewViewController: UIViewController
     {
         super.viewDidLoad()
 
+        /* table view set */
+        review_table.delegate = self
+        review_table.dataSource = self
         
         /* 버튼들 설정 */
         bt_write.setTitle("리뷰 쓰기", forState: .Normal)
@@ -91,6 +139,9 @@ class ReviewViewController: UIViewController
         bt_free.backgroundColor = real_back_color
         bt_free.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 9)
 
+        
+        review_table.bounces = false
+        
         // Do any additional setup after loading the view.
     }
 
