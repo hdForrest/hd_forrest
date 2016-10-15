@@ -10,6 +10,7 @@
 		5C0CDC231D95794A00372AA9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CDC221D95794A00372AA9 /* StartViewController.swift */; };
 		5C233D4E1DAE0FAA0015E91C /* bt_changpo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C233D4C1DAE0FAA0015E91C /* bt_changpo.png */; };
 		5C233D4F1DAE0FAA0015E91C /* bt_mugung.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C233D4D1DAE0FAA0015E91C /* bt_mugung.png */; };
+		5C2DE5351DB088150056009B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DE5341DB088150056009B /* ReviewViewController.swift */; };
 		5C3F35CF1DA4AEA80098566D /* AdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */; };
 		5C3F35D11DA4AEBF0098566D /* IntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */; };
 		5C3F35D31DA4AF070098566D /* FreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35D21DA4AF070098566D /* FreeViewController.swift */; };
@@ -82,6 +83,7 @@
 		5C0CDC221D95794A00372AA9 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		5C233D4C1DAE0FAA0015E91C /* bt_changpo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bt_changpo.png; path = image/bt_changpo.png; sourceTree = "<group>"; };
 		5C233D4D1DAE0FAA0015E91C /* bt_mugung.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bt_mugung.png; path = image/bt_mugung.png; sourceTree = "<group>"; };
+		5C2DE5341DB088150056009B /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedViewController.swift; sourceTree = "<group>"; };
 		5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateViewController.swift; sourceTree = "<group>"; };
 		5C3F35D21DA4AF070098566D /* FreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +236,14 @@
 			name = full_map;
 			sourceTree = "<group>";
 		};
+		5C2DE5331DB087D90056009B /* review */ = {
+			isa = PBXGroup;
+			children = (
+				5C2DE5341DB088150056009B /* ReviewViewController.swift */,
+			);
+			name = review;
+			sourceTree = "<group>";
+		};
 		5C3F35DA1DA4B3AB0098566D /* map */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,15 +256,16 @@
 			name = map;
 			sourceTree = "<group>";
 		};
-		5C3F35DB1DA4B3C00098566D /* travel */ = {
+		5C3F35DB1DA4B3C00098566D /* juhang */ = {
 			isa = PBXGroup;
 			children = (
-				5C93D7931DACC7E800343656 /* Advanced */,
-				5C93D7921DACC7DC00343656 /* intermediate */,
 				5C93D7911DACC7D100343656 /* Beginner */,
+				5C93D7921DACC7DC00343656 /* intermediate */,
+				5C93D7931DACC7E800343656 /* Advanced */,
+				5C2DE5331DB087D90056009B /* review */,
 				5C3F35D21DA4AF070098566D /* FreeViewController.swift */,
 			);
-			name = travel;
+			name = juhang;
 			sourceTree = "<group>";
 		};
 		5C3F35DC1DA4B68F0098566D /* mission&walk */ = {
@@ -332,7 +343,7 @@
 				5CC331811DAA53F60065F261 /* Main.storyboard */,
 				5C03B6C31DAA4DAE0023A799 /* Setting */,
 				5C3F35DC1DA4B68F0098566D /* mission&walk */,
-				5C3F35DB1DA4B3C00098566D /* travel */,
+				5C3F35DB1DA4B3C00098566D /* juhang */,
 				5C0CDC221D95794A00372AA9 /* StartViewController.swift */,
 				5C9DA4081D955B490084B468 /* AppDelegate.swift */,
 				5C9DA40F1D955B490084B468 /* Assets.xcassets */,
@@ -545,6 +556,7 @@
 			files = (
 				5C9DEA1A1DAD298B009F2D25 /* AdvancedInfoViewController.swift in Sources */,
 				5C4FAE0C1DA27B0500E3D5F6 /* SettingTableViewController.swift in Sources */,
+				5C2DE5351DB088150056009B /* ReviewViewController.swift in Sources */,
 				5C9DA4091D955B490084B468 /* AppDelegate.swift in Sources */,
 				5C9D81F01DABC7B9002B0812 /* TextSetTableViewController.swift in Sources */,
 				5C9DEA111DACFFF6009F2D25 /* Begin_juhang_ViewController.swift in Sources */,
