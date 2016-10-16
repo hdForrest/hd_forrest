@@ -700,12 +700,8 @@
                                     <segue destination="isi-6m-V6L" kind="show" id="1ed-Xe-fdt"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explanation.png" translatesAutoresizingMaskIntoConstraints="NO" id="oQS-29-49z">
-                                <frame key="frameInset" minY="510" width="375" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePK-xv-CPz">
-                                <frame key="frameInset" minY="568" width="184" height="55"/>
+                                <frame key="frameInset" minY="568" width="187" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -713,13 +709,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gu6-7S-tYY">
-                                <frame key="frameInset" minX="185" minY="568" width="184" height="55"/>
+                                <frame key="frameInset" minX="187" minY="568" width="188" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="yesAction:" destination="kzt-da-yXT" eventType="touchUpInside" id="a5Q-xJ-cYd"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explanation.png" translatesAutoresizingMaskIntoConstraints="NO" id="oQS-29-49z">
+                                <frame key="frameInset" minY="501" width="375" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -736,7 +736,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1J-v7-Q1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="-1033"/>
+            <point key="canvasLocation" x="948" y="-1033.1334332833585"/>
         </scene>
         <!--Begin Table View Controller-->
         <scene sceneID="gsz-5R-Vg7">
@@ -1056,7 +1056,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSr-YV-WtR">
-                                <frame key="frameInset" minY="568" width="184" height="55"/>
+                                <frame key="frameInset" minY="568" width="187" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -1064,7 +1064,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explanation.png" translatesAutoresizingMaskIntoConstraints="NO" id="pAY-r5-wrB">
-                                <frame key="frameInset" minY="510" width="375" height="53"/>
+                                <frame key="frameInset" minY="501" width="375" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ2-dI-kcZ">
@@ -1076,7 +1076,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQX-4z-hYa">
-                                <frame key="frameInset" minX="191" minY="568" width="184" height="55"/>
+                                <frame key="frameInset" minX="187" minY="568" width="188" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -1187,7 +1187,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLG-ca-AOU">
-                                <frame key="frameInset" minY="568" width="184" height="55"/>
+                                <frame key="frameInset" minY="568" width="187" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -1195,7 +1195,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explanation.png" translatesAutoresizingMaskIntoConstraints="NO" id="5TX-p7-1MW">
-                                <frame key="frameInset" minY="510" width="375" height="53"/>
+                                <frame key="frameInset" minY="501" width="375" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNN-RT-FQc">
@@ -1207,7 +1207,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTx-U4-Mdy">
-                                <frame key="frameInset" minX="192" minY="571" width="184" height="55"/>
+                                <frame key="frameInset" minX="187" minY="571" width="188" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -1230,7 +1230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCA-x8-6hP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="403"/>
+            <point key="canvasLocation" x="948" y="402.54872563718146"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="29W-sq-kx8">
@@ -1331,16 +1331,16 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explanation.png" translatesAutoresizingMaskIntoConstraints="NO" id="5m7-LV-av3">
-                                <frame key="frameInset" minY="510" width="375" height="53"/>
+                                <frame key="frameInset" minY="501" width="375" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfr-Cw-Kmf">
-                                <frame key="frameInset" minY="568" width="184" height="55"/>
+                                <frame key="frameInset" minY="568" width="187" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGa-LL-ZPz">
-                                <frame key="frameInset" minX="185" minY="568" width="184" height="55"/>
+                                <frame key="frameInset" minX="188" minY="568" width="187" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
@@ -1429,10 +1429,10 @@
         <image name="towalk1.png" width="751" height="1211"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XYA-KH-v3y"/>
+        <segue reference="feH-va-c9d"/>
         <segue reference="onQ-hR-Tya"/>
         <segue reference="UPj-qT-lEA"/>
-        <segue reference="feH-va-c9d"/>
         <segue reference="i6v-W7-lki"/>
+        <segue reference="XYA-KH-v3y"/>
     </inferredMetricsTieBreakers>
 </document>
