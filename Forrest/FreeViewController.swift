@@ -31,6 +31,7 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     let bt_jipi_check = UIButton(type: UIButtonType.Custom)
     
     var bakhop_state = 0
+    var road_1 = UIImage(named: "road_1")
     
     /* zoom function */
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
@@ -150,7 +151,7 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
             image_view.userInteractionEnabled = true
             /* info 띄우기 */
             bt_bakhop_info.setImage(UIImage(named: "info_1"), forState: .Normal)
-            bt_bakhop_info.frame = CGRectMake(3065, 1385, 90, 90)
+            bt_bakhop_info.frame = CGRectMake(3065, 1385, 100, 100)
             bt_bakhop_info.layer.cornerRadius = 0.5 * bt_bakhop_info.bounds.size.width
             bt_bakhop_info.addTarget(self, action: #selector(clicked_bh_info), forControlEvents: UIControlEvents.TouchUpInside)
             image_view.addSubview(bt_bakhop_info)
@@ -167,9 +168,35 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     }
     func clicked_bh_check(sender: UIButton)
     {
+        bt_bakhop_info.setImage(nil, forState: .Normal)
+        bt_bakhop.setImage(UIImage(named: "free_bak_2"), forState: .Normal)
+        bt_bakhop_check.setImage(nil, forState: .Normal)
         
+        /* 사진 띄우기 */
+        image_view = UIImageView(image: UIImage(named: "map_1"))
+        image_view.contentMode = .ScaleAspectFill
+        scroll_view = UIScrollView(frame: view.bounds)
+        scroll_view.contentSize = image_view.frame.size //bound를  frame으로 바꿈
+        scroll_view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         
+        // 초기 위치 설정
+        scroll_view.contentOffset = CGPoint(x: 1315, y: 510)
+        
+        // zoom 정도 세팅
+        scroll_view.delegate = self
+        scroll_view.minimumZoomScale = 0.1
+        scroll_view.maximumZoomScale = 3.0
+        scroll_view.zoomScale = 0.5
+        self.view.translatesAutoresizingMaskIntoConstraints = true
+        
+        /* scroll and click 다 되게 */
+        scroll_view.delaysContentTouches = false
+        
+        /* 사진 띄우기 */
+        scroll_view.addSubview(image_view)
+        view?.addSubview(scroll_view)      //뷰에다가 두개 띄워버림
     }
+    
     func clicked_bh_info(sender: UIButton)
     {
         

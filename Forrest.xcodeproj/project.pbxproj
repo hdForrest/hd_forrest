@@ -42,6 +42,7 @@
 		5C28FCB41DB3682A003FE7E7 /* check_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCB21DB3682A003FE7E7 /* check_2.png */; };
 		5C28FCB71DB36E13003FE7E7 /* info_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCB51DB36E13003FE7E7 /* info_1.png */; };
 		5C28FCB81DB36E13003FE7E7 /* info_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCB61DB36E13003FE7E7 /* info_2.png */; };
+		5C28FCBA1DB37258003FE7E7 /* map_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCB91DB37258003FE7E7 /* map_1.png */; };
 		5C2DE5351DB088150056009B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DE5341DB088150056009B /* ReviewViewController.swift */; };
 		5C3F35CF1DA4AEA80098566D /* AdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */; };
 		5C3F35D11DA4AEBF0098566D /* IntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */; };
@@ -192,6 +193,7 @@
 		5C28FCB21DB3682A003FE7E7 /* check_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check_2.png; path = image/free_travel/check_2.png; sourceTree = "<group>"; };
 		5C28FCB51DB36E13003FE7E7 /* info_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info_1.png; path = image/free_travel/info_1.png; sourceTree = "<group>"; };
 		5C28FCB61DB36E13003FE7E7 /* info_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info_2.png; path = image/free_travel/info_2.png; sourceTree = "<group>"; };
+		5C28FCB91DB37258003FE7E7 /* map_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_1.png; path = image/free_travel/map_1.png; sourceTree = "<group>"; };
 		5C2DE5341DB088150056009B /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedViewController.swift; sourceTree = "<group>"; };
 		5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateViewController.swift; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 		5C28FC981DB36377003FE7E7 /* free_bt_6 */ = {
 			isa = PBXGroup;
 			children = (
+				5C28FCB91DB37258003FE7E7 /* map_1.png */,
 				5C28FCB11DB3682A003FE7E7 /* check_1.png */,
 				5C28FCB21DB3682A003FE7E7 /* check_2.png */,
 				5C28FCB51DB36E13003FE7E7 /* info_1.png */,
@@ -777,6 +780,7 @@
 				5C28FCA91DB36605003FE7E7 /* free_jan_1.png in Resources */,
 				5C28FCAB1DB36605003FE7E7 /* free_jipi_1.png in Resources */,
 				EE1958131DA71E0800574DF9 /* bt_toBlack.png in Resources */,
+				5C28FCBA1DB37258003FE7E7 /* map_1.png in Resources */,
 				5C4FAE1C1DA335AB00E3D5F6 /* beginner_map.png in Resources */,
 				EEBAB2421DB36ECE008E2D1A /* intermediate_road16.png in Resources */,
 				EEBAB2161DB36B58008E2D1A /* beginner_map18.png in Resources */,
