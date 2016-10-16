@@ -107,6 +107,7 @@ class MissionViewController: UIViewController
         /* tab bar set */
         self.tabBarController?.tabBar.backgroundColor = real_back_color
         self.tabBarController?.tabBar.tintColor = background_color_state
+        self.tabBarController!.tabBar.barTintColor = real_back_color
         
     }
     

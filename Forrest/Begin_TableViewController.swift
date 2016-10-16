@@ -56,24 +56,55 @@ class Begin_TableViewController: UITableViewController
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
     {
-        return 66.0
+        return 80.0
     }
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell", forIndexPath: indexPath)
-        
-        
-        
-        /* button */
         switch indexPath.row
         {
-        case 0: break
+        case 0:
+            let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_1", forIndexPath: indexPath)
             
-        default : break
+            cell.backgroundColor = real_back_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(60, 0, 315, 80))
+            cell_img_text.image = UIImage(named: "begin_text1~4")
+            cell.addSubview(cell_img_text)
+            
+            let cell_img_arrow : UIImageView = UIImageView(frame: CGRectMake(0, 0, 61, 80))
+            cell_img_arrow.image = UIImage(named: "begin_small1~4")
+            cell.addSubview(cell_img_arrow)
+            
+            return cell/*
+        case 1:
+            let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
+            
+            cell.backgroundColor = real_back_color
+            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+            cell_img.image = UIImage(named: "review2")
+            cell.addSubview(cell_img)
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
+            
+            cell.backgroundColor = real_back_color
+            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+            cell_img.image = UIImage(named: "review3")
+            cell.addSubview(cell_img)
+            return cell*/
+        default:
+            let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_6", forIndexPath: indexPath)
+            
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(40, 0, 280, 66))
+            cell_img_text.image = UIImage(named: "begin_text23~26")
+            cell.addSubview(cell_img_text)
+            
+            let cell_img_arrow : UIImageView = UIImageView(frame: CGRectMake(0, 0, 40, 66))
+            cell_img_arrow.image = UIImage(named: "begin_small23~26")
+            cell.addSubview(cell_img_arrow)
+            return cell
         }
-        return cell
     }
 
 

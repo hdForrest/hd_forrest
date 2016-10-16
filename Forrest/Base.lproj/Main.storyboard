@@ -528,7 +528,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Text_LabelCell" id="KSf-d0-JVp">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSf-d0-JVp" id="vCJ-Wx-3iJ">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -675,11 +675,6 @@
                                     <segue destination="QKf-W1-OgY" kind="show" id="onQ-hR-Tya"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdf-nB-Pdw">
-                                <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="전체보기"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvz-kp-Ihu">
                                 <frame key="frameInset" minX="298" minY="64" width="77" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -700,6 +695,10 @@
                                     <segue destination="isi-6m-V6L" kind="show" id="1ed-Xe-fdt"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explanation.png" translatesAutoresizingMaskIntoConstraints="NO" id="oQS-29-49z">
+                                <frame key="frameInset" minY="501" width="375" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePK-xv-CPz">
                                 <frame key="frameInset" minY="568" width="187" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -716,10 +715,11 @@
                                     <action selector="yesAction:" destination="kzt-da-yXT" eventType="touchUpInside" id="a5Q-xJ-cYd"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explanation.png" translatesAutoresizingMaskIntoConstraints="NO" id="oQS-29-49z">
-                                <frame key="frameInset" minY="501" width="375" height="67"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdf-nB-Pdw">
+                                <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="전체보기"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -742,15 +742,57 @@
         <scene sceneID="gsz-5R-Vg7">
             <objects>
                 <tableViewController id="isi-6m-V6L" customClass="Begin_TableViewController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="w9k-Qn-ts6">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="w9k-Qn-ts6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="begin_cell" id="w4y-6S-XJp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="begin_cell_1" id="w4y-6S-XJp">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w4y-6S-XJp" id="q5K-W2-AQo">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="begin_cell_2" id="z2c-2Z-gaY">
+                                <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z2c-2Z-gaY" id="gEE-SY-rFK">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="begin_cell_3" id="iY9-eq-AnG">
+                                <rect key="frame" x="0.0" y="180" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iY9-eq-AnG" id="NDI-P7-H5B">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="begin_cell_4" id="Jst-ug-1XN">
+                                <rect key="frame" x="0.0" y="224" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jst-ug-1XN" id="hy8-9D-71b">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="begin_cell_5" id="U6E-U5-oFZ">
+                                <rect key="frame" x="0.0" y="268" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U6E-U5-oFZ" id="bfE-fO-JhB">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="begin_cell_6" id="XLI-b7-WWe">
+                                <rect key="frame" x="0.0" y="312" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XLI-b7-WWe" id="qJi-tk-23x">
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
@@ -862,10 +904,34 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Review_LabelCell" id="XVt-nz-tIR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Review_LabelCell_1" id="XVt-nz-tIR">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XVt-nz-tIR" id="tJ2-bo-a0q">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Review_LabelCell_2" id="fz3-rl-EHN">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fz3-rl-EHN" id="1UZ-fX-CAk">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Review_LabelCell_3" id="ooB-73-P0y">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ooB-73-P0y" id="bSe-7R-rmw">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Review_LabelCell_4" id="aJp-rm-537">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aJp-rm-537" id="FAy-2s-QCr">
                                             <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
@@ -1430,8 +1496,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="feH-va-c9d"/>
-        <segue reference="lxP-Yj-GO9"/>
-        <segue reference="UPj-qT-lEA"/>
+        <segue reference="onQ-hR-Tya"/>
+        <segue reference="qRE-hd-pXn"/>
         <segue reference="i6v-W7-lki"/>
         <segue reference="XYA-KH-v3y"/>
     </inferredMetricsTieBreakers>

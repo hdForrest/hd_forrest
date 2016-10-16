@@ -49,69 +49,41 @@ class ReviewViewController: UIViewController, UITableViewDataSource, UITableView
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell", forIndexPath: indexPath)
-        
-        cell.backgroundColor = real_back_color
-        
-        var img_name = ""
-        let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-        //cell_img = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-        
-        //let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-        
         switch indexPath.row
         {
         case 0:
-            img_name = "review1"
-            //cell.removeFromSuperview()
-            //cell_img.image = nil
-            //cell_img.removeFromSuperview()
-            //cell_img.image = UIImage(named: "review1")
-            //cell.addSubview(cell_img)
-        case 1:
-            img_name = "review2"
-            //cell_img.removeFromSuperview()
-            //cell_img.image = UIImage(named: "review2")
-            //cell.addSubview(cell_img)
-        case 2:
-            img_name = "review3"
-            //cell_img.removeFromSuperview()
-            //cell_img.image = UIImage(named: "review3")
-            //cell.addSubview(cell_img)
-        case 3:
-            img_name = "review4"
-            //cell_img.removeFromSuperview()
-            //cell_img.image = UIImage(named: "review4")
-            //cell.addSubview(cell_img)
-        default: break
-        }
+            let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_1", forIndexPath: indexPath)
         
-        if img_name != ""
-        {
-            cell_img.image = UIImage(named: img_name)
+            cell.backgroundColor = real_back_color
+            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+            cell_img.image = UIImage(named: "review1")
             cell.addSubview(cell_img)
-        }
-        else
-        {
-            cell_img.image = nil
-        }
-        
-        //let image =
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
             
-        //UIImage(data: img_name, scale: CGSize(width: 20, height: 20),
-        //let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-        cell_img.image = UIImage(named: img_name)
-        cell.addSubview(cell_img)
-        
-        //cell.imageView?.image =
-        //cell.imageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-        
-        return cell
-    }
-    
-    func prepareForReuse()
-    {
-        
+            cell.backgroundColor = real_back_color
+            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+            cell_img.image = UIImage(named: "review2")
+            cell.addSubview(cell_img)
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
+            
+            cell.backgroundColor = real_back_color
+            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+            cell_img.image = UIImage(named: "review3")
+            cell.addSubview(cell_img)
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
+            
+            cell.backgroundColor = real_back_color
+            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+            cell_img.image = UIImage(named: "review4")
+            cell.addSubview(cell_img)
+            return cell
+        }
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat

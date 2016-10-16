@@ -93,7 +93,7 @@ class Begin_juhang_ViewController: UIViewController
     func imageTapped(img: AnyObject)
     {
         num = num + 1
-        var temp = name + String(num)
+        let temp = name + String(num)
         big_image.image = UIImage(named: temp)
         if (num > 4 && num<13) {
             small_image.image = UIImage(named:"begin_small5~12")
