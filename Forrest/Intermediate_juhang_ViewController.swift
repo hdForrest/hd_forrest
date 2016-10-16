@@ -14,6 +14,8 @@ class Intermediate_juhang_ViewController: UIViewController
     
     @IBOutlet weak var bt_exit: UIButton!
     @IBOutlet weak var bt_viewAll: UIButton!
+    @IBOutlet weak var bt_soundIcon: UIButton!
+    @IBOutlet weak var img_temp: UIImageView!
 
     @IBOutlet weak var explanation_view: UIImageView!
     @IBOutlet weak var bt_no: UIButton!
@@ -28,6 +30,13 @@ class Intermediate_juhang_ViewController: UIViewController
         
         /* navigation 바 숨기기 */
         self.navigationController?.navigationBarHidden = true
+        
+        bt_viewAll.setImage(UIImage(named: "bt_viewAll"), forState: .Normal)
+        bt_viewAll.backgroundColor = background_color_state
+        bt_viewAll.tintColor = real_back_color
+        bt_soundIcon.setImage(UIImage(named: "bt_soundIcon"), forState: .Normal)
+        bt_soundIcon.backgroundColor = background_color_state
+        bt_soundIcon.tintColor = real_back_color
     }
     
     override func viewDidLoad()
@@ -36,16 +45,13 @@ class Intermediate_juhang_ViewController: UIViewController
 
         /* 첫화면 설정 */
         self.view.backgroundColor = real_back_color
+        img_temp.backgroundColor = background_color_state
         
         /* 버튼 설정 */
         bt_exit.setTitle("종료", forState: .Normal)
         bt_exit.setTitleColor(text_color, forState: .Normal)
         bt_exit.backgroundColor = real_back_color
         bt_exit.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 5)
-        bt_viewAll.setTitle("전체보기", forState: .Normal)
-        bt_viewAll.setTitleColor(text_color, forState: .Normal)
-        bt_viewAll.backgroundColor = real_back_color
-        bt_viewAll.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 5)
         bt_no.setTitle("아니오", forState: .Normal)
         bt_no.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         bt_no.backgroundColor = UIColor.blackColor()

@@ -14,6 +14,46 @@ class Begin_TableViewController: UITableViewController
     {
         cell.backgroundColor = UIColor.clearColor()
     }
+    
+    func clicked_bt()
+    {
+        performSegueWithIdentifier("clicked_ok", sender: self)
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        /* navigation 바 숨기기 */
+        //self.navigationController?.navigationBarHidden = true
+        
+        /* top layout */
+        let top : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 50))
+        top.backgroundColor = real_back_color
+        
+        let label = UILabel(frame: CGRectMake(160, 0, 100, 50))
+        label.text = "경로"
+        label.textColor = text_color
+        label.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
+        
+        let button = UIButton(type: UIButtonType.Custom)
+        button.frame = CGRectMake(280, 0, 100, 50)
+        button.setTitle("완료", forState: .Normal)
+        button.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
+        button.addTarget(self, action: #selector(clicked_bt), forControlEvents: UIControlEvents.TouchUpInside)
+    
+        top.userInteractionEnabled = true
+        top.addSubview(button)
+        top.addSubview(label)
+        self.navigationItem.titleView = top
+        self.navigationItem.hidesBackButton = true
+        //view.addSubview(top)
+        
+        /* top margine */
+        //self.tableView.frame = CGRectMake(0, 100, self.tableView.frame.width, self.tableView.frame.height)
+        //self.tableView.contentInset = UIEdgeInsetsMake(100, 0, 0, 0);
+        
+    }
 
     override func viewDidLoad()
     {
@@ -50,7 +90,7 @@ class Begin_TableViewController: UITableViewController
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         // #warning Incomplete implementation, return the number of rows
-        return 6
+        return 5
     }
     
     
@@ -68,41 +108,46 @@ class Begin_TableViewController: UITableViewController
             let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_1", forIndexPath: indexPath)
             
             cell.backgroundColor = real_back_color
-            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(60, 0, 315, 80))
-            cell_img_text.image = UIImage(named: "begin_text1~4")
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 80))
+            cell_img_text.image = UIImage(named: "begin_1")
             cell.addSubview(cell_img_text)
             
-            let cell_img_arrow : UIImageView = UIImageView(frame: CGRectMake(0, 0, 61, 80))
-            cell_img_arrow.image = UIImage(named: "begin_small1~4")
-            cell.addSubview(cell_img_arrow)
-            
-            return cell/*
+            return cell
         case 1:
-            let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
+            let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_2", forIndexPath: indexPath)
             
             cell.backgroundColor = real_back_color
-            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-            cell_img.image = UIImage(named: "review2")
-            cell.addSubview(cell_img)
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 80))
+            cell_img_text.image = UIImage(named: "begin_2")
+            cell.addSubview(cell_img_text)
+            
             return cell
         case 2:
-            let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
+            let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_3", forIndexPath: indexPath)
             
             cell.backgroundColor = real_back_color
-            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-            cell_img.image = UIImage(named: "review3")
-            cell.addSubview(cell_img)
-            return cell*/
-        default:
-            let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_6", forIndexPath: indexPath)
-            
-            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(40, 0, 280, 66))
-            cell_img_text.image = UIImage(named: "begin_text23~26")
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 80))
+            cell_img_text.image = UIImage(named: "begin_3")
             cell.addSubview(cell_img_text)
             
-            let cell_img_arrow : UIImageView = UIImageView(frame: CGRectMake(0, 0, 40, 66))
-            cell_img_arrow.image = UIImage(named: "begin_small23~26")
-            cell.addSubview(cell_img_arrow)
+            return cell
+        case 3:
+            let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_4", forIndexPath: indexPath)
+            
+            cell.backgroundColor = real_back_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 80))
+            cell_img_text.image = UIImage(named: "begin_4")
+            cell.addSubview(cell_img_text)
+            
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_5", forIndexPath: indexPath)
+            
+            cell.backgroundColor = real_back_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 80))
+            cell_img_text.image = UIImage(named: "begin_5")
+            cell.addSubview(cell_img_text)
+            
             return cell
         }
     }
