@@ -46,10 +46,10 @@ class Begin_juhang_ViewController: UIViewController
         bt_viewAll.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 5)
         
         /* 첫 이미지 */
-        big_image.image = UIImage(named: "begin_road1")
+        big_image.image = UIImage(named: "beginner_map1")
         big_image.backgroundColor = background_color_state
-        small_image.image = UIImage(named: "begin_road1_small")
-        text_image.image = UIImage(named: "begin_road1_text")
+        small_image.image = UIImage(named: "begin_small1~4")
+        text_image.image = UIImage(named: "begin_text1~4")
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(Begin_juhang_ViewController.imageTapped(_:)))
         big_image.userInteractionEnabled = true
         big_image.addGestureRecognizer(tapGestureRecognizer)
@@ -73,7 +73,27 @@ class Begin_juhang_ViewController: UIViewController
         num = num + 1
         var temp = name + String(num)
         big_image.image = UIImage(named: temp)
+        if (num > 4 && num<13) {
+            small_image.image = UIImage(named:"begin_small5~12")
+            text_image.image = UIImage(named: "begin_text5~12")
+        }
+        else if(num > 12 && num < 18) {
+            small_image.image = UIImage(named:"begin_small13~17")
+            text_image.image = UIImage(named: "begin_text13~17")
         
+        }
+        else if(num > 17 && num < 20) {
+            small_image.image = UIImage(named:"begin_small18~19")
+            text_image.image = UIImage(named: "begin_text18~19")
+        }
+        else if( num > 19 && num < 23){
+            small_image.image = UIImage(named:"begin_small20~22")
+            text_image.image = UIImage(named: "begin_text20~22")
+        }
+        else if( num > 22 && num < 27){
+            small_image.image = UIImage(named:"begin_small23~26")
+            text_image.image = UIImage(named: "begin_text23~26")
+        }
     }
 
     /*
