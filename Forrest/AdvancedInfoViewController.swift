@@ -76,9 +76,9 @@ class AdvancedInfoViewController: UIViewController
             case 6: bt.addTarget(self, action: #selector(clicked_6), forControlEvents: UIControlEvents.TouchUpInside)
             case 7: bt.addTarget(self, action: #selector(clicked_7), forControlEvents: UIControlEvents.TouchUpInside)
             case 8: bt.addTarget(self, action: #selector(clicked_8), forControlEvents: UIControlEvents.TouchUpInside)
-            case 9: bt.addTarget(self, action: #selector(clicked_8), forControlEvents: UIControlEvents.TouchUpInside)
-            case 10: bt.addTarget(self, action: #selector(clicked_8), forControlEvents: UIControlEvents.TouchUpInside)
-            case 11: bt.addTarget(self, action: #selector(clicked_8), forControlEvents: UIControlEvents.TouchUpInside)
+            case 9: bt.addTarget(self, action: #selector(clicked_9), forControlEvents: UIControlEvents.TouchUpInside)
+            case 10: bt.addTarget(self, action: #selector(clicked_10), forControlEvents: UIControlEvents.TouchUpInside)
+            case 11: bt.addTarget(self, action: #selector(clicked_11), forControlEvents: UIControlEvents.TouchUpInside)
             default : break
             }
             

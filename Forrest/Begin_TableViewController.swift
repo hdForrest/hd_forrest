@@ -10,6 +10,8 @@ import UIKit
 
 class Begin_TableViewController: UITableViewController
 {
+    let table_color = UIColor(red: CGFloat(24/225.0), green: CGFloat(24/225.0), blue: CGFloat(24/225.0), alpha: 1.0)
+    
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
     {
         cell.backgroundColor = UIColor.clearColor()
@@ -29,9 +31,9 @@ class Begin_TableViewController: UITableViewController
         
         /* top layout */
         let top : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 50))
-        top.backgroundColor = real_back_color
+        //top.backgroundColor = table_color
         
-        let label = UILabel(frame: CGRectMake(160, 0, 100, 50))
+        let label = UILabel(frame: CGRectMake(150, 0, 100, 50))
         label.text = "경로"
         label.textColor = text_color
         label.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
@@ -47,6 +49,9 @@ class Begin_TableViewController: UITableViewController
         top.addSubview(label)
         self.navigationItem.titleView = top
         self.navigationItem.hidesBackButton = true
+        //self.navigationController!.navigationBar.barTintColor = table_color
+        self.navigationController!.navigationBar.backgroundColor = table_color
+        
         //view.addSubview(top)
         
         /* top margine */
@@ -61,7 +66,7 @@ class Begin_TableViewController: UITableViewController
         
         
         /* background color set */
-        self.tableView.backgroundColor = real_back_color
+        self.tableView.backgroundColor = table_color //real_back_color
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -96,7 +101,7 @@ class Begin_TableViewController: UITableViewController
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
     {
-        return 80.0
+        return 88.5
     }
 
 
@@ -107,8 +112,8 @@ class Begin_TableViewController: UITableViewController
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_1", forIndexPath: indexPath)
             
-            cell.backgroundColor = real_back_color
-            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 80))
+            cell.backgroundColor = table_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 88.5))
             cell_img_text.image = UIImage(named: "begin_1")
             cell.addSubview(cell_img_text)
             
@@ -116,8 +121,8 @@ class Begin_TableViewController: UITableViewController
         case 1:
             let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_2", forIndexPath: indexPath)
             
-            cell.backgroundColor = real_back_color
-            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 80))
+            cell.backgroundColor = table_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 88.5))
             cell_img_text.image = UIImage(named: "begin_2")
             cell.addSubview(cell_img_text)
             
@@ -125,8 +130,8 @@ class Begin_TableViewController: UITableViewController
         case 2:
             let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_3", forIndexPath: indexPath)
             
-            cell.backgroundColor = real_back_color
-            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 80))
+            cell.backgroundColor = table_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 88.5))
             cell_img_text.image = UIImage(named: "begin_3")
             cell.addSubview(cell_img_text)
             
@@ -134,8 +139,8 @@ class Begin_TableViewController: UITableViewController
         case 3:
             let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_4", forIndexPath: indexPath)
             
-            cell.backgroundColor = real_back_color
-            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 80))
+            cell.backgroundColor = table_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 88.5))
             cell_img_text.image = UIImage(named: "begin_4")
             cell.addSubview(cell_img_text)
             
@@ -143,8 +148,8 @@ class Begin_TableViewController: UITableViewController
         default:
             let cell = tableView.dequeueReusableCellWithIdentifier("begin_cell_5", forIndexPath: indexPath)
             
-            cell.backgroundColor = real_back_color
-            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 80))
+            cell.backgroundColor = table_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 88.5))
             cell_img_text.image = UIImage(named: "begin_5")
             cell.addSubview(cell_img_text)
             
