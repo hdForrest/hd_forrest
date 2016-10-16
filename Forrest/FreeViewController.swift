@@ -17,8 +17,10 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     
     let bt_bakhop = UIButton(type: UIButtonType.Custom)
     let bt_bakhop_check = UIButton(type: UIButtonType.Custom)
+    let bt_bakhop_info = UIButton(type: UIButtonType.Custom)
     let bt_mugung = UIButton(type: UIButtonType.Custom)
     let bt_mugung_check = UIButton(type: UIButtonType.Custom)
+    let bt_mugung_info = UIButton(type: UIButtonType.Custom)
     let bt_chang = UIButton(type: UIButtonType.Custom)
     let bt_chang_check = UIButton(type: UIButtonType.Custom)
     let bt_sam = UIButton(type: UIButtonType.Custom)
@@ -54,15 +56,18 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         
         bt_bakhop.setImage(nil, forState: .Normal)
         bt_bakhop_check.setImage(nil, forState: .Normal)
+        bt_bakhop_info.setImage(nil, forState: .Normal)
         bt_mugung.setImage(nil, forState: .Normal)
-        bt_mugung_check.setImage(UIImage(named: "check_1"), forState: .Normal)
+        bt_mugung_check.setImage(nil, forState: .Normal)
+        bt_mugung_info.setImage(nil, forState: .Normal)
         bt_chang.setImage(nil, forState: .Normal)
-        bt_chang_check.setImage(UIImage(named: "check_1"), forState: .Normal)
+        bt_chang_check.setImage(nil, forState: .Normal)
         bt_sam.setImage(nil, forState: .Normal)
+        bt_sam_check.setImage(nil, forState: .Normal)
         bt_jandi.setImage(nil, forState: .Normal)
-        bt_jandi_check.setImage(UIImage(named: "check_1"), forState: .Normal)
+        bt_jandi_check.setImage(nil, forState: .Normal)
         bt_jipi.setImage(nil, forState: .Normal)
-        bt_jipi_check.setImage(UIImage(named: "check_1"), forState: .Normal)
+        bt_jipi_check.setImage(nil, forState: .Normal)
     }
 
     override func viewDidLoad()
@@ -138,21 +143,34 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
             
             /* check 띄우기 */
             bt_bakhop_check.setImage(UIImage(named: "check_1"), forState: .Normal)
-            bt_bakhop_check.frame = CGRectMake(3200, 1400, 100, 100)
+            bt_bakhop_check.frame = CGRectMake(3225, 1385, 100, 100)
             bt_bakhop_check.layer.cornerRadius = 0.5 * bt_bakhop_check.bounds.size.width
             bt_bakhop_check.addTarget(self, action: #selector(clicked_bh_check), forControlEvents: UIControlEvents.TouchUpInside)
             image_view.addSubview(bt_bakhop_check)
+            image_view.userInteractionEnabled = true
+            /* info 띄우기 */
+            bt_bakhop_info.setImage(UIImage(named: "info_1"), forState: .Normal)
+            bt_bakhop_info.frame = CGRectMake(3065, 1385, 90, 90)
+            bt_bakhop_info.layer.cornerRadius = 0.5 * bt_bakhop_info.bounds.size.width
+            bt_bakhop_info.addTarget(self, action: #selector(clicked_bh_info), forControlEvents: UIControlEvents.TouchUpInside)
+            image_view.addSubview(bt_bakhop_info)
             image_view.userInteractionEnabled = true
             bakhop_state = 1
         case 1:
             bt_bakhop.setImage(nil, forState: .Normal)
             bt_bakhop_check.setImage(nil, forState: .Normal)
+            bt_bakhop_info.setImage(nil, forState: .Normal)
             bakhop_state = 0
         default :break
         }
         
     }
     func clicked_bh_check(sender: UIButton)
+    {
+        
+        
+    }
+    func clicked_bh_info(sender: UIButton)
     {
         
     }
