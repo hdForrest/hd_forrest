@@ -15,6 +15,20 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     var scroll_view: UIScrollView!
     var image_view: UIImageView!
     
+    let bt_bakhop = UIButton(type: UIButtonType.Custom)
+    let bt_bakhop_check = UIButton(type: UIButtonType.Custom)
+    let bt_mugung = UIButton(type: UIButtonType.Custom)
+    let bt_mugung_check = UIButton(type: UIButtonType.Custom)
+    let bt_chang = UIButton(type: UIButtonType.Custom)
+    let bt_chang_check = UIButton(type: UIButtonType.Custom)
+    let bt_sam = UIButton(type: UIButtonType.Custom)
+    let bt_sam_check = UIButton(type: UIButtonType.Custom)
+    let bt_jandi = UIButton(type: UIButtonType.Custom)
+    let bt_jandi_check = UIButton(type: UIButtonType.Custom)
+    let bt_jipi = UIButton(type: UIButtonType.Custom)
+    let bt_jipi_check = UIButton(type: UIButtonType.Custom)
+    
+    
     /* zoom function */
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
     {
@@ -36,6 +50,18 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         /* tab bar set */
         self.tabBarController?.tabBar.backgroundColor = real_back_color
         self.tabBarController?.tabBar.tintColor = background_color_state
+        
+        bt_bakhop.setImage(nil, forState: .Normal)
+        bt_bakhop_check.setImage(nil, forState: .Normal)
+        bt_mugung.setImage(nil, forState: .Normal)
+        bt_mugung_check.setImage(nil, forState: .Normal)
+        bt_chang.setImage(nil, forState: .Normal)
+        bt_chang_check.setImage(nil, forState: .Normal)
+        bt_sam.setImage(nil, forState: .Normal)
+        bt_jandi.setImage(nil, forState: .Normal)
+        bt_jandi_check.setImage(nil, forState: .Normal)
+        bt_jipi.setImage(nil, forState: .Normal)
+        
     }
 
     override func viewDidLoad()
@@ -67,6 +93,24 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         bt_travel_start.layer.zPosition = 1
         
         
+        /* 백합원 띄우기 */
+        bt_bakhop.frame = CGRectMake(3037, 1492, 300, 105)
+        bt_bakhop.layer.cornerRadius = 0.2 * bt_bakhop.bounds.size.width
+        //bt_won.backgroundColor = UIColor.orangeColor()
+        bt_bakhop.addTarget(self, action: #selector(clicked_bt_bh), forControlEvents: UIControlEvents.TouchUpInside)
+        image_view.addSubview(bt_bakhop)
+        image_view.userInteractionEnabled = true
+        
+        /* 무궁화원 띄우기 */
+        bt_mugung.frame = CGRectMake(2800, 1400, 260, 105)
+        bt_mugung.layer.cornerRadius = 0.18 * bt_mugung.bounds.size.width
+        //bt_mugung_won.backgroundColor = UIColor.orangeColor()
+        bt_mugung.addTarget(self, action: #selector(clicked_bt_mg), forControlEvents: UIControlEvents.TouchUpInside)
+        image_view.addSubview(bt_mugung)
+        image_view.userInteractionEnabled = true
+
+        
+        
         /* scroll and click 다 되게 */
         scroll_view.delaysContentTouches = false
         
@@ -83,6 +127,37 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func clicked_bt_bh(sender: UIButton)
+    {
+        bt_bakhop.setImage(UIImage(named: "free_bak_1"), forState: .Normal)
+    }
+    
+    func clicked_bt_mg(sender: UIButton)
+    {
+        bt_mugung.setImage(UIImage(named: "free_chang_1"), forState: .Normal)
+    }
+    
+    func clicked_bt_bchang(sender: UIButton)
+    {
+        bt_chang.setImage(UIImage(named: "free_jan_1"), forState: .Normal)
+    }
+    
+    func clicked_bt_sam(sender: UIButton)
+    {
+        bt_sam.setImage(UIImage(named: "free_jipi_1"), forState: .Normal)
+    }
+    
+    func clicked_bt_jandi(sender: UIButton)
+    {
+        bt_jandi.setImage(UIImage(named: "free_mugung_1"), forState: .Normal)
+    }
+    
+    func clicked_bt_jipi(sender: UIButton)
+    {
+        bt_jipi.setImage(UIImage(named: "free_sam_1"), forState: .Normal)
+    }
+
 
     /*
     // MARK: - Navigation
