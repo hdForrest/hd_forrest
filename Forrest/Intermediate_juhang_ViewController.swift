@@ -58,7 +58,7 @@ class Intermediate_juhang_ViewController: UIViewController
         
         /* 첫 이미지 */
         big_image.image = UIImage(named: "begin_road1")
-        big_image.backgroundColor = background_color_state
+        big_image.backgroundColor = real_back_color
         small_image.image = UIImage(named: "begin_road1_small")
         text_image.image = UIImage(named: "begin_road1_text")
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(Intermediate_juhang_ViewController.imageTapped(_:)))
@@ -88,6 +88,14 @@ class Intermediate_juhang_ViewController: UIViewController
         big_image.image = UIImage(named: temp)
         
     }
+    @IBAction func noAction(sender: AnyObject) {
+        explanation_view.hidden = true
+        bt_no.hidden = true
+        bt_yes.hidden = true
+    }
+    @IBAction func yesAction(sender: AnyObject) {
+    }
+   
     /*
     // MARK: - Navigation
 

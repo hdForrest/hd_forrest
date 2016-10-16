@@ -15,6 +15,9 @@ class Advanced_juhangViewController: UIViewController
     @IBOutlet weak var bt_exit: UIButton!
     @IBOutlet weak var bt_viewAll: UIButton!
 
+    @IBOutlet weak var bt_yes: UIButton!
+    @IBOutlet weak var bt_no: UIButton!
+    @IBOutlet weak var explanation_view: UIImageView!
     @IBOutlet weak var big_image: UIImageView!
     @IBOutlet weak var small_image: UIImageView!
     @IBOutlet weak var text_image: UIImageView!
@@ -43,10 +46,18 @@ class Advanced_juhangViewController: UIViewController
         bt_viewAll.setTitleColor(text_color, forState: .Normal)
         bt_viewAll.backgroundColor = real_back_color
         bt_viewAll.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 5)
+        bt_no.setTitle("아니오", forState: .Normal)
+        bt_no.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        bt_no.backgroundColor = UIColor.blackColor()
+        bt_no.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
         
+        bt_yes.setTitle("네", forState: .Normal)
+        bt_yes.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        bt_yes.backgroundColor = background_color_state
+        bt_yes.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
         /* 첫 이미지 */
         big_image.image = UIImage(named: "begin_road1")
-        big_image.backgroundColor = background_color_state
+        big_image.backgroundColor = real_back_color
         small_image.image = UIImage(named: "begin_road1_small")
         text_image.image = UIImage(named: "begin_road1_text")
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector
@@ -76,7 +87,14 @@ class Advanced_juhangViewController: UIViewController
         big_image.image = UIImage(named: temp)
         
     }
+    @IBAction func yesAction(sender: AnyObject) {
+        explanation_view.hidden = true
+        bt_no.hidden = true
+        bt_yes.hidden = true
+    }
 
+    @IBAction func noAction(sender: AnyObject) {
+    }
     /*
     // MARK: - Navigation
 
