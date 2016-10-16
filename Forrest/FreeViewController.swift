@@ -9,6 +9,8 @@
 import UIKit
 
 var info = 0
+var bh_info = 0
+var mg_info = 0
 
 class FreeViewController: UIViewController, UIScrollViewDelegate
 {
@@ -80,6 +82,99 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         bt_jandi_check.setImage(nil, forState: .Normal)
         bt_jipi.setImage(nil, forState: .Normal)
         bt_jipi_check.setImage(nil, forState: .Normal)
+        
+        if bh_info == 1
+        {
+            /* 사진 띄우기 */
+            image_view = UIImageView(image: UIImage(named: "map_1"))
+            image_view.contentMode = .ScaleAspectFill
+            scroll_view = UIScrollView(frame: view.bounds)
+            scroll_view.contentSize = image_view.frame.size //bound를  frame으로 바꿈
+            scroll_view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+            
+            // 초기 위치 설정
+            scroll_view.contentOffset = CGPoint(x: 1000, y: 410)
+            
+            // zoom 정도 세팅
+            scroll_view.delegate = self
+            scroll_view.minimumZoomScale = 0.1
+            scroll_view.maximumZoomScale = 3.0
+            scroll_view.zoomScale = 0.5
+            self.view.translatesAutoresizingMaskIntoConstraints = true
+            
+            /* scroll and click 다 되게 */
+            scroll_view.delaysContentTouches = false
+            
+            /* 사진 띄우기 */
+            scroll_view.addSubview(image_view)
+            view?.addSubview(scroll_view)   //뷰에다가 두개 띄워버림
+            
+            input_bt()
+            
+            bt_bakhop.setImage(UIImage(named: "free_bak_2"), forState: .Normal)
+        }
+        else if mg_info == 1
+        {
+            
+            /* 사진 띄우기 */
+            image_view = UIImageView(image: UIImage(named: "map_2"))
+            image_view.contentMode = .ScaleAspectFill
+            scroll_view = UIScrollView(frame: view.bounds)
+            scroll_view.contentSize = image_view.frame.size //bound를  frame으로 바꿈
+            scroll_view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+            
+            // 초기 위치 설정
+            scroll_view.contentOffset = CGPoint(x: 1000, y: 410)
+            
+            // zoom 정도 세팅
+            scroll_view.delegate = self
+            scroll_view.minimumZoomScale = 0.1
+            scroll_view.maximumZoomScale = 3.0
+            scroll_view.zoomScale = 0.5
+            self.view.translatesAutoresizingMaskIntoConstraints = true
+            
+            /* scroll and click 다 되게 */
+            scroll_view.delaysContentTouches = false
+            
+            /* 사진 띄우기 */
+            scroll_view.addSubview(image_view)
+            view?.addSubview(scroll_view)   //뷰에다가 두개 띄워버림
+            
+            input_bt()
+            
+            bt_mugung.setImage(UIImage(named: "free_mugung_2"), forState: .Normal)
+        }
+        else
+        {
+            
+            /* 사진 띄우기 */
+            image_view = UIImageView(image: UIImage(named: "free_map"))
+            image_view.contentMode = .ScaleAspectFill
+            scroll_view = UIScrollView(frame: view.bounds)
+            scroll_view.contentSize = image_view.frame.size //bound를  frame으로 바꿈
+            scroll_view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+            
+            // 초기 위치 설정
+            scroll_view.contentOffset = CGPoint(x: 1315, y: 510)
+            
+            // zoom 정도 세팅
+            scroll_view.delegate = self
+            scroll_view.minimumZoomScale = 0.1
+            scroll_view.maximumZoomScale = 3.0
+            scroll_view.zoomScale = 0.5
+            self.view.translatesAutoresizingMaskIntoConstraints = true
+            
+            /* button input */
+            input_bt()
+            
+            /* scroll and click 다 되게 */
+            scroll_view.delaysContentTouches = false
+            
+            /* 사진 띄우기 */
+            scroll_view.addSubview(image_view)
+            view?.addSubview(scroll_view)      //뷰에다가 두개 띄워버림
+        }
+        
     }
 
     override func viewDidLoad()
@@ -113,6 +208,7 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         /* button input */
         input_bt()
         
+        
         /* scroll and click 다 되게 */
         scroll_view.delaysContentTouches = false
         
@@ -121,6 +217,13 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         view?.addSubview(scroll_view)      //뷰에다가 두개 띄워버림
         view.addSubview(bt_travel_start)
     
+    }
+    
+    override func viewWillDisappear(animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        bh_info = 0
+        mg_info = 0
     }
 
     override func didReceiveMemoryWarning()
@@ -565,6 +668,7 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         image_view.userInteractionEnabled = true
         
         input_bt()
+        view.addSubview(bt_travel_start)
         
         bt_jipi.setImage(UIImage(named: "free_jipi_2"), forState: .Normal)
     }

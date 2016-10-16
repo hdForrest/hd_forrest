@@ -17,6 +17,8 @@ class Advanced_juhangViewController: UIViewController
     @IBOutlet weak var bt_soundIcon: UIButton!
     @IBOutlet weak var img_temp: UIImageView!
     @IBOutlet weak var bt_temp_view: UIButton!
+    @IBOutlet weak var time_label: UILabel!
+    @IBOutlet weak var arrive_label: UILabel!
 
     @IBOutlet weak var bt_yes: UIButton!
     @IBOutlet weak var bt_no: UIButton!
@@ -75,7 +77,54 @@ class Advanced_juhangViewController: UIViewController
             (Advanced_juhangViewController.imageTapped(_:)))
         big_image.userInteractionEnabled = true
         big_image.addGestureRecognizer(tapGestureRecognizer)
+        /* time label */
+        let date = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components([.Hour, .Minute], fromDate: date)
+        let hour = components.hour
+        let minutes = components.minute
         
+        var current_minutes = minutes
+        var current_hour = hour + 1
+        
+        var text_minutes = ""
+        var text_hour = ""
+        
+        if current_minutes >= 60
+        {
+            current_hour += 1
+            current_minutes -= 60
+        }
+        
+        if current_minutes < 10
+        {
+            text_minutes = "0" + String(current_minutes)
+        }
+        else
+        {
+            text_minutes = String(current_minutes)
+        }
+        
+        print(text_minutes)
+        
+        if current_hour > 12
+        {
+            current_hour = current_hour - 12
+            text_hour = String(current_hour)
+            time_label.text = "오후 " + text_hour + ":" + text_minutes
+        }
+        else
+        {
+            text_hour = String(current_hour)
+            time_label.text = "오전 " + text_hour + ":" + text_minutes
+        }
+        
+        arrive_label.text = " 도착"
+        
+        arrive_label.textColor = text_color
+        time_label.textColor = text_color
+        time_label.font = UIFont(name : "AppleSDGothicNeo-Bold", size: text_size - 7)
+        arrive_label.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 7)
         // Do any additional setup after loading the view.
     }
     

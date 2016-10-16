@@ -717,6 +717,9 @@
                                 <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="전체보기"/>
+                                <connections>
+                                    <segue destination="496-Qb-OYj" kind="show" id="yIp-Ca-7gf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LER-0V-pY3">
                                 <frame key="frameInset" minX="306" minY="623" width="69" height="45"/>
@@ -726,11 +729,26 @@
                                 <frame key="frameInset" minX="59" minY="623" width="247" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsA-Bu-e6X">
+                                <frame key="frameInset" minX="123" minY="20" width="81" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0v-fc-0I4">
+                                <frame key="frameInset" minX="204" minY="20" width="75" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="PQW-Lh-sqg"/>
                     <connections>
+                        <outlet property="arrive_label" destination="F0v-fc-0I4" id="FuC-lz-NvQ"/>
                         <outlet property="big_image" destination="dsp-Lw-uiu" id="7YK-tc-dar"/>
                         <outlet property="bt_exit" destination="G1U-Wl-BIb" id="1zX-hx-WGX"/>
                         <outlet property="bt_no" destination="ePK-xv-CPz" id="arP-oK-t1N"/>
@@ -742,6 +760,7 @@
                         <outlet property="img_temp" destination="cgx-FV-iXY" id="aed-tV-B0W"/>
                         <outlet property="small_image" destination="fvz-kp-Ihu" id="t0W-bL-r9H"/>
                         <outlet property="text_image" destination="b9Y-JE-zey" id="7m4-7W-o8A"/>
+                        <outlet property="time_label" destination="qsA-Bu-e6X" id="GbZ-Ip-aGS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1J-v7-Q1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1113,6 +1132,9 @@
                                 <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="전체보기"/>
+                                <connections>
+                                    <segue destination="496-Qb-OYj" kind="show" id="9Y3-2T-XZy"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xhi-TQ-8gR">
                                 <frame key="frameInset" minX="298" minY="64" width="77" height="83"/>
@@ -1161,11 +1183,26 @@
                                 <frame key="frameInset" minX="59" minY="623" width="247" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgY-oU-dFD">
+                                <frame key="frameInset" minX="123" minY="20" width="81" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gx-q3-um8">
+                                <frame key="frameInset" minX="204" minY="20" width="75" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Y1h-iD-1tl"/>
                     <connections>
+                        <outlet property="arrive_label" destination="4gx-q3-um8" id="r1L-mC-jkr"/>
                         <outlet property="big_image" destination="SZ1-ex-a3h" id="sZN-pt-ZBZ"/>
                         <outlet property="bt_exit" destination="8bd-8N-oWK" id="P2h-YB-k3M"/>
                         <outlet property="bt_no" destination="TSr-YV-WtR" id="NXs-aB-8Au"/>
@@ -1177,6 +1214,7 @@
                         <outlet property="img_temp" destination="B3v-gE-gi1" id="m0c-Rh-wqH"/>
                         <outlet property="small_image" destination="Xhi-TQ-8gR" id="6Av-ZM-aCt"/>
                         <outlet property="text_image" destination="BKl-Ur-GKn" id="TG4-z8-LGA"/>
+                        <outlet property="time_label" destination="FgY-oU-dFD" id="dVG-aR-AWb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zec-HR-RQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1255,6 +1293,9 @@
                                 <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="전체보기"/>
+                                <connections>
+                                    <segue destination="496-Qb-OYj" kind="show" id="8Wk-gL-ehP"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQj-kF-adO">
                                 <frame key="frameInset" minX="298" minY="64" width="77" height="83"/>
@@ -1304,11 +1345,26 @@
                                 <frame key="frameInset" minX="306" minY="623" width="69" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP2-kb-prx">
+                                <frame key="frameInset" minX="123" minY="20" width="81" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zo9-p7-tAg">
+                                <frame key="frameInset" minX="204" minY="20" width="75" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="mdp-lZ-2Am"/>
                     <connections>
+                        <outlet property="arrive_label" destination="Zo9-p7-tAg" id="Qqq-AY-XuV"/>
                         <outlet property="big_image" destination="L3Y-Oz-Tcc" id="8fr-hv-reh"/>
                         <outlet property="bt_exit" destination="kDp-YY-bah" id="hcQ-7l-Pig"/>
                         <outlet property="bt_no" destination="NLG-ca-AOU" id="EIO-2s-RQF"/>
@@ -1320,6 +1376,7 @@
                         <outlet property="img_temp" destination="IZb-gp-rVE" id="wJW-U7-eF1"/>
                         <outlet property="small_image" destination="JQj-kF-adO" id="TKD-vE-g8g"/>
                         <outlet property="text_image" destination="Nv8-G5-Qi9" id="FHd-Uo-3hG"/>
+                        <outlet property="time_label" destination="MP2-kb-prx" id="rcU-nM-KYV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCA-x8-6hP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1468,6 +1525,9 @@
                                 <frame key="frameInset" minX="270" minY="20" width="105" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="전체보기"/>
+                                <connections>
+                                    <segue destination="496-Qb-OYj" kind="show" id="vlh-P4-XWv"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p2g-Ib-8Uf">
                                 <frame key="frameInset" minX="298" minY="64" width="77" height="83"/>
@@ -1518,11 +1578,26 @@
                                 <frame key="frameInset" minX="59" minY="623" width="247" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJR-63-MdQ">
+                                <frame key="frameInset" minX="123" minY="20" width="81" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDc-dx-IG0">
+                                <frame key="frameInset" minX="204" minY="20" width="75" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="bDW-YF-swd"/>
                     <connections>
+                        <outlet property="arrive_label" destination="qDc-dx-IG0" id="WXC-gm-t1P"/>
                         <outlet property="big_image" destination="P14-2s-K8D" id="lJG-e6-MfW"/>
                         <outlet property="bt_exit" destination="5Wc-ZD-Sbx" id="aH8-hz-7rZ"/>
                         <outlet property="bt_no" destination="lfr-Cw-Kmf" id="9vA-dg-OP3"/>
@@ -1534,6 +1609,7 @@
                         <outlet property="img_temp" destination="Egy-uT-hDj" id="TvU-Z3-VIZ"/>
                         <outlet property="small_image" destination="p2g-Ib-8Uf" id="DQI-yj-bVt"/>
                         <outlet property="text_image" destination="TMi-ym-bQm" id="XEp-bj-xTA"/>
+                        <outlet property="time_label" destination="DJR-63-MdQ" id="Urt-tU-1tV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVj-Vr-4ZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1611,6 +1687,24 @@
             </objects>
             <point key="canvasLocation" x="1657" y="-1752"/>
         </scene>
+        <!--Full map View Controller-->
+        <scene sceneID="oa4-iB-oJe">
+            <objects>
+                <viewController id="496-Qb-OYj" customClass="Full_map_ViewController" customModule="Forrest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oLo-Ov-v7N"/>
+                        <viewControllerLayoutGuide type="bottom" id="nCJ-uM-Mdp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ykx-Tx-beu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APU-zc-TtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2508" y="-1033"/>
+        </scene>
         <!--Free Info View Controller-->
         <scene sceneID="qh6-lu-rIN">
             <objects>
@@ -1666,10 +1760,11 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="feH-va-c9d"/>
-        <segue reference="onQ-hR-Tya"/>
-        <segue reference="enL-q3-nNR"/>
-        <segue reference="VIH-15-2Xb"/>
-        <segue reference="20f-qD-bh5"/>
+        <segue reference="XnL-e5-zio"/>
+        <segue reference="i6v-W7-lki"/>
+        <segue reference="qRE-hd-pXn"/>
+        <segue reference="YFo-x0-ioz"/>
+        <segue reference="9Y3-2T-XZy"/>
         <segue reference="1Lb-IU-Xuj"/>
     </inferredMetricsTieBreakers>
 </document>

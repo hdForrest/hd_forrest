@@ -17,6 +17,18 @@ class FreeInfoViewController: UIViewController
     @IBOutlet weak var img_flower: UIImageView!
     @IBOutlet weak var bt_choice: UIButton!
 
+    func clicked_choice()
+    {
+        self.navigationController?.popViewControllerAnimated(true)
+        if info == 0
+        {
+            bh_info = 1
+        }
+        else
+        {
+            mg_info = 1
+        }
+    }
     
     override func viewWillAppear(animated: Bool)
     {
@@ -41,6 +53,7 @@ class FreeInfoViewController: UIViewController
         bt_choice.setTitleColor(UIColor.blackColor(), forState: .Normal)
         bt_choice.backgroundColor = background_color_state
         bt_choice.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
+        bt_choice.addTarget(self, action: #selector(clicked_choice), forControlEvents: UIControlEvents.TouchUpInside)
     }
     
     override func viewDidLoad()

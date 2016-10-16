@@ -19,7 +19,8 @@ class Advanced_TableViewController: UITableViewController
     
     func clicked_bt()
     {
-        performSegueWithIdentifier("clicked_ok_adv", sender: self)
+        self.navigationController?.popViewControllerAnimated(true)
+        //performSegueWithIdentifier("clicked_ok_adv", sender: self)
     }
     
     override func viewWillAppear(animated: Bool)
@@ -41,7 +42,7 @@ class Advanced_TableViewController: UITableViewController
         let button = UIButton(type: UIButtonType.Custom)
         button.frame = CGRectMake(280, 0, 100, 50)
         button.setTitle("완료", forState: .Normal)
-        button.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
+        button.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 5)
         button.addTarget(self, action: #selector(clicked_bt), forControlEvents: UIControlEvents.TouchUpInside)
         
         top.userInteractionEnabled = true
