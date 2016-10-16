@@ -29,6 +29,10 @@ class Begin_juhang_ViewController: UIViewController
         
         /* navigation 바 숨기기 */
         self.navigationController?.navigationBarHidden = true
+        
+        bt_viewAll.setImage(UIImage(named: "bt_viewAll"), forState: .Normal)
+        bt_viewAll.backgroundColor = background_color_state
+        bt_viewAll.tintColor = real_back_color
     }
     
     override func viewDidLoad()

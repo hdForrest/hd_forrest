@@ -496,7 +496,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" id="wl1-Mb-1PN">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wl1-Mb-1PN" id="S3Z-Ca-bfo">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -528,7 +528,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Text_LabelCell" id="KSf-d0-JVp">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSf-d0-JVp" id="vCJ-Wx-3iJ">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -555,8 +555,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Color_LabelCell" rowHeight="79" id="ILr-bg-Y7F">
-                                <rect key="frame" x="0.0" y="28" width="375" height="79"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Color_LabelCell" rowHeight="79" id="ILr-bg-Y7F">
+                                <rect key="frame" x="0.0" y="92" width="375" height="79"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ILr-bg-Y7F" id="4CC-PD-xRa">
                                     <frame key="frameInset" width="375" height="78"/>
@@ -727,7 +727,7 @@
                         <outlet property="big_image" destination="dsp-Lw-uiu" id="7YK-tc-dar"/>
                         <outlet property="bt_exit" destination="G1U-Wl-BIb" id="1zX-hx-WGX"/>
                         <outlet property="bt_no" destination="ePK-xv-CPz" id="arP-oK-t1N"/>
-                        <outlet property="bt_viewAll" destination="kdf-nB-Pdw" id="reC-19-h7P"/>
+                        <outlet property="bt_viewAll" destination="Jnt-Ye-DMq" id="xDg-LT-wtp"/>
                         <outlet property="bt_yes" destination="Gu6-7S-tYY" id="LJJ-r5-98P"/>
                         <outlet property="explanation_view" destination="oQS-29-49z" id="DsE-2c-z7M"/>
                         <outlet property="small_image" destination="fvz-kp-Ihu" id="t0W-bL-r9H"/>
@@ -747,8 +747,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="begin_cell" id="w4y-6S-XJp">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="begin_cell" id="w4y-6S-XJp">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w4y-6S-XJp" id="q5K-W2-AQo">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -764,7 +764,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEV-Nw-2LU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1657" y="-1033"/>
+            <point key="canvasLocation" x="1656.8" y="-1033.1334332833585"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="src-gi-B9Z">
@@ -862,7 +862,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Review_LabelCell" id="XVt-nz-tIR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Review_LabelCell" id="XVt-nz-tIR">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XVt-nz-tIR" id="tJ2-bo-a0q">
@@ -1241,8 +1241,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="intermediate_cell" id="Zw0-px-exu">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="intermediate_cell" id="Zw0-px-exu">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zw0-px-exu" id="aXQ-ig-dEu">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -1269,8 +1269,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="advanced_cell" id="EF0-OA-yTw">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="advanced_cell" id="EF0-OA-yTw">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EF0-OA-yTw" id="uzx-78-gTX">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -1361,8 +1361,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="free_cell" id="fWo-eZ-Has">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="free_cell" id="fWo-eZ-Has">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fWo-eZ-Has" id="kI2-UK-VUe">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -1430,7 +1430,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="feH-va-c9d"/>
-        <segue reference="onQ-hR-Tya"/>
+        <segue reference="lxP-Yj-GO9"/>
         <segue reference="UPj-qT-lEA"/>
         <segue reference="i6v-W7-lki"/>
         <segue reference="XYA-KH-v3y"/>

@@ -52,27 +52,44 @@ class ReviewViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell", forIndexPath: indexPath)
         
         cell.backgroundColor = real_back_color
-
+        
+        var img_name = ""
+        
+        //let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+        
         switch indexPath.row
         {
         case 0:
-            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-            cell_img.image = UIImage(named: "review1")
-            cell.addSubview(cell_img)
+            img_name = "review1"
+            //cell_img.image = UIImage(named: "review1")
+            //cell.addSubview(cell_img)
         case 1:
-            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-            cell_img.image = UIImage(named: "review2")
-            cell.addSubview(cell_img)
+            img_name = "review2"
+            //cell_img.image = UIImage(named: "review2")
+            //cell.addSubview(cell_img)
         case 2:
-            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-            cell_img.image = UIImage(named: "review3")
-            cell.addSubview(cell_img)
+            img_name = "review3"
+            //cell_img.image = UIImage(named: "review3")
+            //cell.addSubview(cell_img)
         case 3:
-            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-            cell_img.image = UIImage(named: "review4")
-            cell.addSubview(cell_img)
+            img_name = "review4"
+            //cell_img.image = UIImage(named: "review4")
+            //cell.addSubview(cell_img)
         default: break
         }
+        
+        
+        //let image =
+            
+        //UIImage(data: img_name, scale: CGSize(width: 20, height: 20),
+        var cell_img = cell.viewWithTag(100) as! UIImageView
+        cell_img = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+        //let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+        cell_img.image = UIImage(named: img_name)
+        cell.addSubview(cell_img)
+        
+        //cell.imageView?.image =
+        //cell.imageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
         
         return cell
     }

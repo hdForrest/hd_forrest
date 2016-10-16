@@ -54,6 +54,8 @@
 		5C28FCD11DB3C794003FE7E7 /* Free_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28FCD01DB3C794003FE7E7 /* Free_TableViewController.swift */; };
 		5C28FCD31DB3C83F003FE7E7 /* Intermediate_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28FCD21DB3C83F003FE7E7 /* Intermediate_TableViewController.swift */; };
 		5C28FCD51DB3C849003FE7E7 /* Advanced_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28FCD41DB3C849003FE7E7 /* Advanced_TableViewController.swift */; };
+		5C28FCD71DB3D088003FE7E7 /* bt_viewAll.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCD61DB3D088003FE7E7 /* bt_viewAll.png */; };
+		5C28FCD91DB3D1C9003FE7E7 /* Write_review_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C28FCD81DB3D1C9003FE7E7 /* Write_review_ViewController.swift */; };
 		5C2DE5351DB088150056009B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DE5341DB088150056009B /* ReviewViewController.swift */; };
 		5C3F35CF1DA4AEA80098566D /* AdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */; };
 		5C3F35D11DA4AEBF0098566D /* IntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */; };
@@ -259,6 +261,8 @@
 		5C28FCD01DB3C794003FE7E7 /* Free_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Free_TableViewController.swift; sourceTree = "<group>"; };
 		5C28FCD21DB3C83F003FE7E7 /* Intermediate_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intermediate_TableViewController.swift; sourceTree = "<group>"; };
 		5C28FCD41DB3C849003FE7E7 /* Advanced_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advanced_TableViewController.swift; sourceTree = "<group>"; };
+		5C28FCD61DB3D088003FE7E7 /* bt_viewAll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bt_viewAll.png; path = image/bt_viewAll.png; sourceTree = "<group>"; };
+		5C28FCD81DB3D1C9003FE7E7 /* Write_review_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Write_review_ViewController.swift; sourceTree = "<group>"; };
 		5C2DE5341DB088150056009B /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedViewController.swift; sourceTree = "<group>"; };
 		5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateViewController.swift; sourceTree = "<group>"; };
@@ -571,6 +575,7 @@
 			isa = PBXGroup;
 			children = (
 				5C2DE5341DB088150056009B /* ReviewViewController.swift */,
+				5C28FCD81DB3D1C9003FE7E7 /* Write_review_ViewController.swift */,
 			);
 			name = review;
 			sourceTree = "<group>";
@@ -578,6 +583,7 @@
 		5C3F35DA1DA4B3AB0098566D /* map */ = {
 			isa = PBXGroup;
 			children = (
+				5C28FCD61DB3D088003FE7E7 /* bt_viewAll.png */,
 				EEBAB2CB1DB3C7BF008E2D1A /* advanced_course info */,
 				EEBAB26A1DB37381008E2D1A /* advanced_road_soga */,
 				EEBAB2201DB36D6F008E2D1A /* intermediate_road_soga */,
@@ -1017,6 +1023,7 @@
 				EEBAB2071DB36B58008E2D1A /* beginner_map3.png in Resources */,
 				5C28FCA71DB36605003FE7E7 /* free_chang_1.png in Resources */,
 				EEBAB2DB1DB3C7DA008E2D1A /* advanced_text4~6.png in Resources */,
+				5C28FCD71DB3D088003FE7E7 /* bt_viewAll.png in Resources */,
 				EE1444F11DB0C52700176EFA /* numission1.png in Resources */,
 				EEBAB2DD1DB3C7DA008E2D1A /* advanced_text9.png in Resources */,
 				5C9DEA171DAD0655009F2D25 /* begin_road1_small.png in Resources */,
@@ -1132,6 +1139,7 @@
 				5C9D81F01DABC7B9002B0812 /* TextSetTableViewController.swift in Sources */,
 				5C9DEA111DACFFF6009F2D25 /* Begin_juhang_ViewController.swift in Sources */,
 				5C9DEA1C1DAD2999009F2D25 /* IntermediateInfoViewController.swift in Sources */,
+				5C28FCD91DB3D1C9003FE7E7 /* Write_review_ViewController.swift in Sources */,
 				5C4FAE0E1DA2828600E3D5F6 /* ColorSetTableViewController.swift in Sources */,
 				5C9D81F21DABD68A002B0812 /* BeginnerInfoViewController.swift in Sources */,
 				5C28FC971DB35E63003FE7E7 /* Begin_TableViewController.swift in Sources */,

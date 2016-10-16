@@ -10,7 +10,6 @@ import UIKit
 
 class Begin_TableViewController: UITableViewController
 {
-    
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
     {
         cell.backgroundColor = UIColor.clearColor()
@@ -51,9 +50,15 @@ class Begin_TableViewController: UITableViewController
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         // #warning Incomplete implementation, return the number of rows
-        return 26
+        return 6
     }
     
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
+    {
+        return 66.0
+    }
+
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
@@ -65,7 +70,8 @@ class Begin_TableViewController: UITableViewController
         switch indexPath.row
         {
         case 0: break
-        default :break
+            
+        default : break
         }
         return cell
     }
