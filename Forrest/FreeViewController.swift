@@ -29,6 +29,7 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     let bt_jipi_check = UIButton(type: UIButtonType.Custom)
     
     
+    
     /* zoom function */
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
     {
@@ -52,16 +53,16 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         self.tabBarController?.tabBar.tintColor = background_color_state
         
         bt_bakhop.setImage(nil, forState: .Normal)
-        bt_bakhop_check.setImage(nil, forState: .Normal)
+        bt_bakhop_check.setImage(UIImage(named: "check_1"), forState: .Normal)
         bt_mugung.setImage(nil, forState: .Normal)
-        bt_mugung_check.setImage(nil, forState: .Normal)
+        bt_mugung_check.setImage(UIImage(named: "check_1"), forState: .Normal)
         bt_chang.setImage(nil, forState: .Normal)
-        bt_chang_check.setImage(nil, forState: .Normal)
+        bt_chang_check.setImage(UIImage(named: "check_1"), forState: .Normal)
         bt_sam.setImage(nil, forState: .Normal)
         bt_jandi.setImage(nil, forState: .Normal)
-        bt_jandi_check.setImage(nil, forState: .Normal)
+        bt_jandi_check.setImage(UIImage(named: "check_1"), forState: .Normal)
         bt_jipi.setImage(nil, forState: .Normal)
-        
+        bt_jipi_check.setImage(UIImage(named: "check_1"), forState: .Normal)
     }
 
     override func viewDidLoad()
@@ -131,6 +132,17 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     func clicked_bt_bh(sender: UIButton)
     {
         bt_bakhop.setImage(UIImage(named: "free_bak_1"), forState: .Normal)
+        
+        /* check 띄우기 */
+        bt_bakhop_check.frame = CGRectMake(3200, 1370, 100, 100)
+        bt_bakhop_check.layer.cornerRadius = 0.5 * bt_bakhop_check.bounds.size.width
+        bt_bakhop_check.addTarget(self, action: #selector(clicked_bh_check), forControlEvents: UIControlEvents.TouchUpInside)
+        image_view.addSubview(bt_bakhop_check)
+        image_view.userInteractionEnabled = true
+    }
+    func clicked_bh_check(sender: UIButton)
+    {
+        
     }
     
     func clicked_bt_mg(sender: UIButton)

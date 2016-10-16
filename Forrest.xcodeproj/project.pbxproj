@@ -38,6 +38,8 @@
 		5C28FCAE1DB36605003FE7E7 /* free_mugung_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCA21DB36605003FE7E7 /* free_mugung_2.png */; };
 		5C28FCAF1DB36605003FE7E7 /* free_sam_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCA31DB36605003FE7E7 /* free_sam_1.png */; };
 		5C28FCB01DB36605003FE7E7 /* free_sam_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCA41DB36605003FE7E7 /* free_sam_2.png */; };
+		5C28FCB31DB3682A003FE7E7 /* check_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCB11DB3682A003FE7E7 /* check_1.png */; };
+		5C28FCB41DB3682A003FE7E7 /* check_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCB21DB3682A003FE7E7 /* check_2.png */; };
 		5C2DE5351DB088150056009B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DE5341DB088150056009B /* ReviewViewController.swift */; };
 		5C3F35CF1DA4AEA80098566D /* AdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */; };
 		5C3F35D11DA4AEBF0098566D /* IntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */; };
@@ -139,6 +141,8 @@
 		5C28FCA21DB36605003FE7E7 /* free_mugung_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = free_mugung_2.png; path = image/free_travel/free_mugung_2.png; sourceTree = "<group>"; };
 		5C28FCA31DB36605003FE7E7 /* free_sam_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = free_sam_1.png; path = image/free_travel/free_sam_1.png; sourceTree = "<group>"; };
 		5C28FCA41DB36605003FE7E7 /* free_sam_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = free_sam_2.png; path = image/free_travel/free_sam_2.png; sourceTree = "<group>"; };
+		5C28FCB11DB3682A003FE7E7 /* check_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check_1.png; path = image/free_travel/check_1.png; sourceTree = "<group>"; };
+		5C28FCB21DB3682A003FE7E7 /* check_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check_2.png; path = image/free_travel/check_2.png; sourceTree = "<group>"; };
 		5C2DE5341DB088150056009B /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedViewController.swift; sourceTree = "<group>"; };
 		5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateViewController.swift; sourceTree = "<group>"; };
@@ -317,6 +321,8 @@
 		5C28FC981DB36377003FE7E7 /* free_bt_6 */ = {
 			isa = PBXGroup;
 			children = (
+				5C28FCB11DB3682A003FE7E7 /* check_1.png */,
+				5C28FCB21DB3682A003FE7E7 /* check_2.png */,
 				5C28FC991DB36605003FE7E7 /* free_bak_1.png */,
 				5C28FC9A1DB36605003FE7E7 /* free_bak_2.png */,
 				5C28FC9B1DB36605003FE7E7 /* free_chang_1.png */,
@@ -646,12 +652,14 @@
 				EE1180621DA61883007719F2 /* noojuk.png in Resources */,
 				5C9DA4101D955B490084B468 /* Assets.xcassets in Resources */,
 				5C1AC0EE1DB281030067E0EC /* img_begin_sim.png in Resources */,
+				5C28FCB31DB3682A003FE7E7 /* check_1.png in Resources */,
 				EE1444EF1DB0C10700176EFA /* tomission1.png in Resources */,
 				5C4FAE101DA2868D00E3D5F6 /* Setting.png in Resources */,
 				5C3F35D91DA4B3A50098566D /* intermediate_map.png in Resources */,
 				5CA6EE271DA1327100B9C547 /* Travel.png in Resources */,
 				5C1AC0F61DB286180067E0EC /* review1.png in Resources */,
 				5C1AC0EA1DB281030067E0EC /* img_begin_jandi.png in Resources */,
+				5C28FCB41DB3682A003FE7E7 /* check_2.png in Resources */,
 				5CA6EE241DA12D4600B9C547 /* Mission.png in Resources */,
 				5C9DEA141DAD02CF009F2D25 /* begin_road1.png in Resources */,
 				5C3F35D71DA4B3A50098566D /* advanced_map.png in Resources */,
