@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="24z-vl-1YJ">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="24z-vl-1YJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -700,13 +700,36 @@
                                     <segue destination="isi-6m-V6L" kind="show" id="1ed-Xe-fdt"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explanation.png" translatesAutoresizingMaskIntoConstraints="NO" id="oQS-29-49z">
+                                <frame key="frameInset" minY="510" width="375" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePK-xv-CPz">
+                                <frame key="frameInset" minY="568" width="184" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="noAction:" destination="kzt-da-yXT" eventType="touchUpInside" id="fjd-Af-ehP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gu6-7S-tYY">
+                                <frame key="frameInset" minX="185" minY="568" width="184" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="yesAction:" destination="kzt-da-yXT" eventType="touchUpInside" id="a5Q-xJ-cYd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="big_image" destination="dsp-Lw-uiu" id="7YK-tc-dar"/>
                         <outlet property="bt_exit" destination="G1U-Wl-BIb" id="1zX-hx-WGX"/>
+                        <outlet property="bt_no" destination="ePK-xv-CPz" id="arP-oK-t1N"/>
                         <outlet property="bt_viewAll" destination="kdf-nB-Pdw" id="reC-19-h7P"/>
+                        <outlet property="bt_yes" destination="Gu6-7S-tYY" id="LJJ-r5-98P"/>
+                        <outlet property="explanation_view" destination="oQS-29-49z" id="DsE-2c-z7M"/>
                         <outlet property="small_image" destination="fvz-kp-Ihu" id="t0W-bL-r9H"/>
                         <outlet property="text_image" destination="b9Y-JE-zey" id="7m4-7W-o8A"/>
                     </connections>
@@ -1028,6 +1051,18 @@
                                 <frame key="frameInset" minY="147" width="375" height="476"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSr-YV-WtR">
+                                <frame key="frameInset" minY="568" width="184" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="noAction:" destination="kzt-da-yXT" eventType="touchUpInside" id="IEb-kr-Yia"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explanation.png" translatesAutoresizingMaskIntoConstraints="NO" id="pAY-r5-wrB">
+                                <frame key="frameInset" minY="510" width="375" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ2-dI-kcZ">
                                 <frame key="frameInset" minY="622" width="375" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1036,13 +1071,24 @@
                                     <segue destination="Suy-TP-taH" kind="show" id="d5s-ko-fBh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQX-4z-hYa">
+                                <frame key="frameInset" minX="191" minY="568" width="184" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="noAction:" destination="kzt-da-yXT" eventType="touchUpInside" id="otB-bk-9TI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="big_image" destination="SZ1-ex-a3h" id="sZN-pt-ZBZ"/>
                         <outlet property="bt_exit" destination="8bd-8N-oWK" id="P2h-YB-k3M"/>
+                        <outlet property="bt_no" destination="TSr-YV-WtR" id="NXs-aB-8Au"/>
                         <outlet property="bt_viewAll" destination="Kun-0S-vLf" id="Ugg-rF-tB7"/>
+                        <outlet property="bt_yes" destination="RQX-4z-hYa" id="iBS-1q-Fxg"/>
+                        <outlet property="explanation_view" destination="pAY-r5-wrB" id="nQB-Ow-ZLO"/>
                         <outlet property="small_image" destination="Xhi-TQ-8gR" id="6Av-ZM-aCt"/>
                         <outlet property="text_image" destination="BKl-Ur-GKn" id="TG4-z8-LGA"/>
                     </connections>
@@ -1219,16 +1265,17 @@
     <resources>
         <image name="Title.png" width="484" height="171"/>
         <image name="bt_travel_start.png" width="851" height="851"/>
+        <image name="explanation.png" width="751" height="131"/>
         <image name="numission1.png" width="751" height="1211"/>
         <image name="nuwalk1.png" width="751" height="1211"/>
         <image name="tomission1.png" width="751" height="1211"/>
         <image name="towalk1.png" width="751" height="1211"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qRE-hd-pXn"/>
-        <segue reference="onQ-hR-Tya"/>
-        <segue reference="feH-va-c9d"/>
+        <segue reference="XnL-e5-zio"/>
         <segue reference="i6v-W7-lki"/>
+        <segue reference="UPj-qT-lEA"/>
         <segue reference="XYA-KH-v3y"/>
+        <segue reference="feH-va-c9d"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -168,6 +168,10 @@
 		EEBAB2BC1DB3B15E008E2D1A /* begin_text18~19.png in Resources */ = {isa = PBXBuildFile; fileRef = EEBAB2B01DB3B15E008E2D1A /* begin_text18~19.png */; };
 		EEBAB2BD1DB3B15E008E2D1A /* begin_text20~22.png in Resources */ = {isa = PBXBuildFile; fileRef = EEBAB2B11DB3B15E008E2D1A /* begin_text20~22.png */; };
 		EEBAB2BE1DB3B15E008E2D1A /* begin_text23~26.png in Resources */ = {isa = PBXBuildFile; fileRef = EEBAB2B21DB3B15E008E2D1A /* begin_text23~26.png */; };
+		EEBAB2C01DB3B658008E2D1A /* no.png in Resources */ = {isa = PBXBuildFile; fileRef = EEBAB2BF1DB3B658008E2D1A /* no.png */; };
+		EEBAB2C21DB3B65F008E2D1A /* yes.png in Resources */ = {isa = PBXBuildFile; fileRef = EEBAB2C11DB3B65F008E2D1A /* yes.png */; };
+		EEBAB2C41DB3B666008E2D1A /* juhang_review.png in Resources */ = {isa = PBXBuildFile; fileRef = EEBAB2C31DB3B666008E2D1A /* juhang_review.png */; };
+		EEBAB2C61DB3B669008E2D1A /* explanation.png in Resources */ = {isa = PBXBuildFile; fileRef = EEBAB2C51DB3B669008E2D1A /* explanation.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -355,6 +359,10 @@
 		EEBAB2B01DB3B15E008E2D1A /* begin_text18~19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "begin_text18~19.png"; sourceTree = "<group>"; };
 		EEBAB2B11DB3B15E008E2D1A /* begin_text20~22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "begin_text20~22.png"; sourceTree = "<group>"; };
 		EEBAB2B21DB3B15E008E2D1A /* begin_text23~26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "begin_text23~26.png"; sourceTree = "<group>"; };
+		EEBAB2BF1DB3B658008E2D1A /* no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = no.png; path = "고급 거리+화살표/no.png"; sourceTree = "<group>"; };
+		EEBAB2C11DB3B65F008E2D1A /* yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yes.png; path = "고급 거리+화살표/yes.png"; sourceTree = "<group>"; };
+		EEBAB2C31DB3B666008E2D1A /* juhang_review.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = juhang_review.png; path = "고급 거리+화살표/juhang_review.png"; sourceTree = "<group>"; };
+		EEBAB2C51DB3B669008E2D1A /* explanation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = explanation.png; path = "고급 거리+화살표/explanation.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +431,10 @@
 		5C233D511DAE214A0015E91C /* bt */ = {
 			isa = PBXGroup;
 			children = (
+				EEBAB2C51DB3B669008E2D1A /* explanation.png */,
+				EEBAB2C31DB3B666008E2D1A /* juhang_review.png */,
+				EEBAB2C11DB3B65F008E2D1A /* yes.png */,
+				EEBAB2BF1DB3B658008E2D1A /* no.png */,
 				5C9D81F61DABFB97002B0812 /* bt_bakhop.png */,
 				5C233D4C1DAE0FAA0015E91C /* bt_changpo.png */,
 				5C233D4D1DAE0FAA0015E91C /* bt_mugung.png */,
@@ -864,6 +876,7 @@
 				EEBAB2361DB36ECE008E2D1A /* intermediate_road4.png in Resources */,
 				EE1444F31DB0C52B00176EFA /* nuwalk1.png in Resources */,
 				EEBAB23B1DB36ECE008E2D1A /* intermediate_road9.png in Resources */,
+				EEBAB2C01DB3B658008E2D1A /* no.png in Resources */,
 				5CA6EE251DA12D4600B9C547 /* Title.png in Resources */,
 				EEBAB23D1DB36ECE008E2D1A /* intermediate_road11.png in Resources */,
 				EEBAB20F1DB36B58008E2D1A /* beginner_map11.png in Resources */,
@@ -877,6 +890,7 @@
 				5C233D4F1DAE0FAA0015E91C /* bt_mugung.png in Resources */,
 				EEBAB2881DB37397008E2D1A /* advanced_road12.png in Resources */,
 				5C3F35D81DA4B3A50098566D /* free_map.png in Resources */,
+				EEBAB2C21DB3B65F008E2D1A /* yes.png in Resources */,
 				5C28FCA91DB36605003FE7E7 /* free_jan_1.png in Resources */,
 				5C28FCAB1DB36605003FE7E7 /* free_jipi_1.png in Resources */,
 				EE1958131DA71E0800574DF9 /* bt_toBlack.png in Resources */,
@@ -907,6 +921,7 @@
 				5C1AC0F01DB281030067E0EC /* img_inte_mok.png in Resources */,
 				EE1444EE1DB0C10700176EFA /* towalk1.png in Resources */,
 				EEBAB2B81DB3B15E008E2D1A /* begin_small23~26.png in Resources */,
+				EEBAB2C61DB3B669008E2D1A /* explanation.png in Resources */,
 				5C28FCB01DB36605003FE7E7 /* free_sam_2.png in Resources */,
 				EEBAB2081DB36B58008E2D1A /* beginner_map4.png in Resources */,
 				EEBAB2861DB37397008E2D1A /* advanced_road10.png in Resources */,
@@ -990,6 +1005,7 @@
 				EEBAB2111DB36B58008E2D1A /* beginner_map13.png in Resources */,
 				EEBAB2401DB36ECE008E2D1A /* intermediate_road14.png in Resources */,
 				5CA2CC531DAC999D006A9C45 /* img_begin_mugung.png in Resources */,
+				EEBAB2C41DB3B666008E2D1A /* juhang_review.png in Resources */,
 				EEBAB20D1DB36B58008E2D1A /* beginner_map9.png in Resources */,
 				EEBAB23F1DB36ECE008E2D1A /* intermediate_road13.png in Resources */,
 				5C1AC0E71DB281030067E0EC /* img_begin_chul.png in Resources */,
