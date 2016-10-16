@@ -60,7 +60,7 @@ class Begin_juhang_ViewController: UIViewController
         
         /* 첫 이미지 */
         big_image.image = UIImage(named: "beginner_map1")
-        big_image.backgroundColor = background_color_state
+        big_image.backgroundColor = real_back_color
         small_image.image = UIImage(named: "begin_small1~4")
         text_image.image = UIImage(named: "begin_text1~4")
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(Begin_juhang_ViewController.imageTapped(_:)))
