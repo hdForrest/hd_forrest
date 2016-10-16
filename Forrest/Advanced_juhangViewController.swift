@@ -10,7 +10,8 @@ import UIKit
 
 class Advanced_juhangViewController: UIViewController
 {
-    
+    var name = "advanced_road"
+    var num = 1
     @IBOutlet weak var bt_exit: UIButton!
     @IBOutlet weak var bt_viewAll: UIButton!
 
@@ -48,6 +49,10 @@ class Advanced_juhangViewController: UIViewController
         big_image.backgroundColor = background_color_state
         small_image.image = UIImage(named: "begin_road1_small")
         text_image.image = UIImage(named: "begin_road1_text")
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector
+            (Advanced_juhangViewController.imageTapped(_:)))
+        big_image.userInteractionEnabled = true
+        big_image.addGestureRecognizer(tapGestureRecognizer)
         
         // Do any additional setup after loading the view.
     }
@@ -64,7 +69,13 @@ class Advanced_juhangViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func imageTapped(img: AnyObject)
+    {
+        num = num + 1
+        var temp = name + String(num)
+        big_image.image = UIImage(named: temp)
+        
+    }
 
     /*
     // MARK: - Navigation
