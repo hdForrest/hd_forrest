@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="24z-vl-1YJ">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="24z-vl-1YJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -10,7 +10,7 @@
         <scene sceneID="Vmy-TI-Tfp">
             <objects>
                 <navigationController id="24z-vl-1YJ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IMM-e2-fcu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="IMM-e2-fcu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -380,56 +380,56 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="04/30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWB-NY-ivY">
-                                <frame key="frameInset" minX="31" minY="617" width="47" height="21"/>
+                                <frame key="frameInset" minX="31" minY="632" width="47" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="06/12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhz-1X-SYq">
-                                <frame key="frameInset" minX="114" minY="617" width="44" height="21"/>
+                                <frame key="frameInset" minX="114" minY="632" width="44" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="08/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NR9-eG-Cnr">
-                                <frame key="frameInset" minX="195" minY="617" width="44" height="21"/>
+                                <frame key="frameInset" minX="214" minY="632" width="44" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10/20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DK-18-pyG">
-                                <frame key="frameInset" minX="293" minY="617" width="44" height="21"/>
+                                <frame key="frameInset" minX="293" minY="632" width="44" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="70%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfV-Oc-O70">
-                                <frame key="frameInset" minX="125" minY="528" width="33" height="21"/>
+                                <frame key="frameInset" minX="125" minY="536" width="33" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5z8-1C-2ja">
-                                <frame key="frameInset" minX="216" minY="496" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7p-PT-y7I">
-                                <frame key="frameInset" minX="313" minY="536" width="34" height="21"/>
+                                <frame key="frameInset" minX="216" minY="513" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="40%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liG-JY-aei">
-                                <frame key="frameInset" minX="31" minY="553" width="34" height="21"/>
+                                <frame key="frameInset" minX="31" minY="569" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7p-PT-y7I">
+                                <frame key="frameInset" minX="313" minY="551" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -647,6 +647,7 @@
                     <navigationItem key="navigationItem" id="ZFs-0C-gu2"/>
                     <connections>
                         <outlet property="bt_juhang" destination="wlb-X6-XuN" id="SaN-oj-wRY"/>
+                        <outlet property="explanation" destination="eZX-al-BTD" id="J9L-lr-btl"/>
                         <outlet property="img_flower" destination="ERx-4a-U1f" id="Nnh-pa-N9W"/>
                     </connections>
                 </viewController>
@@ -717,7 +718,6 @@
         <!--Table View Controller-->
         <scene sceneID="gsz-5R-Vg7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fEV-Nw-2LU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="isi-6m-V6L" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="w9k-Qn-ts6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -739,6 +739,7 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEV-Nw-2LU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1657" y="-1033"/>
         </scene>
@@ -982,6 +983,7 @@
                     <navigationItem key="navigationItem" id="zNn-jP-evR"/>
                     <connections>
                         <outlet property="bt_juhang" destination="1Oq-zL-yyv" id="SYn-G1-MV3"/>
+                        <outlet property="explanation" destination="yWg-im-d9o" id="iM9-8B-JfO"/>
                         <outlet property="img_flower" destination="8Ae-6S-TsA" id="fM0-3L-mPu"/>
                     </connections>
                 </viewController>
@@ -1089,6 +1091,7 @@
                     <navigationItem key="navigationItem" id="FTs-lM-wQp"/>
                     <connections>
                         <outlet property="bt_juhang" destination="AeY-6W-RvS" id="kPP-q2-emZ"/>
+                        <outlet property="explanation" destination="TlN-8X-jHF" id="pp9-7c-FP5"/>
                         <outlet property="img_flower" destination="0dy-0e-mKg" id="Ksu-w7-I1c"/>
                     </connections>
                 </viewController>
@@ -1225,7 +1228,7 @@
         <segue reference="ssk-Oq-ams"/>
         <segue reference="XYA-KH-v3y"/>
         <segue reference="qRE-hd-pXn"/>
-        <segue reference="5Qq-R2-nsJ"/>
+        <segue reference="i6v-W7-lki"/>
         <segue reference="feH-va-c9d"/>
     </inferredMetricsTieBreakers>
 </document>
