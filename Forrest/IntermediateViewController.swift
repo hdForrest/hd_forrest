@@ -71,7 +71,7 @@ class IntermediateViewController: UIViewController, UIScrollViewDelegate
         bt_travel_start.layer.zPosition = 1
         
         /* 백합원 띄우기 */
-        bt_bakhop_won.frame = CGRectMake(3080, 1495, 200, 100)
+        bt_bakhop_won.frame = CGRectMake(3088, 1495, 200, 100)
         bt_bakhop_won.layer.cornerRadius = 0.25 * bt_bakhop_won.bounds.size.width
         //bt_bakhop_won.backgroundColor = UIColor.orangeColor()
         bt_bakhop_won.addTarget(self, action: #selector(clicked_bt), forControlEvents: UIControlEvents.TouchUpInside)

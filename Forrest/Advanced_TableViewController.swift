@@ -16,13 +16,58 @@ class Advanced_TableViewController: UITableViewController
         cell.backgroundColor = UIColor.clearColor()
     }
     
+    
+    func clicked_bt()
+    {
+        performSegueWithIdentifier("clicked_ok_adv", sender: self)
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        /* navigation 바 숨기기 */
+        //self.navigationController?.navigationBarHidden = true
+        
+        /* top layout */
+        let top : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 50))
+        //top.backgroundColor = table_color
+        
+        let label = UILabel(frame: CGRectMake(150, 0, 100, 50))
+        label.text = "경로"
+        label.textColor = text_color
+        label.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
+        
+        let button = UIButton(type: UIButtonType.Custom)
+        button.frame = CGRectMake(280, 0, 100, 50)
+        button.setTitle("완료", forState: .Normal)
+        button.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
+        button.addTarget(self, action: #selector(clicked_bt), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        top.userInteractionEnabled = true
+        top.addSubview(button)
+        top.addSubview(label)
+        self.navigationItem.titleView = top
+        self.navigationItem.hidesBackButton = true
+        //self.navigationController!.navigationBar.barTintColor = table_color
+        self.navigationController!.navigationBar.backgroundColor = table_color
+        
+        //view.addSubview(top)
+        
+        /* top margine */
+        //self.tableView.frame = CGRectMake(0, 100, self.tableView.frame.width, self.tableView.frame.height)
+        //self.tableView.contentInset = UIEdgeInsetsMake(100, 0, 0, 0);
+        
+    }
+
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
         /* background color set */
-        self.tableView.backgroundColor = real_back_color
+        self.tableView.backgroundColor = table_color //real_back_color
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -48,22 +93,74 @@ class Advanced_TableViewController: UITableViewController
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         // #warning Incomplete implementation, return the number of rows
-        return 26
+        return 5
     }
     
     
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
+    {
+        return 88.5
+    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("advanced_cell", forIndexPath: indexPath)
-        
-        
-        /* button */
         switch indexPath.row
         {
-        case 0: break
-        default :break
+        case 0:
+            let cell = tableView.dequeueReusableCellWithIdentifier("adv_cell_1", forIndexPath: indexPath)
+            
+            cell.backgroundColor = table_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 88.5))
+            cell_img_text.image = UIImage(named: "adv_1")
+            cell.addSubview(cell_img_text)
+            
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCellWithIdentifier("adv_cell_2", forIndexPath: indexPath)
+            
+            cell.backgroundColor = table_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 88.5))
+            cell_img_text.image = UIImage(named: "adv_2")
+            cell.addSubview(cell_img_text)
+            
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCellWithIdentifier("adv_cell_3", forIndexPath: indexPath)
+            
+            cell.backgroundColor = table_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 88.5))
+            cell_img_text.image = UIImage(named: "adv_3")
+            cell.addSubview(cell_img_text)
+            
+            return cell
+        case 3:
+            let cell = tableView.dequeueReusableCellWithIdentifier("adv_cell_4", forIndexPath: indexPath)
+            
+            cell.backgroundColor = table_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 88.5))
+            cell_img_text.image = UIImage(named: "adv_4")
+            cell.addSubview(cell_img_text)
+            
+            return cell
+        case 4:
+            let cell = tableView.dequeueReusableCellWithIdentifier("adv_cell_5", forIndexPath: indexPath)
+            
+            cell.backgroundColor = table_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 88.5))
+            cell_img_text.image = UIImage(named: "adv_5")
+            cell.addSubview(cell_img_text)
+            
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCellWithIdentifier("adv_cell_6", forIndexPath: indexPath)
+            
+            cell.backgroundColor = table_color
+            let cell_img_text : UIImageView = UIImageView(frame: CGRectMake(0, 0, 375, 88.5))
+            cell_img_text.image = UIImage(named: "adv_6")
+            cell.addSubview(cell_img_text)
+            
+            return cell
         }
-        return cell
     }
 
 

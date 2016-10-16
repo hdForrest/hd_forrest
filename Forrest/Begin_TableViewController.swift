@@ -8,9 +8,10 @@
 
 import UIKit
 
+let table_color = UIColor(red: CGFloat(24/225.0), green: CGFloat(24/225.0), blue: CGFloat(24/225.0), alpha: 1.0)
+
 class Begin_TableViewController: UITableViewController
 {
-    let table_color = UIColor(red: CGFloat(24/225.0), green: CGFloat(24/225.0), blue: CGFloat(24/225.0), alpha: 1.0)
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
     {

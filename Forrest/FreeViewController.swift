@@ -8,6 +8,8 @@
 
 import UIKit
 
+var info = 0
+
 class FreeViewController: UIViewController, UIScrollViewDelegate
 {
     @IBOutlet weak var bt_travel_start: UIButton!
@@ -243,7 +245,8 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     
     func clicked_bh_info(sender: UIButton)
     {
-        
+        performSegueWithIdentifier("free_won_soga", sender: self)
+        info = 0
     }
     
     /* mugung */
@@ -310,7 +313,8 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     
     func clicked_mg_info(sender: UIButton)
     {
-        
+        performSegueWithIdentifier("free_won_soga", sender: self)
+        info = 1
     }
     
     /* chang */

@@ -110,12 +110,14 @@ class BeginnerViewController: UIViewController, UIScrollViewDelegate
     {
         performSegueWithIdentifier("begin_won_soga", sender: self)
         bt_bakhop_won.setImage(UIImage(named: "bt_bakhop"), forState: .Normal)
+        info = 0
     }
     
     func clicked_bt_mg(sender: UIButton)
     {
         performSegueWithIdentifier("begin_won_soga", sender: self)
         bt_mugung_won.setImage(UIImage(named: "bt_mugung"), forState: .Normal)
+        info = 1
     }
     /*
     // MARK: - Navigation

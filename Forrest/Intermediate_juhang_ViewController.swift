@@ -16,6 +16,7 @@ class Intermediate_juhang_ViewController: UIViewController
     @IBOutlet weak var bt_viewAll: UIButton!
     @IBOutlet weak var bt_soundIcon: UIButton!
     @IBOutlet weak var img_temp: UIImageView!
+    @IBOutlet weak var bt_temp_view: UIButton!
 
     @IBOutlet weak var explanation_view: UIImageView!
     @IBOutlet weak var bt_no: UIButton!
@@ -52,6 +53,10 @@ class Intermediate_juhang_ViewController: UIViewController
         bt_exit.setTitleColor(text_color, forState: .Normal)
         bt_exit.backgroundColor = real_back_color
         bt_exit.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 5)
+        bt_temp_view.setTitle("전체보기", forState: .Normal)
+        bt_temp_view.setTitleColor(text_color, forState: .Normal)
+        bt_temp_view.backgroundColor = real_back_color
+        bt_temp_view.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 5)
         bt_no.setTitle("아니오", forState: .Normal)
         bt_no.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         bt_no.backgroundColor = UIColor.blackColor()
@@ -90,7 +95,7 @@ class Intermediate_juhang_ViewController: UIViewController
     func imageTapped(img: AnyObject)
     {
         num = num + 1
-        var temp = name + String(num)
+        let temp = name + String(num)
         big_image.image = UIImage(named: temp)
         
     }

@@ -10,19 +10,138 @@ import UIKit
 
 class FreeInfoViewController: UIViewController
 {
+    var scroll_view: UIScrollView!
+    var won_name = ["백합원", "무궁화원", "창포원", "삼미담", "잔디광장", "지피식물원"]
+    
+    @IBOutlet weak var explanation: UITextView!
+    @IBOutlet weak var img_flower: UIImageView!
+    @IBOutlet weak var bt_choice: UIButton!
 
-    override func viewDidLoad() {
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        /* navigation bar text set */
+        self.navigationItem.title = "코스 설명"
+        self.tabBarController?.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: text_color, NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
+        
+        /* navigation bar color set */
+        self.tabBarController?.navigationController!.navigationBar.barTintColor = real_back_color
+        self.tabBarController?.navigationController!.navigationBar.tintColor = background_color_state
+        /*
+         self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: text_color, NSFontAttributeName: UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)!]
+         
+         /* navigation bar color set */
+         self.navigationController!.navigationBar.barTintColor = real_back_color
+         self.navigationController!.navigationBar.tintColor = background_color_state
+         */
+        /* 주행하기 버튼 설정 */
+        bt_choice.setTitle("선택 하기", forState: .Normal)
+        bt_choice.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        bt_choice.backgroundColor = background_color_state
+        bt_choice.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
+    }
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
+        createScrollMenu()
+        if info == 0
+        {
+            img_flower.image = UIImage(named: "img_begin_backhop")
+            explanation.font =  UIFont(name: "AppleSDGothicNeo-Regular", size: text_size + 20)
+            explanation.text = "일본 원산으로 관상용으로 심어 기르는 여러해살이풀입니다. 높이는 30-100cm정도 됩니다. 비늘줄기는 편평한 구형으로 지름 4-7cm, 연한 황색을 띄고 있습니다. 잎은 잎자루가 없으며, 피침형으로 길이 10-20cm, 폭 5-20mm, 털이 없습니다. 꽃은 5-6월에 흰색으로 피며, 원줄기 끝에 2-3개씩 옆을 향해 달리고 나팔 모양으로 벌어집니다. 향기가 좋고, 열매는 삭과, 장타원형이고 길이 5-10cm정도 됩니다. 전국의 공원, 화단, 온실에 관상용으로 식재하고 있습니다."
+        }
+        else
+        {
+            img_flower.image = UIImage(named: "img_begin_mugung")
+            explanation.font =  UIFont(name: "AppleSDGothicNeo-Regular", size: text_size + 20)
+            explanation.text = "무궁화는 대한민국의 나라꽃(국화)입니다. 낙엽 관목으로서 여러 품종이 있고 높이가 3-4m에 달하며, 어린 가지에 털이 많으나 점차 없어집니다. 무궁화는 정원에서 재배가 쉽고 씨로 번식이 가능하지만 꺽꽂이로 번식되므로 형질을 변형시키지 않고 유지하는 것이 쉽습니다. 잎은 어긋나며 달걀모양이고 대개 3개로 갈라지고 가장자리에는 톱니가 있습니다."
+            
+        }
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    func createScrollMenu()
+    {
+        scroll_view = UIScrollView(frame: CGRectMake(0, 280, self.view.frame.size.width, 80))
+        
+        var bt_X = CGFloat(0)
+        for i in 0...5
+        {
+            let bt = UIButton()
+            bt.frame = CGRectMake(bt_X, 20, 150, 60)
+            bt.setTitle(won_name[i], forState: .Normal)
+            bt.titleLabel!.font = UIFont(name: "AppleSDGothicNeo-Regular", size: text_size)
+            bt.setTitleColor(background_color_state, forState: .Normal)
+            switch i
+            {
+            case 0: bt.addTarget(self, action: #selector(clicked_0), forControlEvents: UIControlEvents.TouchUpInside)
+            case 1: bt.addTarget(self, action: #selector(clicked_1), forControlEvents: UIControlEvents.TouchUpInside)
+            case 2: bt.addTarget(self, action: #selector(clicked_2), forControlEvents: UIControlEvents.TouchUpInside)
+            case 3: bt.addTarget(self, action: #selector(clicked_3), forControlEvents: UIControlEvents.TouchUpInside)
+            case 4: bt.addTarget(self, action: #selector(clicked_4), forControlEvents: UIControlEvents.TouchUpInside)
+            case 5: bt.addTarget(self, action: #selector(clicked_5), forControlEvents: UIControlEvents.TouchUpInside)
+            default : break
+            }
+            bt.backgroundColor = real_back_color
+            scroll_view.addSubview(bt)
+            bt_X += bt.frame.size.width
+        }
+        
+        scroll_view.contentSize = CGSizeMake(bt_X, scroll_view.frame.size.height)
+        scroll_view.bounces = false
+        self.view.addSubview(scroll_view)
+    }
+    
+    /* menu click */
+    func clicked_0()
+    {
+        img_flower.image = UIImage(named: "img_begin_backhop")
+        explanation.font =  UIFont(name: "AppleSDGothicNeo-Regular", size: text_size + 20)
+        explanation.text = "일본 원산으로 관상용으로 심어 기르는 여러해살이풀입니다. 높이는 30-100cm정도 됩니다. 비늘줄기는 편평한 구형으로 지름 4-7cm, 연한 황색을 띄고 있습니다. 잎은 잎자루가 없으며, 피침형으로 길이 10-20cm, 폭 5-20mm, 털이 없습니다. 꽃은 5-6월에 흰색으로 피며, 원줄기 끝에 2-3개씩 옆을 향해 달리고 나팔 모양으로 벌어집니다. 향기가 좋고, 열매는 삭과, 장타원형이고 길이 5-10cm정도 됩니다. 전국의 공원, 화단, 온실에 관상용으로 식재하고 있습니다."
+        
+    }
+    func clicked_1()
+    {
+        img_flower.image = UIImage(named: "img_begin_mugung")
+        explanation.font =  UIFont(name: "AppleSDGothicNeo-Regular", size: text_size + 20)
+        explanation.text = "무궁화는 대한민국의 나라꽃(국화)입니다. 낙엽 관목으로서 여러 품종이 있고 높이가 3-4m에 달하며, 어린 가지에 털이 많으나 점차 없어집니다. 무궁화는 정원에서 재배가 쉽고 씨로 번식이 가능하지만 꺽꽂이로 번식되므로 형질을 변형시키지 않고 유지하는 것이 쉽습니다. 잎은 어긋나며 달걀모양이고 대개 3개로 갈라지고 가장자리에는 톱니가 있습니다."
+    }
+    func clicked_2()
+    {
+        img_flower.image = UIImage(named: "img_begin_chang")
+        explanation.font =  UIFont(name: "AppleSDGothicNeo-Regular", size: text_size + 20)
+        explanation.text = "창포는 우리나라 호수나 연못가의 습지에서 나는 다년생 초본입니다. 생육환경은 햇볕이 잘 들어오는 곳의 물웅덩이나 물이 잘 빠지지 않는 습지에서 잘 자랍니다. 키는 약 70㎝ 정도이고, 잎은 뿌리 끝에서 촘촘히 나오고 길이는 약 70㎝, 폭은 1~2㎝이며 가운데 뚜렷한 선이 있습니다. 꽃은 원기둥 모양으로 잎 사이에서 비스듬히 옆으로 올라오며 흰색을 띄고 있습니다. 열매는 7~8월경에 달리고 긴 타원형으로 적색입니다. 주로 관상용으로 쓰이며, 뿌리는 약용으로 쓰이고 있습니다."
+    }
+    func clicked_3()
+    {
+        img_flower.image = UIImage(named: "img_begin_sim")
+        explanation.font =  UIFont(name: "AppleSDGothicNeo-Regular", size: text_size + 20)
+        explanation.text = "숲에서 미래를 찾자는 의미의 삼미담에서는 연못과 가제보, 가지각색의 수련, 부들 뿐 아니라 1/10로 축소된 독도의 모습도 볼 수 있습니다."
+        
+    }
+    func clicked_4()
+    {
+        img_flower.image = UIImage(named: "img_begin_jandi")
+        explanation.font =  UIFont(name: "AppleSDGothicNeo-Regular", size: text_size + 20)
+        explanation.text = "잔디로 깔려진 광장으로써 수목원을 관람하시다가 언제든지 편안하게 쉬었다가 가실 수 있도록 마련한 편의시설입니다."
+    }
+    func clicked_5()
+    {
+        img_flower.image = UIImage(named: "img_begin_chul")
+        explanation.font =  UIFont(name: "AppleSDGothicNeo-Regular", size: text_size + 20)
+        explanation.text = "지피수종은 땅에 밀착하여 자라면서, 토양유실을 방지하고 땅의 건조를 막는 식물을 말합니다. 흔히 위성류, 만경류라고 이야기되는 식물들과 백리향과 같은 땅에 낮게 자라는 식물등 우리 지표에 살고 있는 각종 식물 114종 6,808본을 식재하여 전시하고 있습니다."
+    }
 
     /*
     // MARK: - Navigation
