@@ -24,15 +24,118 @@ class ReviewViewController: UIViewController, UITableViewDataSource, UITableView
     var is_bt_clicked_inte = false
     var is_bt_clicked_adv = false
     var is_bt_clicked_free = false
+    var check_clicked = 0
+    var check_state = [0,0,0,0]
     
     /* 버튼 클릭 설정 */
     @IBAction func clicked_all(sender: AnyObject)
     {
         if (is_bt_clicked_all == false)
         {
-            bt_all.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            bt_all.setTitleColor(background_color_state, forState: .Normal)
+            bt_begin.setTitleColor(text_color, forState: .Normal)
+            bt_inte.setTitleColor(text_color, forState: .Normal)
+            bt_adv.setTitleColor(text_color, forState: .Normal)
+            bt_free.setTitleColor(text_color, forState: .Normal)
         }
+        
         is_bt_clicked_all = true
+        is_bt_clicked_begin = false
+        is_bt_clicked_inte = false
+        is_bt_clicked_adv = false
+        is_bt_clicked_free = false
+        check_clicked = 0
+        /*
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+        self.review_table.reloadData()
+        })
+        */
+        self.review_table.reloadData()
+ 
+        }
+    @IBAction func clicked_begin(sender: AnyObject)
+    {
+        if (is_bt_clicked_begin == false)
+        {
+            bt_all.setTitleColor(text_color, forState: .Normal)
+            bt_begin.setTitleColor(background_color_state, forState: .Normal)
+            bt_inte.setTitleColor(text_color, forState: .Normal)
+            bt_adv.setTitleColor(text_color, forState: .Normal)
+            bt_free.setTitleColor(text_color, forState: .Normal)
+        }
+        
+        is_bt_clicked_all = false
+        is_bt_clicked_begin = true
+        is_bt_clicked_inte = false
+        is_bt_clicked_adv = false
+        is_bt_clicked_free = false
+        check_clicked = 1
+        
+        self.review_table.reloadData()
+        
+    }
+    @IBAction func clicked_inte(sender: AnyObject)
+    {
+        if (is_bt_clicked_inte == false)
+        {
+            bt_all.setTitleColor(text_color, forState: .Normal)
+            bt_begin.setTitleColor(text_color, forState: .Normal)
+            bt_inte.setTitleColor(background_color_state, forState: .Normal)
+            bt_adv.setTitleColor(text_color, forState: .Normal)
+            bt_free.setTitleColor(text_color, forState: .Normal)
+        }
+        
+        is_bt_clicked_all = false
+        is_bt_clicked_begin = false
+        is_bt_clicked_inte = true
+        is_bt_clicked_adv = false
+        is_bt_clicked_free = false
+        check_clicked = 2
+        
+        self.review_table.reloadData()
+        
+    }
+    @IBAction func clicked_adv(sender: AnyObject)
+    {
+        if (is_bt_clicked_adv == false)
+        {
+            bt_all.setTitleColor(text_color, forState: .Normal)
+            bt_begin.setTitleColor(text_color, forState: .Normal)
+            bt_inte.setTitleColor(text_color, forState: .Normal)
+            bt_adv.setTitleColor(background_color_state, forState: .Normal)
+            bt_free.setTitleColor(text_color, forState: .Normal)
+        }
+        
+        is_bt_clicked_all = false
+        is_bt_clicked_begin = false
+        is_bt_clicked_inte = false
+        is_bt_clicked_adv = true
+        is_bt_clicked_free = false
+        check_clicked = 3
+        
+        self.review_table.reloadData()
+        
+    }
+    @IBAction func clicked_free(sender: AnyObject)
+    {
+        if (is_bt_clicked_begin == false)
+        {
+            bt_all.setTitleColor(text_color, forState: .Normal)
+            bt_begin.setTitleColor(text_color, forState: .Normal)
+            bt_inte.setTitleColor(text_color, forState: .Normal)
+            bt_adv.setTitleColor(text_color, forState: .Normal)
+            bt_free.setTitleColor(background_color_state, forState: .Normal)
+        }
+        
+        is_bt_clicked_all = false
+        is_bt_clicked_begin = false
+        is_bt_clicked_inte = false
+        is_bt_clicked_adv = false
+        is_bt_clicked_free = true
+        check_clicked = 4
+        
+        self.review_table.reloadData()
+        
     }
     
     /* table set */
@@ -47,42 +150,148 @@ class ReviewViewController: UIViewController, UITableViewDataSource, UITableView
         // #warning Incomplete implementation, return the number of rows
         return 4
     }
+    
+    
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        switch indexPath.row
+        
+        let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
+        
+        switch check_clicked
         {
         case 0:
-            let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_1", forIndexPath: indexPath)
+            switch indexPath.row
+            {
+                case 0:
+                    if check_state[0] == 0
+                    {
+                        let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_1", forIndexPath: indexPath)
         
-            cell.backgroundColor = real_back_color
-            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-            cell_img.image = UIImage(named: "review1")
-            cell.addSubview(cell_img)
-            return cell
+                        cell.backgroundColor = real_back_color
+                        cell_img.image = UIImage(named: "review1")
+                        cell.addSubview(cell_img)
+                        check_state[0] = 1
+                        return cell
+                    }
+                    else
+                    {
+                        let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_1", forIndexPath: indexPath)
+                        return cell
+                    }
+            case 1:
+                if check_state[1] == 0
+                {
+                    let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
+                    
+                    cell.backgroundColor = real_back_color
+                    cell_img.image = UIImage(named: "review2")
+                    cell.addSubview(cell_img)
+                    check_state[1] = 1
+                    return cell
+                }
+                else
+                {
+                    let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
+                    return cell
+                }
+            case 2:
+                if check_state[2] == 0
+                {
+                    let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
+                    
+                    cell.backgroundColor = real_back_color
+                    cell_img.image = UIImage(named: "review3")
+                    cell.addSubview(cell_img)
+                    check_state[2] = 1
+                    return cell
+                }
+                else
+                {
+                    let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
+                    return cell
+                }
+            default:
+                if check_state[3] == 0
+                {
+                    let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
+                    
+                    cell.backgroundColor = real_back_color
+                    cell_img.image = UIImage(named: "review4")
+                    cell.addSubview(cell_img)
+                    check_state[3] = 1
+                    return cell
+                }
+                else
+                {
+                    let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
+                    return cell
+                }
+            }
         case 1:
-            let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
-            
-            cell.backgroundColor = real_back_color
-            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-            cell_img.image = UIImage(named: "review2")
-            cell.addSubview(cell_img)
-            return cell
+            switch indexPath.row
+            {
+            case 0:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
+                return cell
+            case 1:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_1", forIndexPath: indexPath)
+                return cell
+            case 2:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
+                return cell
+            default:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
+                return cell
+            }
         case 2:
-            let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
-            
-            cell.backgroundColor = real_back_color
-            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-            cell_img.image = UIImage(named: "review3")
-            cell.addSubview(cell_img)
-            return cell
-        default:
-            let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
-            
-            cell.backgroundColor = real_back_color
-            let cell_img : UIImageView = UIImageView(frame: CGRectMake(10, 10, 350, 260))
-            cell_img.image = UIImage(named: "review4")
-            cell.addSubview(cell_img)
-            return cell
+            switch indexPath.row
+            {
+            case 0:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
+                return cell
+            case 1:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_1", forIndexPath: indexPath)
+                return cell
+            case 2:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
+                return cell
+            default:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
+                return cell
+            }
+        case 3:
+            switch indexPath.row
+            {
+            case 0:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
+                return cell
+            case 1:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_1", forIndexPath: indexPath)
+                return cell
+            case 2:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
+                return cell
+            default:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
+                return cell
+            }
+        default :
+            switch indexPath.row
+            {
+            case 0:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
+                return cell
+            case 1:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_1", forIndexPath: indexPath)
+                return cell
+            case 2:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
+                return cell
+            default:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
+                return cell
+            }
         }
     }
     
