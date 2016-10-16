@@ -9,7 +9,8 @@
 import UIKit
 
 class Intermediate_juhang_ViewController: UIViewController
-{
+{ var num = 1
+    var name = "beginner_map"
     
     @IBOutlet weak var bt_exit: UIButton!
     @IBOutlet weak var bt_viewAll: UIButton!
@@ -65,7 +66,13 @@ class Intermediate_juhang_ViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-
+    func imageTapped(img: AnyObject)
+    {
+        num = num + 1
+        var temp = name + String(num)
+        big_image.image = UIImage(named: temp)
+        
+    }
     /*
     // MARK: - Navigation
 
