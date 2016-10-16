@@ -28,7 +28,7 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     let bt_jipi = UIButton(type: UIButtonType.Custom)
     let bt_jipi_check = UIButton(type: UIButtonType.Custom)
     
-    
+    var bakhop_state = 0
     
     /* zoom function */
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
@@ -53,7 +53,7 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         self.tabBarController?.tabBar.tintColor = background_color_state
         
         bt_bakhop.setImage(nil, forState: .Normal)
-        bt_bakhop_check.setImage(UIImage(named: "check_1"), forState: .Normal)
+        bt_bakhop_check.setImage(nil, forState: .Normal)
         bt_mugung.setImage(nil, forState: .Normal)
         bt_mugung_check.setImage(UIImage(named: "check_1"), forState: .Normal)
         bt_chang.setImage(nil, forState: .Normal)
@@ -95,7 +95,7 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         
         
         /* 백합원 띄우기 */
-        bt_bakhop.frame = CGRectMake(3037, 1492, 300, 105)
+        bt_bakhop.frame = CGRectMake(3037, 1493, 300, 105)
         bt_bakhop.layer.cornerRadius = 0.2 * bt_bakhop.bounds.size.width
         //bt_won.backgroundColor = UIColor.orangeColor()
         bt_bakhop.addTarget(self, action: #selector(clicked_bt_bh), forControlEvents: UIControlEvents.TouchUpInside)
@@ -131,14 +131,26 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     
     func clicked_bt_bh(sender: UIButton)
     {
-        bt_bakhop.setImage(UIImage(named: "free_bak_1"), forState: .Normal)
+        switch(bakhop_state)
+        {
+        case 0:
+            bt_bakhop.setImage(UIImage(named: "free_bak_1"), forState: .Normal)
+            
+            /* check 띄우기 */
+            bt_bakhop_check.setImage(UIImage(named: "check_1"), forState: .Normal)
+            bt_bakhop_check.frame = CGRectMake(3200, 1400, 100, 100)
+            bt_bakhop_check.layer.cornerRadius = 0.5 * bt_bakhop_check.bounds.size.width
+            bt_bakhop_check.addTarget(self, action: #selector(clicked_bh_check), forControlEvents: UIControlEvents.TouchUpInside)
+            image_view.addSubview(bt_bakhop_check)
+            image_view.userInteractionEnabled = true
+            bakhop_state = 1
+        case 1:
+            bt_bakhop.setImage(nil, forState: .Normal)
+            bt_bakhop_check.setImage(nil, forState: .Normal)
+            bakhop_state = 0
+        default :break
+        }
         
-        /* check 띄우기 */
-        bt_bakhop_check.frame = CGRectMake(3200, 1370, 100, 100)
-        bt_bakhop_check.layer.cornerRadius = 0.5 * bt_bakhop_check.bounds.size.width
-        bt_bakhop_check.addTarget(self, action: #selector(clicked_bh_check), forControlEvents: UIControlEvents.TouchUpInside)
-        image_view.addSubview(bt_bakhop_check)
-        image_view.userInteractionEnabled = true
     }
     func clicked_bh_check(sender: UIButton)
     {
@@ -147,27 +159,27 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     
     func clicked_bt_mg(sender: UIButton)
     {
-        bt_mugung.setImage(UIImage(named: "free_chang_1"), forState: .Normal)
+        bt_mugung.setImage(UIImage(named: "free_mugung_1"), forState: .Normal)
     }
     
     func clicked_bt_bchang(sender: UIButton)
     {
-        bt_chang.setImage(UIImage(named: "free_jan_1"), forState: .Normal)
+        bt_chang.setImage(UIImage(named: "free_chang_1"), forState: .Normal)
     }
     
     func clicked_bt_sam(sender: UIButton)
     {
-        bt_sam.setImage(UIImage(named: "free_jipi_1"), forState: .Normal)
+        bt_sam.setImage(UIImage(named: "free_sam_1"), forState: .Normal)
     }
     
     func clicked_bt_jandi(sender: UIButton)
     {
-        bt_jandi.setImage(UIImage(named: "free_mugung_1"), forState: .Normal)
+        bt_jandi.setImage(UIImage(named: "free_jandi_1"), forState: .Normal)
     }
     
     func clicked_bt_jipi(sender: UIButton)
     {
-        bt_jipi.setImage(UIImage(named: "free_sam_1"), forState: .Normal)
+        bt_jipi.setImage(UIImage(named: "free_jipi_1"), forState: .Normal)
     }
 
 
