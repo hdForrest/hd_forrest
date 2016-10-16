@@ -16,6 +16,9 @@ class Begin_juhang_ViewController: UIViewController
     @IBOutlet weak var bt_exit: UIButton!
     @IBOutlet weak var bt_viewAll: UIButton!
 
+    @IBOutlet weak var bt_no: UIButton!
+    @IBOutlet weak var bt_yes: UIButton!
+    @IBOutlet weak var explanation_view: UIImageView!
     @IBOutlet weak var big_image: UIImageView!
     @IBOutlet weak var small_image: UIImageView!
     @IBOutlet weak var text_image: UIImageView!
@@ -44,15 +47,30 @@ class Begin_juhang_ViewController: UIViewController
         bt_viewAll.setTitleColor(text_color, forState: .Normal)
         bt_viewAll.backgroundColor = real_back_color
         bt_viewAll.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 5)
+        bt_no.setTitle("아니오", forState: .Normal)
+        bt_no.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        bt_no.backgroundColor = UIColor.blackColor()
+        bt_no.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
+        
+        bt_yes.setTitle("네", forState: .Normal)
+        bt_yes.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        bt_yes.backgroundColor = background_color_state
+        bt_yes.titleLabel!.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size)
+        
         
         /* 첫 이미지 */
-        big_image.image = UIImage(named: "begin_road1")
+        big_image.image = UIImage(named: "beginner_map1")
         big_image.backgroundColor = background_color_state
-        small_image.image = UIImage(named: "begin_road1_small")
-        text_image.image = UIImage(named: "begin_road1_text")
+        small_image.image = UIImage(named: "begin_small1~4")
+        text_image.image = UIImage(named: "begin_text1~4")
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(Begin_juhang_ViewController.imageTapped(_:)))
         big_image.userInteractionEnabled = true
         big_image.addGestureRecognizer(tapGestureRecognizer)
+        
+        explanation_view.hidden = true
+        bt_no.hidden = true
+        bt_yes.hidden = true
+        
         // Do any additional setup after loading the view.
     }
 
@@ -73,9 +91,51 @@ class Begin_juhang_ViewController: UIViewController
         num = num + 1
         var temp = name + String(num)
         big_image.image = UIImage(named: temp)
+        if (num > 4 && num<13) {
+            small_image.image = UIImage(named:"begin_small5~12")
+            text_image.image = UIImage(named: "begin_text5~12")
+            if(num == 9){
+            explanation_view.hidden = false
+            bt_yes.hidden = false
+            bt_no.hidden = false
+            
+            }
+            else {
+                explanation_view.hidden = true
+                bt_no.hidden = true
+                bt_yes.hidden = true
+            }
+            
+            
+        }
+        else if(num > 12 && num < 18) {
+            small_image.image = UIImage(named:"begin_small13~17")
+            text_image.image = UIImage(named: "begin_text13~17")
         
+        }
+        else if(num > 17 && num < 20) {
+            small_image.image = UIImage(named:"begin_small18~19")
+            text_image.image = UIImage(named: "begin_text18~19")
+        }
+        else if( num > 19 && num < 23){
+            small_image.image = UIImage(named:"begin_small20~22")
+            text_image.image = UIImage(named: "begin_text20~22")
+        }
+        else if( num > 22 && num < 27){
+            small_image.image = UIImage(named:"begin_small23~26")
+            text_image.image = UIImage(named: "begin_text23~26")
+        }
     }
 
+    @IBAction func yesAction(sender: AnyObject) {
+        
+        
+    }
+    @IBAction func noAction(sender: AnyObject) {
+        explanation_view.hidden = true
+        bt_no.hidden = true
+        bt_yes.hidden = true
+    }
     /*
     // MARK: - Navigation
 
