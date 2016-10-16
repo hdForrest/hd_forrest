@@ -99,24 +99,8 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         /* 버튼 맨 위에 있게 */
         bt_travel_start.layer.zPosition = 1
         
-        
-        /* 백합원 띄우기 */
-        bt_bakhop.frame = CGRectMake(3037, 1493, 300, 105)
-        bt_bakhop.layer.cornerRadius = 0.2 * bt_bakhop.bounds.size.width
-        //bt_won.backgroundColor = UIColor.orangeColor()
-        bt_bakhop.addTarget(self, action: #selector(clicked_bt_bh), forControlEvents: UIControlEvents.TouchUpInside)
-        image_view.addSubview(bt_bakhop)
-        image_view.userInteractionEnabled = true
-        
-        /* 무궁화원 띄우기 */
-        bt_mugung.frame = CGRectMake(2800, 1400, 260, 105)
-        bt_mugung.layer.cornerRadius = 0.18 * bt_mugung.bounds.size.width
-        //bt_mugung_won.backgroundColor = UIColor.orangeColor()
-        bt_mugung.addTarget(self, action: #selector(clicked_bt_mg), forControlEvents: UIControlEvents.TouchUpInside)
-        image_view.addSubview(bt_mugung)
-        image_view.userInteractionEnabled = true
-
-        
+        /* button input */
+        input_bt()
         
         /* scroll and click 다 되게 */
         scroll_view.delaysContentTouches = false
@@ -134,6 +118,25 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         // Dispose of any resources that can be recreated.
     }
     
+    func input_bt()
+    {
+        /* 백합원 띄우기 */
+        bt_bakhop.frame = CGRectMake(3037, 1493, 300, 105)
+        bt_bakhop.layer.cornerRadius = 0.2 * bt_bakhop.bounds.size.width
+        //bt_won.backgroundColor = UIColor.orangeColor()
+        bt_bakhop.addTarget(self, action: #selector(clicked_bt_bh), forControlEvents: UIControlEvents.TouchUpInside)
+        image_view.addSubview(bt_bakhop)
+        image_view.userInteractionEnabled = true
+        
+        /* 무궁화원 띄우기 */
+        bt_mugung.frame = CGRectMake(2800, 1400, 260, 105)
+        bt_mugung.layer.cornerRadius = 0.18 * bt_mugung.bounds.size.width
+        //bt_mugung_won.backgroundColor = UIColor.orangeColor()
+        bt_mugung.addTarget(self, action: #selector(clicked_bt_mg), forControlEvents: UIControlEvents.TouchUpInside)
+        image_view.addSubview(bt_mugung)
+        image_view.userInteractionEnabled = true
+
+    }
     
     func clicked_bt_bh(sender: UIButton)
     {
@@ -168,9 +171,7 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
     }
     func clicked_bh_check(sender: UIButton)
     {
-        bt_bakhop_info.setImage(nil, forState: .Normal)
         bt_bakhop.setImage(UIImage(named: "free_bak_2"), forState: .Normal)
-        bt_bakhop_check.setImage(nil, forState: .Normal)
         
         /* 사진 띄우기 */
         image_view = UIImageView(image: UIImage(named: "map_1"))
@@ -180,7 +181,7 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         scroll_view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         
         // 초기 위치 설정
-        scroll_view.contentOffset = CGPoint(x: 1315, y: 510)
+        scroll_view.contentOffset = CGPoint(x: 1000, y: 410)
         
         // zoom 정도 세팅
         scroll_view.delegate = self
@@ -194,7 +195,9 @@ class FreeViewController: UIViewController, UIScrollViewDelegate
         
         /* 사진 띄우기 */
         scroll_view.addSubview(image_view)
-        view?.addSubview(scroll_view)      //뷰에다가 두개 띄워버림
+        view?.addSubview(scroll_view)   //뷰에다가 두개 띄워버림
+        image_view.addSubview(bt_bakhop)
+        image_view.userInteractionEnabled = true
     }
     
     func clicked_bh_info(sender: UIButton)
