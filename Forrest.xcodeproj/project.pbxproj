@@ -43,6 +43,12 @@
 		5C28FCB71DB36E13003FE7E7 /* info_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCB51DB36E13003FE7E7 /* info_1.png */; };
 		5C28FCB81DB36E13003FE7E7 /* info_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCB61DB36E13003FE7E7 /* info_2.png */; };
 		5C28FCBA1DB37258003FE7E7 /* map_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCB91DB37258003FE7E7 /* map_1.png */; };
+		5C28FCC31DB3B9D8003FE7E7 /* map_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCBD1DB3B9D8003FE7E7 /* map_2.png */; };
+		5C28FCC41DB3B9D8003FE7E7 /* map_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCBE1DB3B9D8003FE7E7 /* map_3.png */; };
+		5C28FCC51DB3B9D8003FE7E7 /* map_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCBF1DB3B9D8003FE7E7 /* map_4.png */; };
+		5C28FCC61DB3B9D8003FE7E7 /* map_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCC01DB3B9D8003FE7E7 /* map_5.png */; };
+		5C28FCC71DB3B9D8003FE7E7 /* map_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCC11DB3B9D8003FE7E7 /* map_6.png */; };
+		5C28FCC81DB3B9D8003FE7E7 /* map_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C28FCC21DB3B9D8003FE7E7 /* map_7.png */; };
 		5C2DE5351DB088150056009B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DE5341DB088150056009B /* ReviewViewController.swift */; };
 		5C3F35CF1DA4AEA80098566D /* AdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */; };
 		5C3F35D11DA4AEBF0098566D /* IntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */; };
@@ -212,6 +218,12 @@
 		5C28FCB51DB36E13003FE7E7 /* info_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info_1.png; path = image/free_travel/info_1.png; sourceTree = "<group>"; };
 		5C28FCB61DB36E13003FE7E7 /* info_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info_2.png; path = image/free_travel/info_2.png; sourceTree = "<group>"; };
 		5C28FCB91DB37258003FE7E7 /* map_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_1.png; path = image/free_travel/map_1.png; sourceTree = "<group>"; };
+		5C28FCBD1DB3B9D8003FE7E7 /* map_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_2.png; path = image/free_travel/map_2.png; sourceTree = "<group>"; };
+		5C28FCBE1DB3B9D8003FE7E7 /* map_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_3.png; path = image/free_travel/map_3.png; sourceTree = "<group>"; };
+		5C28FCBF1DB3B9D8003FE7E7 /* map_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_4.png; path = image/free_travel/map_4.png; sourceTree = "<group>"; };
+		5C28FCC01DB3B9D8003FE7E7 /* map_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_5.png; path = image/free_travel/map_5.png; sourceTree = "<group>"; };
+		5C28FCC11DB3B9D8003FE7E7 /* map_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_6.png; path = image/free_travel/map_6.png; sourceTree = "<group>"; };
+		5C28FCC21DB3B9D8003FE7E7 /* map_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_7.png; path = image/free_travel/map_7.png; sourceTree = "<group>"; };
 		5C2DE5341DB088150056009B /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		5C3F35CE1DA4AEA80098566D /* AdvancedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedViewController.swift; sourceTree = "<group>"; };
 		5C3F35D01DA4AEBF0098566D /* IntermediateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateViewController.swift; sourceTree = "<group>"; };
@@ -454,6 +466,12 @@
 			isa = PBXGroup;
 			children = (
 				5C28FCB91DB37258003FE7E7 /* map_1.png */,
+				5C28FCBD1DB3B9D8003FE7E7 /* map_2.png */,
+				5C28FCBE1DB3B9D8003FE7E7 /* map_3.png */,
+				5C28FCBF1DB3B9D8003FE7E7 /* map_4.png */,
+				5C28FCC01DB3B9D8003FE7E7 /* map_5.png */,
+				5C28FCC11DB3B9D8003FE7E7 /* map_6.png */,
+				5C28FCC21DB3B9D8003FE7E7 /* map_7.png */,
 				5C28FCB11DB3682A003FE7E7 /* check_1.png */,
 				5C28FCB21DB3682A003FE7E7 /* check_2.png */,
 				5C28FCB51DB36E13003FE7E7 /* info_1.png */,
@@ -823,10 +841,12 @@
 				EEBAB28B1DB37397008E2D1A /* advanced_road15.png in Resources */,
 				5C28FCA51DB36605003FE7E7 /* free_bak_1.png in Resources */,
 				EEBAB2181DB36B58008E2D1A /* beginner_map20.png in Resources */,
+				5C28FCC51DB3B9D8003FE7E7 /* map_4.png in Resources */,
 				EE1180661DA620E9007719F2 /* onl.png in Resources */,
 				5C28FCAA1DB36605003FE7E7 /* free_jan_2.png in Resources */,
 				EEBAB2361DB36ECE008E2D1A /* intermediate_road4.png in Resources */,
 				EE1444F31DB0C52B00176EFA /* nuwalk1.png in Resources */,
+				5C28FCC41DB3B9D8003FE7E7 /* map_3.png in Resources */,
 				EEBAB23B1DB36ECE008E2D1A /* intermediate_road9.png in Resources */,
 				5CA6EE251DA12D4600B9C547 /* Title.png in Resources */,
 				EEBAB23D1DB36ECE008E2D1A /* intermediate_road11.png in Resources */,
@@ -855,6 +875,7 @@
 				EEBAB2811DB37397008E2D1A /* advanced_road5.png in Resources */,
 				EEBAB2171DB36B58008E2D1A /* beginner_map19.png in Resources */,
 				EEBAB20B1DB36B58008E2D1A /* beginner_map7.png in Resources */,
+				5C28FCC71DB3B9D8003FE7E7 /* map_6.png in Resources */,
 				5C1AC0F71DB286180067E0EC /* review2.png in Resources */,
 				5C9D81F71DABFB97002B0812 /* bt_bakhop.png in Resources */,
 				EEBAB21A1DB36B58008E2D1A /* beginner_map22.png in Resources */,
@@ -873,6 +894,7 @@
 				EEBAB2861DB37397008E2D1A /* advanced_road10.png in Resources */,
 				5CA6EE2B1DA135CE00B9C547 /* Walk.png in Resources */,
 				EEBAB27D1DB37397008E2D1A /* advanced_road1.png in Resources */,
+				5C28FCC81DB3B9D8003FE7E7 /* map_7.png in Resources */,
 				5C233D4E1DAE0FAA0015E91C /* bt_changpo.png in Resources */,
 				EEBAB2351DB36ECE008E2D1A /* intermediate_road3.png in Resources */,
 				EEBAB2071DB36B58008E2D1A /* beginner_map3.png in Resources */,
@@ -893,6 +915,7 @@
 				EEBAB2891DB37397008E2D1A /* advanced_road13.png in Resources */,
 				EEBAB2151DB36B58008E2D1A /* beginner_map17.png in Resources */,
 				EEBAB23E1DB36ECE008E2D1A /* intermediate_road12.png in Resources */,
+				5C28FCC31DB3B9D8003FE7E7 /* map_2.png in Resources */,
 				EEBAB2841DB37397008E2D1A /* advanced_road8.png in Resources */,
 				5C28FCAC1DB36605003FE7E7 /* free_jipi_2.png in Resources */,
 				EEBAB28A1DB37397008E2D1A /* advanced_road14.png in Resources */,
@@ -936,6 +959,7 @@
 				EEBAB2801DB37397008E2D1A /* advanced_road4.png in Resources */,
 				5CA6EE241DA12D4600B9C547 /* Mission.png in Resources */,
 				EEBAB2371DB36ECE008E2D1A /* intermediate_road5.png in Resources */,
+				5C28FCC61DB3B9D8003FE7E7 /* map_5.png in Resources */,
 				5C9DEA141DAD02CF009F2D25 /* begin_road1.png in Resources */,
 				EEBAB27F1DB37397008E2D1A /* advanced_road3.png in Resources */,
 				5C3F35D71DA4B3A50098566D /* advanced_map.png in Resources */,
