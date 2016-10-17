@@ -11,7 +11,7 @@ import UIKit
 class Free_juhang_ViewController: UIViewController
 {
     var num = 1
-    var name = "free_road"
+    var name = " free_road"
     
     @IBOutlet weak var bt_exit: UIButton!
     @IBOutlet weak var bt_viewAll: UIButton!
@@ -24,6 +24,7 @@ class Free_juhang_ViewController: UIViewController
     @IBOutlet weak var bt_no: UIButton!
     @IBOutlet weak var bt_yes: UIButton!
     @IBOutlet weak var explanation_view: UIImageView!
+    
     @IBOutlet weak var big_image: UIImageView!
     @IBOutlet weak var small_image: UIImageView!
     @IBOutlet weak var text_image: UIImageView!
@@ -71,10 +72,10 @@ class Free_juhang_ViewController: UIViewController
         
         
         /* 첫 이미지 */
-        big_image.image = UIImage(named: "beginner_map1")
+        big_image.image = UIImage(named: "free_road1")
         big_image.backgroundColor = real_back_color
-        small_image.image = UIImage(named: "begin_small1~4")
-        text_image.image = UIImage(named: "begin_text1~4")
+        small_image.image = UIImage(named: "free_small1~3")
+        text_image.image = UIImage(named: "free_text1~3")
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(Begin_juhang_ViewController.imageTapped(_:)))
         big_image.userInteractionEnabled = true
         big_image.addGestureRecognizer(tapGestureRecognizer)
@@ -153,39 +154,20 @@ class Free_juhang_ViewController: UIViewController
         num = num + 1
         let temp = name + String(num)
         big_image.image = UIImage(named: temp)
-        if (num > 4 && num<13) {
-            small_image.image = UIImage(named:"begin_small5~12")
-            text_image.image = UIImage(named: "begin_text5~12")
-            if(num == 9){
-                explanation_view.hidden = false
-                bt_yes.hidden = false
-                bt_no.hidden = false
-                
-            }
-            else {
-                explanation_view.hidden = true
-                bt_no.hidden = true
-                bt_yes.hidden = true
-            }
+        if (num > 3 && num<11) {
+            small_image.image = UIImage(named:"free_small4~10")
+            text_image.image = UIImage(named: "free_text4~10")
             
         }
-        else if(num > 12 && num < 18) {
-            small_image.image = UIImage(named:"begin_small13~17")
-            text_image.image = UIImage(named: "begin_text13~17")
-            
+        else if(num > 10 && num < 14) {
+            small_image.image = UIImage(named:"free_small10-13")
+            text_image.image = UIImage(named: "free_text10_13")
         }
-        else if(num > 17 && num < 20) {
-            small_image.image = UIImage(named:"begin_small18~19")
-            text_image.image = UIImage(named: "begin_text18~19")
+        else if(num > 13 && num < 17) {
+            small_image.image = UIImage(named:"free_small14-16")
+            text_image.image = UIImage(named: "free_text14-16")
         }
-        else if( num > 19 && num < 23){
-            small_image.image = UIImage(named:"begin_small20~22")
-            text_image.image = UIImage(named: "begin_text20~22")
-        }
-        else if( num > 22 && num < 27){
-            small_image.image = UIImage(named:"begin_small23~26")
-            text_image.image = UIImage(named: "begin_text23~26")
-        }
+       
     }
 
     @IBAction func yesAction(sender: AnyObject)

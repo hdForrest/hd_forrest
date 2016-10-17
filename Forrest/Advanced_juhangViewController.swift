@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import AVFoundation
 class Advanced_juhangViewController: UIViewController
 {
+    var player = AVAudioPlayer()
     var name = "advanced_road"
     var num = 1
     @IBOutlet weak var bt_exit: UIButton!
@@ -71,8 +72,8 @@ class Advanced_juhangViewController: UIViewController
         /* 첫 이미지 */
         big_image.image = UIImage(named: "begin_road1")
         big_image.backgroundColor = real_back_color
-        small_image.image = UIImage(named: "begin_road1_small")
-        text_image.image = UIImage(named: "begin_road1_text")
+        small_image.image = UIImage(named: "advanced_small1~3")
+        text_image.image = UIImage(named: "advanced_text1~3")
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector
             (Advanced_juhangViewController.imageTapped(_:)))
         big_image.userInteractionEnabled = true
@@ -125,6 +126,10 @@ class Advanced_juhangViewController: UIViewController
         time_label.textColor = text_color
         time_label.font = UIFont(name : "AppleSDGothicNeo-Bold", size: text_size - 7)
         arrive_label.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 7)
+        
+        explanation_view.hidden = true
+        bt_no.hidden = true
+        bt_yes.hidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -146,14 +151,50 @@ class Advanced_juhangViewController: UIViewController
         var temp = name + String(num)
         big_image.image = UIImage(named: temp)
         
+        if (num == 2){
+            explanation_view.hidden = false
+            bt_yes.hidden = false
+            bt_no.hidden = false
+        }
+        else {explanation_view.hidden = true
+            bt_no.hidden = true
+            bt_yes.hidden = true}
+        if (num > 3 && num < 7){
+            small_image.image = UIImage(named: "advanced_small4~8")
+            text_image.image = UIImage(named: "advanced_text4~6")
+        
+        }
+        else if(num > 6 && num < 9){
+        text_image.image = UIImage(named: "advanced_text7~8")
+        
+        }
+        else if(num == 9){
+            small_image.image = UIImage(named: "advanced_small9")
+            text_image.image = UIImage(named: "advanced_text9")
+        
+        }
+        
     }
     @IBAction func yesAction(sender: AnyObject) {
-        explanation_view.hidden = true
-        bt_no.hidden = true
-        bt_yes.hidden = true
+        let myPath = NSBundle.mainBundle().pathForResource("advance_audio", ofType: "m4a")
+        
+        
+        let myPathURL = NSURL(fileURLWithPath: myPath!)
+        
+        do{
+            try player = AVAudioPlayer(contentsOfURL: myPathURL)
+            
+            player.play()
+        }catch{
+            print("error")
+        }
+
     }
 
     @IBAction func noAction(sender: AnyObject) {
+        explanation_view.hidden = true
+        bt_no.hidden = true
+        bt_yes.hidden = true
     }
     /*
     // MARK: - Navigation

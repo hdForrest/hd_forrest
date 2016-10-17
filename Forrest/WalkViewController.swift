@@ -141,6 +141,14 @@ class WalkViewController: UIViewController
         toWalkLabel5.textColor = background_color_state
         toWalkLabel6.textColor = background_color_state
         toWalkLabel7.textColor = background_color_state
+        toWalkLabel1.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 10)
+        toWalkLabel2.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 10)
+        toWalkLabel3.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 10)
+        toWalkLabel4.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 10)
+        toWalkLabel5.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 10)
+        toWalkLabel6.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 10)
+        toWalkLabel7.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 10)
+        
         
         nuWalkLabel2.textColor = background_color_state
         nuWalkLabel3.textColor = background_color_state

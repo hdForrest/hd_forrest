@@ -7,11 +7,11 @@
 //
 
 import UIKit
-
+import AVFoundation
 class Intermediate_juhang_ViewController: UIViewController
 { var num = 1
     var name = "intermediate_road"
-    
+    var player = AVAudioPlayer()
     @IBOutlet weak var bt_exit: UIButton!
     @IBOutlet weak var bt_viewAll: UIButton!
     @IBOutlet weak var bt_soundIcon: UIButton!
@@ -72,8 +72,8 @@ class Intermediate_juhang_ViewController: UIViewController
         /* 첫 이미지 */
         big_image.image = UIImage(named: "begin_road1")
         big_image.backgroundColor = real_back_color
-        small_image.image = UIImage(named: "begin_road1_small")
-        text_image.image = UIImage(named: "begin_road1_text")
+        small_image.image = UIImage(named: "inter_small1~3")
+        text_image.image = UIImage(named: "inter_text1~3")
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(Intermediate_juhang_ViewController.imageTapped(_:)))
         big_image.userInteractionEnabled = true
         big_image.addGestureRecognizer(tapGestureRecognizer)
@@ -129,6 +129,10 @@ class Intermediate_juhang_ViewController: UIViewController
         time_label.font = UIFont(name : "AppleSDGothicNeo-Bold", size: text_size - 7)
         arrive_label.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 7)
         // Do any additional setup after loading the view.
+  
+        explanation_view.hidden = true
+        bt_no.hidden = true
+        bt_yes.hidden = true
     }
     
     /* 화면 사라질 때 네비게이션 바 나타나기. */
@@ -150,6 +154,34 @@ class Intermediate_juhang_ViewController: UIViewController
         let temp = name + String(num)
         big_image.image = UIImage(named: temp)
         
+        if (num > 3 && num < 8){
+            small_image.image = UIImage(named: "inter_small4~7")
+            text_image.image = UIImage(named: "inter_text4~7")
+        }
+        else if ( num > 7 && num < 14){
+            if ( num == 11){
+                explanation_view.hidden = false
+                bt_yes.hidden = false
+                bt_no.hidden = false
+            
+            }
+            else {
+                explanation_view.hidden = true
+                bt_no.hidden = true
+                bt_yes.hidden = true}
+            small_image.image = UIImage(named: "inter_small8~13")
+            text_image.image = UIImage(named: "inter_text8~13")
+        }
+        else if ( num > 13 && num < 16){
+            small_image.image = UIImage(named: "inter_small14~15")
+            text_image.image = UIImage(named: "inter_text14~15")
+        }
+        else if ( num > 15 && num < 19){
+        
+            small_image.image = UIImage(named: "inter_small16~18")
+            text_image.image = UIImage(named: "inter_text16~18")
+        }
+        
     }
     @IBAction func noAction(sender: AnyObject) {
         explanation_view.hidden = true
@@ -157,6 +189,19 @@ class Intermediate_juhang_ViewController: UIViewController
         bt_yes.hidden = true
     }
     @IBAction func yesAction(sender: AnyObject) {
+        let myPath = NSBundle.mainBundle().pathForResource("inter_audio", ofType: "m4a")
+        
+        
+        let myPathURL = NSURL(fileURLWithPath: myPath!)
+        
+        do{
+            try player = AVAudioPlayer(contentsOfURL: myPathURL)
+            
+            player.play()
+        }catch{
+            print("error")
+        }
+
     }
    
     /*

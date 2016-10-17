@@ -7,12 +7,15 @@
 //
 
 import UIKit
-
-class Begin_juhang_ViewController: UIViewController
+import AVFoundation
+import AVKit
+class Begin_juhang_ViewController: UIViewController, AVAudioPlayerDelegate
 {
+    var player = AVAudioPlayer()
     var num = 1
     var name = "beginner_map"
 
+    @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var bt_exit: UIButton!
     @IBOutlet weak var bt_viewAll: UIButton!
     @IBOutlet weak var bt_soundIcon: UIButton!
@@ -46,8 +49,10 @@ class Begin_juhang_ViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        /* 첫화면 설정 */
+        
+        /* 오디오 설정 */
+   
+     /* 첫화면 설정 */
         self.view.backgroundColor = real_back_color
         img_temp.backgroundColor = background_color_state
         /* 버튼 설정 */
@@ -132,7 +137,7 @@ class Begin_juhang_ViewController: UIViewController
         time_label.textColor = text_color
         time_label.font = UIFont(name : "AppleSDGothicNeo-Bold", size: text_size - 7)
         arrive_label.font = UIFont(name : "AppleSDGothicNeo-Regular", size: text_size - 7)
-        // Do any additional setup after loading the view.
+       slider.hidden = true
     }
 
     /* 화면 사라질 때 네비게이션 바 나타나기. */
@@ -188,8 +193,24 @@ class Begin_juhang_ViewController: UIViewController
     }
 
     @IBAction func yesAction(sender: AnyObject) {
+        let myPath = NSBundle.mainBundle().pathForResource("begin_audio", ofType: "m4a")
         
+       
+            let myPathURL = NSURL(fileURLWithPath: myPath!)
         
+        do{
+            try player = AVAudioPlayer(contentsOfURL: myPathURL)
+            
+            player.play()
+        }catch{
+            print("error")
+        }
+
+    
+    }
+    @IBAction func Volume(sender: AnyObject) {
+        slider.hidden = false
+       slider.value = player.volume
     }
     @IBAction func noAction(sender: AnyObject) {
         explanation_view.hidden = true
