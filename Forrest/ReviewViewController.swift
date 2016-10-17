@@ -248,7 +248,7 @@ class ReviewViewController: UIViewController, UITableViewDataSource, UITableView
             switch indexPath.row
             {
             case 0:
-                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
                 return cell
             case 1:
                 let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_1", forIndexPath: indexPath)
@@ -257,23 +257,23 @@ class ReviewViewController: UIViewController, UITableViewDataSource, UITableView
                 let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
                 return cell
             default:
-                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
                 return cell
             }
         case 3:
             switch indexPath.row
             {
             case 0:
-                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
-                return cell
-            case 1:
-                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_1", forIndexPath: indexPath)
-                return cell
-            case 2:
                 let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
                 return cell
-            default:
+            case 1:
                 let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
+                return cell
+            case 2:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_1", forIndexPath: indexPath)
+                return cell
+            default:
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_3", forIndexPath: indexPath)
                 return cell
             }
         default :
@@ -286,10 +286,10 @@ class ReviewViewController: UIViewController, UITableViewDataSource, UITableView
                 let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_1", forIndexPath: indexPath)
                 return cell
             case 2:
-                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
                 return cell
             default:
-                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_4", forIndexPath: indexPath)
+                let cell = tableView.dequeueReusableCellWithIdentifier("Review_LabelCell_2", forIndexPath: indexPath)
                 return cell
             }
         }
